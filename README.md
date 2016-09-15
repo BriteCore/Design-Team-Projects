@@ -59,8 +59,8 @@ Helpful Links
 Questions
 ---------
 
- - For questions about technologies, please contact chris@britecore.com
- - For questions about design, please contact phil@britecore.com
+ - For questions about technologies, please contact phil@britecore.com
+ - For questions about design, please contact will@britecore.com
 
 Finished?
 ---------
