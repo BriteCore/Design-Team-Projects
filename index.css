@@ -26,12 +26,13 @@ hr {
 .inner-GRID {
   margin-left: 5% ;
 }
-
+/*
 .form-container {
   display: none;
-  /*padding: 0 35%;*/
+  padding: 0 50%;
 /*   border: 1px solid #e1e1e1; */
-}
+}*/
+
 
 #logo {
   margin: 50px 0 70px;
@@ -54,17 +55,16 @@ img {
   width: 13px;
 }
 
-label {
-  margin-top: 15px;
-  padding-right: 90%;
-}
-
 .btn-primary {
   margin-top: 15px;
 }
 
 .btn-secondary {
   margin-top: 20px;
+}
+
+.col-S-1daynum:hover {
+cursor: pointer;
 }
 
 *:before,
