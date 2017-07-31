@@ -3,69 +3,116 @@
   font-weight: 300;
 }
 
-#front-page-stuff {
-  position: relative; 
-  top: 50%;
-  vertical-align: middle;
-    transform: translateY(50%);
-    -webkit-transform: translateY(50%);  
+.add {
+  padding-left: 90%;
+  color: #364f54;
 }
 
-#stuff {
+.delete {
+  float: right;
+  padding-right: 10%;
+  color: #364f54  
+}
+
+label {
+  padding-right: 90%;
+}
+
+.left {
+  background-color: #364f54;
+  height: 100vh;
+}
+
+.left-content {
+  font-weight: 900;
+  margin-top: 40%;
+  color: white;
+}
+
+.left-content > p {
+  font-weight: 300;
+}
+
+.right-content {
+  color: #364f54;
+}
+
+.date-container {
+  font-weight: 900;
+}
+
+.person {
+  font-weight: 500;
+}
+
+.sub-content {
+  padding-left: 10px;
+}
+
+.show{
+  display: block;
+  color: #364f54  
+}
+
+li {
+  text-align: left;
+  list-style: none;
+}
+
+.date-container {
+  text-align: left;
+}
+
+a:hover {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*Lightbox*/
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .0;
+  filter: alpha(opacity=0);
+  z-index: 50;
   display: none;
 }
 
-hr {
-  margin: 0 0 50px;
-}
-
-.col-GRID {
-  border-left: 1px solid #e1e1e1;
-}
-
-.inner-GRID {
-  margin-left: 5% ;
-}
-/*
-.form-container {
+.box {
+  position: relative;
+  top: 20%;
+  /*left: 30%;*/
+  /*width: 500px;*/
+  /*height: 300px;*/
+  display: block;
+  background: #ffffff;
+  z-index: 51;
+  padding: 10px;
+  margin: 0 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #444444;
+  -webkit-box-shadow: 0 0 5px #444444;
+  box-shadow: 0 0 5px #444444;
   display: none;
-  padding: 0 50%;
-/*   border: 1px solid #e1e1e1; */
-}*/
-
-
-#logo {
-  margin: 50px 0 70px;
 }
 
-.list-title, .grid-title {
-  margin: 0 0 50px;
+.close {
+  float: right;
+  margin-right: 6px;
+  cursor: pointer;
 }
 
-#next-month {
-  background-color: #e1e1e1;
-}
 
-#add {
-  display: none;
-  width: 13px;
-}
 
-img {
-  width: 13px;
-}
 
-.btn-primary {
-  margin-top: 15px;
-}
-
-.btn-secondary {
-  margin-top: 20px;
-}
-
-.col-S-1daynum:hover {
-cursor: pointer;
-}
+/*Responsiveness*/
 
 *:before,
 *:after {
@@ -74,7 +121,7 @@ cursor: pointer;
 
 .grid {
   width: 100%;
-  max-width: 1100px;
+  /*max-width: 1100px;*/
   margin: 0 auto;
 }
 
@@ -98,8 +145,8 @@ cursor: pointer;
 }
 
 .col {
-  padding: 1em 0;
-  margin: 8px 0;
+  /*padding: 1em 0;*/
+  /*margin: 8px 0;*/
   text-align: center;
 }
 

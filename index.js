@@ -1,46 +1,57 @@
-// open page 
-$('.btn-secondary').on('click', function(){
-  $('#stuff').css('display', 'block')
-  $('#front-page').hide();
+// lightbox
+
+$('.add').on('click', function(){
+  $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
+  $('.box').animate({'opacity':'1.00'}, 300, 'linear');  
+  $('.backdrop, .box').css('display', 'block');
 })
 
-// hover with "+" button
-
-$('.col-S-1daynum').mouseenter(function(){
-  $(this).children('span').hide()
-  $(this).children('#add').show()
-  $(this).children('#plus').show()
+$('.close').on('click', function(){
+  $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
+    $('.backdrop, .box').css('display', 'none');
+  })
 })
 
-$('.col-S-1daynum').mouseleave(function(){
-    $(this).children('span').show()
-    $(this).children('#add').hide();
-    $(this).children('#plus').hide()
+function addItem (){
+  var name = $('.name').val();
+  var position = $('.position').val();
+  var company =$('.company').val();
+  var phone = $('.phone').val();
+  var email = $('.email').val();
+  var address = $('.address').val();
+  var conversations = $('.conversations').val();
+
+  var d = new Date();
+  var date = d.getDate();
+  var month = d.getMonth();
+  var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
+  var year = d.getFullYear();
+
+  $("ul").append("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + name + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<div class='show-container'>"+ "<a href='#!'>" + "<p class='show'>" + "Show more" + "</p>" + "<p class='show' style='display:none'>" + "Show less" + "</p>" + "</a>" + "</div>" + "</div>")
+}
+
+$(".btn").on("click", function(event){
+  event.preventDefault();
+  addItem();
+  $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
+    $('.backdrop, .box').css('display', 'none');
+  });    
 })
 
-// "+" click functionality
+$('.list-results').on('click', '.delete', function(){
+  $(this).parent().remove();
+});
 
-// $('.col-S-1daynum').mouseenter(function(){
-//   $(this).on('click', function(){
-//     console.log($(this).children('span').text())
-//     $(this).featherlight(
-//       "<div class='col-L-12 form-container'><form><div class='form-group'><label for='Name'>Name</label><input type='text' class='form-control' placeholder='Name'></div><div class='form-group'><label for='Position'>Position</label><input type='text' class='form-control' placeholder='Position'></div><div class='form-group'><label for='Company'>Company</label><input type='text' class='form-control' placeholder='Company'></div><div class='form-group'><label for='Phone Number'>Phone Number</label><input type='text' class='form-control' placeholder='Phone Number'></div><div class='form-group'><label for='Email'>Email Address</label><input type='email' class='form-control' placeholder='Email'></div><div class='form-group'><label for='Address'>Address</label><input type='text' class='form-control' placeholder='Address'></div><div class='form-group'><label for='History of Conversations'>History of Conversations</label><textarea type='text' class='form-control' placeholder='History of Conversations'></textarea></div><div class='form-group'><label for='Picture Upload'>Picture Upload</label><input type='file' id='inputFile'></div><button type='submit' class='btn btn-default'>Submit</button></form></div>",{type:{html: true}});
-//   })
-// })
-
-$('.col-S-1daynum').on('click', function(){
-   $(this).featherlight(
-      "<div class='col-L-12 form-container'><form><div class='form-group'><label for='Name'>Name</label><input type='text' class='form-control' placeholder='Name'></div><div class='form-group'><label for='Position'>Position</label><input type='text' class='form-control' placeholder='Position'></div><div class='form-group'><label for='Company'>Company</label><input type='text' class='form-control' placeholder='Company'></div><div class='form-group'><label for='Phone Number'>Phone Number</label><input type='text' class='form-control' placeholder='Phone Number'></div><div class='form-group'><label for='Email'>Email Address</label><input type='email' class='form-control' placeholder='Email'></div><div class='form-group'><label for='Address'>Address</label><input type='text' class='form-control' placeholder='Address'></div><div class='form-group'><label for='Conversation'>Conversation</label><textarea type='text' class='form-control' placeholder='Conversations'></textarea></div><div class='form-group'><label for='Picture Upload'>Picture Upload</label><input type='file' id='inputFile'></div><button type='submit' class='btn btn-default'>Submit</button></form></div>",{type:{html: true}});
-})
+$('.list-results').on('click', '.list-item-container', function(){
+  $(this).children('.sub-content').toggle('slow', function(){  
+      $(this).closest('ul').children('.show').toggle();
+  });
+});
 
 
 
 
-// Form post 
 
-/*/ OPTION A: 
-Doesn't make use of Backend.
-http://jqueryui.com/dialog/#modal-form /
 
-*/
 
