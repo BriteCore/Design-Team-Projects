@@ -5,7 +5,18 @@
 
 .add {
   padding-left: 90%;
-  color: #364f54;
+  color: white;
+  font-weight: 900;
+  position: relative;
+  right: 14px;
+}
+
+.add-circle {
+  background-color: #364f54;
+  border-radius: 50%;
+  width: 25px;
+  margin-left: 90%;
+  margin-top: 10px;
 }
 
 .delete {
@@ -157,10 +168,6 @@ a:hover {
 @media screen and (min-width:320px){
 
 .col-S-1 { width: 8.33333%; }
-  
-.col-S-1day { width: 13.27%; margin-bottom: 20px;}    
-
-.col-S-1daynum { width: 13%; margin-top: 2px; background-color: #f6f6f6; border: 2px solid white; padding: 20px 0;}   
 
 .col-S-2 { width: 16.66667%; }
 
@@ -183,19 +190,16 @@ a:hover {
 .col-S-11 { width: 91.66667%; }
 
 .col-S-12 { width: 100% ;}
-  
-.col-LIST { width: 25% ;}
-  
-  .col-S-1daynum { padding: 36px 0; }
 
 }
 
 
 @media screen and (max-width: 639px){
-  
-.col-GRID { display: none ;} 
-  
-.col-LIST { width: 100% ;}  
+    
+.add-circle { position: relative; right: 48%; width: 100px; height:50px; bottom: 30px; }
+
+.add { right: 46px; top: 7px; font-size: 30px; }
+
 }
   
 
@@ -224,10 +228,6 @@ a:hover {
 .col-M-11 { width: 91.66667%; }
 
 .col-M-12 { width: 100% ;}
-  
-.col-LIST { width: 50% ;}
-  
-.col-GRID { width: 50% ;}   
     
 }
 
@@ -259,9 +259,5 @@ a:hover {
 .col-L-11 { width: 91.66667%; }
 
 .col-L-12 { width: 100% ;} 
-   
-.col-LIST { width: 25% ;}
-  
-.col-GRID { width: 75% ;} 
 
 }
