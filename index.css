@@ -254,7 +254,7 @@ li {
 
 @media screen and (max-width: 639px){
     
-.add-circle { position: relative; right: 43%; bottom: 90px; }
+.add-circle { position: relative; right: 43%; bottom: 160px; background: transparent;}
 
 .add { margin: 0; font-size: 40px;}
 
