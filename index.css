@@ -7,9 +7,38 @@ body, html {
   /* important */
   height: 100%;
   background: #2c3e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2c3e50, #4ca1af);  
+/*   background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
+/*   background: linear-gradient(to bottom, #2c3e50, #4ca1af);   */ */
+/*   background-repeat: no-repeat;   */
 }
+
+.left {
+  height: 100vh;
+}
+
+.left-content {
+  font-weight: 900;
+  position: fixed;
+    padding: 2em;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  color: white;
+}
+
+.left-content > p {
+  font-weight: 300;
+}
+
+.right {
+  background: white;
+  height: 100%;
+}
+
+.right-content {
+  color: #364f54;
+}
+
 .add {
   padding-left: 90%;
   color: white;
@@ -54,29 +83,6 @@ body, html {
 
 label {
   padding-right: 90%;
-}
-
-.left {
-  height: 100vh;
-}
-
-.left-content {
-  font-weight: 900;
-  margin-top: 40%;
-  color: white;
-}
-
-.left-content > p {
-  font-weight: 300;
-}
-
-.right {
-  background: white;
-  height: 100%;
-}
-
-.right-content {
-  color: #364f54;
 }
 
 .people-met {
@@ -268,6 +274,16 @@ li {
 
 .add { margin: 0; font-size: 40px;}
 
+.left-content {
+  font-weight: 900;
+  position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  color: white;
+}  
+  
 }
   
 
