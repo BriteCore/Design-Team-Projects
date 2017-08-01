@@ -3,6 +3,13 @@
   font-weight: 300;
 }
 
+body, html {
+  /* important */
+  height: 100%;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);  
+}
 .add {
   padding-left: 90%;
   color: white;
@@ -50,9 +57,6 @@ label {
 }
 
 .left {
-  background: #2c3e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
   height: 100vh;
 }
 
@@ -64,6 +68,11 @@ label {
 
 .left-content > p {
   font-weight: 300;
+}
+
+.right {
+  background: white;
+  height: 100%;
 }
 
 .right-content {
@@ -191,6 +200,7 @@ li {
 .grid {
   width: 100%;
   /*max-width: 1100px;*/
+  height: 100%;
   margin: 0 auto;
 }
 
