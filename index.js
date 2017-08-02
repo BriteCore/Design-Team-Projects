@@ -120,3 +120,14 @@ $('.arrow').click(function(){
         scrollTop: $(".list-results").offset().top - 90},
         'slow');
 })
+
+// filter content
+
+        console.log($('.list-results-ul').children('.list-item-container').children());
+        // $('#input-filter').on('input', function ($event)
+        // {
+        //     items.addClass('displayNone').filter(function (item)
+        //     {
+        //         return $(this).text().toLowerCase().includes($($event.target).val().toLowerCase());
+        //     }).removeClass('displayNone');
+        // });

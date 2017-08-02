@@ -33,6 +33,8 @@ body, html {
 .right {
   background: white;
   height: 100%;
+  position: absolute;
+  left: 50%;
 }
 
 .right-content {
@@ -195,8 +197,7 @@ li {
 
 h2 {
   font-size: 15px;
-  position: relative;
-  top: 45vh;
+  margin: 300px auto 0;
   color: white;
  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -347,16 +348,26 @@ h2:hover {
   font-weight: 900;
   position: static;
   color: white;
-  margin: 50% 50% 0;
+  margin: 70% 50% 0;
   width: 90%;
 }  
   
   .arrow {
     display: block;
     position: relative;
-    left: 45%;
-    top: 200px;
+    left: 47%;
+    top: 100px;
+  } 
+  
+  .right {
+    top: 70%;
+    right: 100%;
+    transform: translate(-50%, 50%);    
   }  
+  
+  h2 {
+      margin: 200px auto 0;
+  }
   
 }
   
