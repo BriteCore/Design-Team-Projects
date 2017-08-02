@@ -6,7 +6,7 @@
 body, html {
   /* important */
   height: 100%;
-  background: #2c3e50; /* fallback for old browsers */
+  background: #364f54; /* fallback for old browsers */
 /*   background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
 /*   background: linear-gradient(to bottom, #2c3e50, #4ca1af);   */ */
 /*   background-repeat: no-repeat;   */
@@ -37,6 +37,17 @@ body, html {
 
 .right-content {
   color: #364f54;
+}
+
+.arrow {
+    display: none;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
 }
 
 .add {
@@ -81,7 +92,7 @@ body, html {
   transform: scale(1.02);
 }
 
-label {
+.box label {
   padding-right: 90%;
 }
 
@@ -150,10 +161,46 @@ li {
   transform: scale(3.0);
 }
 
+.upload-container {
+   padding-right: 100%;
+   margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.upload-button
+{
+/*     display: none; */
+}
+
+#picture {
+/*   cursor: pointer; */
+}
+
+.upload-label {
+  
+}
+
+.upload-button{
+  
+}
+
 .btn {
   margin-top: 10px;
 }
 
+
+
+/* #file-input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+}
+ */
 /*Lightbox*/
 
 .backdrop {
@@ -270,19 +317,24 @@ li {
 
 @media screen and (max-width: 639px){
     
-.add-circle { position: relative; right: 43%; bottom: 160px; background: transparent;}
+/* .add-circle { position: fixed; bottom: 80px;} */
 
-.add { margin: 0; font-size: 40px;}
+.add { color: white; }
 
 .left-content {
   font-weight: 900;
-  position: fixed;
-    padding: 2em;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: static;
   color: white;
+  margin: 50% 50% 0;
+  width: 90%;
 }  
+  
+  .arrow {
+    display: block;
+    position: relative;
+    left: 47%;
+    top: 200px;
+  }  
   
 }
   

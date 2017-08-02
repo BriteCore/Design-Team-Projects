@@ -17,6 +17,29 @@ $("ul").html("<div class='list-item-container'>" + "<div class='date-container'>
 
 
 
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#picture').attr('src', e.target.result).width(64).height(64);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+$('.list-results').on('click', '.upload-container', function(){
+ $(this).children("input").change(function(){
+    // console.log('hey')
+        readURL(this);
+    });
+
+});
+
+
+
 function addItem (){
 
   var name = $('.name').val();
@@ -34,7 +57,10 @@ function addItem (){
   "July", "August", "September", "October", "November", "December"];
   var year = d.getFullYear();
 
-  $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img id='picture' />" + ' ' + name + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
+  $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px;'/>" + ' ' + name + "</li>" + "<div class='upload-container'>" + "<label class='upload-label' for='files'>" + "</label>" + "<input type='file' accept='image/*' class='upload-button'>" + "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
+  
+
+  
 }
 
 $(".btn").on("click", function(event){
@@ -70,8 +96,8 @@ $('.list-results').on('click', '.delete', function(){
   $(this).parent().remove();
 });
 
-$('.list-results').on('click', '.list-item-container', function(){
-  $(this).children('.sub-content').toggle('slow', function(){  
+$('.list-results').on('click', '.show', function(){
+  $(this).siblings('.sub-content').toggle('slow', function(){  
       $(this).siblings('.show').children('span').toggle();
   });
 });
@@ -79,20 +105,21 @@ $('.list-results').on('click', '.list-item-container', function(){
 
 // picture upload
 
- //    function readURL(input) {
- //        if (input.files && input.files[0]) {
- //            var reader = new FileReader();
-            
- //            reader.onload = function (e) {
- //                $('#picture').attr('src', e.target.result).width(64).height(64);
- //            }
-            
- //            reader.readAsDataURL(input.files[0]);
- //        }
- //    }
-    
- // $("#imgInp").change(function(){
- //        readURL(this);
- //    });
+
+// scroll down
+$(document).scroll(function() {
+    var y = $(document).scrollTop(),
+        plusButton = $(".add-circle");
+    if(y >= 450)  {
+        plusButton.css({position: "fixed", "top" : "0", "left" : "0"});
+    } else {
+        plusButton.css("position", "static");
+    }
+});
 
 
+$('.arrow').click(function(){
+    $('html,body').animate({
+        scrollTop: $(".list-results").offset().top - 90},
+        'slow');
+})
