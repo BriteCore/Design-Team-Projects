@@ -13,7 +13,7 @@ $('.close').on('click', function(){
   })
 })
 
-$("ul").html("<div class='list-item-container'>" + "<div class='date-container'>" + "1 August" + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img src='headshot.png' style='width: 64px; height: 64px;' />" + ' ' + "Brice Christian" + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + "Position: " + "UI/UX Developer" + "</li>" + "<li>" + "Position: " + "Future Employer: Britecore" + "</li>" + "<li>" + "Phone: " + "713-730-8238" + "</li>" + "<li>" + "Email: " + "bricechristian93@gmail.com" + "</li>" + "<li>" + "Address: " + "Charleston, SC" + "</li>" + "<li>" + "Conversation: " +"Passionate about UI/UX" + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
+$("ul").html("<div class='list-item-container'>" + "<div class='date-container'>" + "1 August" + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img src='headshot.png' style='width: 64px; height: 64px;' />" + ' ' + "Brice Christian" + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + "Position: " + "UI/UX Developer" + "</li>" + "<li>" + "Company: " + "Britecore (Future Employer)" + "</li>" + "<li>" + "Phone: " + "713-730-8238" + "</li>" + "<li>" + "Email: " + "bricechristian93@gmail.com" + "</li>" + "<li>" + "Address: " + "Charleston, SC" + "</li>" + "<li>" + "Conversation: " +"Passionate about UI/UX" + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
 
 
 
@@ -104,15 +104,16 @@ $('.list-results').on('click', '.show', function(){
 
 
 // scroll down
-$(document).scroll(function() {
-    var y = $(document).scrollTop(),
-        plusButton = $(".add-circle");
-    if(y >= 450)  {
-        plusButton.css({position: "fixed", "top" : "0", "left" : "0"});
-    } else {
-        plusButton.css("position", "static");
-    }
-});
+// $(document).scroll(function() {
+//     var y = $(document).scrollTop(),
+//         plusButton = $(".add-circle");
+//     if(y >= 100)  {
+//         plusButton.css({position: "fixed", "top" : "0", "left" : "55px"});
+//     } else {
+//         plusButton.css("position", "static");
+//     }
+// });
+
 
 
 $('.arrow').click(function(){

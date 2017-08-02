@@ -33,8 +33,10 @@ body, html {
 .right {
   background: white;
   height: 100%;
-  position: absolute;
-  left: 50%;
+height:inherit;  
+  padding-bottom: 100%;
+/*   position: absolute;
+  left: 50%; */
 }
 
 .right-content {
@@ -61,10 +63,12 @@ body, html {
 }
 
 .add-circle {
+  position: fixed;
+  top: 0%; right: 1%;
   background-color: #364f54;
   border-radius: 50%;
   width: 25px;
-  margin-left: 90%;
+  margin-left: 87%;
   margin-top: 10px;
     -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -75,7 +79,7 @@ body, html {
 
 .delete {
   float: right;
-  padding-right: 10%;
+  padding-right: 17%;
   color: #364f54;
   text-decoration: none;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -118,7 +122,7 @@ body, html {
 
 .show{
   width: 100px;
-  padding-left: 37%;
+  padding-left: 32%;
   text-decoration: none;
   display: block;
   color: #364f54;  
@@ -141,6 +145,7 @@ body, html {
 li {
   text-align: left;
   list-style: none;
+  margin-right: 45px;  
 }
 
 .date-container {
@@ -300,7 +305,7 @@ h2:hover {
 }
 
 .col {
-  /*padding: 1em 0;*/
+  padding: 0;
   /*margin: 8px 0;*/
   text-align: center;
 }
@@ -343,6 +348,10 @@ h2:hover {
 /* .add-circle { position: fixed; bottom: 80px;} */
 
 .add { color: white; }
+  
+  .add-circle {
+    position: fixed; top: 0px; right: 10px;
+  }  
 
 .left-content {
   font-weight: 900;
@@ -358,12 +367,12 @@ h2:hover {
     left: 47%;
     top: 100px;
   } 
-  
+/*   
   .right {
     top: 70%;
     right: 100%;
     transform: translate(-50%, 50%);    
-  }  
+  }   */
   
   h2 {
       margin: 200px auto 0;
