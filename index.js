@@ -30,12 +30,10 @@ $("ul").html("<div class='list-item-container'>" + "<div class='date-container'>
         }
     }
 
-$('.list-results').on('click', '.upload-container', function(){
- $(this).children("input").change(function(){
-    // console.log('hey')
+$('.list-results').on('click', '.image-upload', function(){
+ $(this).children("li").children("input").change(function(){
         readURL(this);
     });
-
 });
 
 
@@ -57,11 +55,13 @@ function addItem (){
   "July", "August", "September", "October", "November", "December"];
   var year = d.getFullYear();
 
-  $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px;'/>" + ' ' + name + "</li>" + "<div class='upload-container'>" + "<label class='upload-label' for='files'>" + "</label>" + "<input type='file' accept='image/*' class='upload-button'>" + "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
+  // $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px;'/>" + ' ' + name + "</li>" + "<div class='upload-container'>" + "<label class='upload-label' for='files'>" + "</label>" + "<input type='file' accept='image/*' class='upload-button'>" + "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "<div class='image-upload'>" +  "<label for='file-input'>" + "<img src='https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr'/>" + "</label>" + " <input id='file-input' type='file'/>" + "</div>" + "</div>")
+  $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<div class='image-upload'>" + "<li class='person'>" +  "<label for='file-input'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px; border-radius: 50%;'/>" + "</label>" + "<input id='file-input' type='file' accept='image/*'/>" + ' ' + name + "</li>" +  "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
   
-
   
 }
+
+// prepending corresponding name before field value is parsed
 
 $(".btn").on("click", function(event){
   event.preventDefault();
@@ -101,9 +101,6 @@ $('.list-results').on('click', '.show', function(){
       $(this).siblings('.show').children('span').toggle();
   });
 });
-
-
-// picture upload
 
 
 // scroll down
