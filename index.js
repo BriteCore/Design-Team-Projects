@@ -1,4 +1,4 @@
-// lightbox
+// Lightbox
 
 $('.add').on('click', function(){
   $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
@@ -13,10 +13,10 @@ $('.close').on('click', function(){
   })
 })
 
-$("ul").html("<div class='list-item-container'>" + "<div class='date-container'>" + "1 August" + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img src='headshot.png' style='width: 64px; height: 64px;' />" + ' ' + "Brice Christian" + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + "Position: " + "UI/UX Developer" + "</li>" + "<li>" + "Company: " + "Britecore (Future Employer)" + "</li>" + "<li>" + "Phone: " + "713-730-8238" + "</li>" + "<li>" + "Email: " + "bricechristian93@gmail.com" + "</li>" + "<li>" + "Address: " + "Charleston, SC" + "</li>" + "<li>" + "Conversation: " +"Passionate about UI/UX" + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
+$("ul").html("<div class='list-item-container'>" + "<div class='date-container'>" + "1 August" + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img src='headshot.png' style='width: 64px; height: 64px;' />" + ' ' + "<span class='person-name'>" + "Brice Christian" + "</span>" + "</li>" + "<div class='sub-content' style='display:none'>" + "<li>" + "Position: " + "UI/UX Developer" + "</li>" + "<li>" + "Company: " + "Britecore (Future Employer)" + "</li>" + "<li>" + "Phone: " + "713-730-8238" + "</li>" + "<li>" + "Email: " + "bricechristian93@gmail.com" + "</li>" + "<li>" + "Address: " + "Charleston, SC" + "</li>" + "<li>" + "Conversation: " +"Passionate about UI/UX" + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
 
 
-
+// Photo uploader
 
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -36,7 +36,7 @@ $('.list-results').on('click', '.image-upload', function(){
     });
 });
 
-
+// add list item function
 
 function addItem (){
 
@@ -48,6 +48,9 @@ function addItem (){
   var address = $('.address').val();
   var conversations = $('.conversations').val();
 
+
+  $('name').addClass('person-name');
+  
   var d = new Date();
   var date = d.getDate();
   var month = d.getMonth();
@@ -57,7 +60,6 @@ function addItem (){
 
   // $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<li class='person'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px;'/>" + ' ' + name + "</li>" + "<div class='upload-container'>" + "<label class='upload-label' for='files'>" + "</label>" + "<input type='file' accept='image/*' class='upload-button'>" + "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "<div class='image-upload'>" +  "<label for='file-input'>" + "<img src='https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr'/>" + "</label>" + " <input id='file-input' type='file'/>" + "</div>" + "</div>")
   $("ul").prepend("<div class='list-item-container'>" + "<div class='date-container'>" + date + ' ' + monthNames[month] + "</div>" + "<a href='#!' class='delete'>" + "x" + "</a>" + "<div class='image-upload'>" + "<li class='person'>" +  "<label for='file-input'>" + "<img id='picture' src='https://www.aliem.com/wp-content/uploads/Unknown-person-circle.png' style='width: 64px; height: 64px; border-radius: 50%;'/>" + "</label>" + "<input id='file-input' type='file' accept='image/*'/>" + ' ' + name + "</li>" +  "</div>" + "<div class='sub-content' style='display:none'>" + "<li>" + position + "</li>" + "<li>" + company + "</li>" + "<li>" + phone + "</li>" + "<li>" + email + "</li>" + "<li>" + address + "</li>" + "<li>" + conversations + "</li>" + "</div>" + "<a href='#!' class='show'>" + "<span class='show'>" + "Show more" + "</span>" + "<span class='show' style='display:none'>" + "Show less" + "</span>" + "</a>" + "</div>")
-  
   
 }
 
@@ -85,6 +87,7 @@ $(".btn").on("click", function(event){
     $('.conversations').val('Conversation: ' + $('.conversations').val());
   }        
 
+// form submission addition with lightbox animation  
 
   addItem();
   $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
@@ -92,9 +95,13 @@ $(".btn").on("click", function(event){
   });    
 })
 
+// delete list item
+
 $('.list-results').on('click', '.delete', function(){
   $(this).parent().remove();
 });
+
+// toggle between "Show more" and "Show less"
 
 $('.list-results').on('click', '.show', function(){
   $(this).siblings('.sub-content').toggle('slow', function(){  
@@ -103,18 +110,7 @@ $('.list-results').on('click', '.show', function(){
 });
 
 
-// scroll down
-// $(document).scroll(function() {
-//     var y = $(document).scrollTop(),
-//         plusButton = $(".add-circle");
-//     if(y >= 100)  {
-//         plusButton.css({position: "fixed", "top" : "0", "left" : "55px"});
-//     } else {
-//         plusButton.css("position", "static");
-//     }
-// });
-
-
+// arrow scroll
 
 $('.arrow').click(function(){
     $('html,body').animate({
@@ -124,11 +120,13 @@ $('.arrow').click(function(){
 
 // filter content
 
-        console.log($('.list-results-ul').children('.list-item-container').children());
-        // $('#input-filter').on('input', function ($event)
-        // {
-        //     items.addClass('displayNone').filter(function (item)
-        //     {
-        //         return $(this).text().toLowerCase().includes($($event.target).val().toLowerCase());
-        //     }).removeClass('displayNone');
-        // });
+        $('.input-filter').on('input', function ($event) {
+            var items = $('.list-results').children('ul').children('.list-item-container');
+            items.addClass('displayNone').filter(function (item){
+              return $(this).text().toLowerCase().includes($($event.target).val().toLowerCase());
+            }).removeClass('displayNone');
+        });
+
+
+
+// console.log($('.list-results').children('ul').children('.list-item-container').children('li'))

@@ -4,12 +4,9 @@
 }
 
 body, html {
-  /* important */
   height: 100%;
-  background: #364f54; /* fallback for old browsers */
-/*   background: -webkit-linear-gradient(to bottom, #2c3e50, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
-/*   background: linear-gradient(to bottom, #2c3e50, #4ca1af);   */ */
-/*   background-repeat: no-repeat;   */
+  background: #364f54;
+
 }
 
 .left {
@@ -116,6 +113,10 @@ height:inherit;
   font-weight: 500;
 }
 
+.person-name {
+  font-weight: 500;
+}
+
 .sub-content {
   padding-left: 30px;
 }
@@ -200,6 +201,13 @@ li {
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);  
 }
 
+h1 {
+  font-weight: 300;
+  font-size: 50px;
+  margin: auto auto 40px;
+}
+
+
 h2 {
   font-size: 15px;
   margin: 300px auto 0;
@@ -228,6 +236,12 @@ h2:hover {
   text-decoration: none;
  
 }
+
+.displayNone {
+  display: none;
+}
+
+
 
 /*Lightbox*/
 
