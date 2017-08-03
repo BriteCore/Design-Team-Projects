@@ -1,4 +1,10 @@
-Most Recent Updated Link: https://designproject-lqeozbxiou.now.sh/
+<h1>"Hi Phil,"</h1>
+================================
+
+Decided to take a clean, professional approach, yet still incorporate a split screen UI on the desktop. The responsive app allows you to add people you've met, add pictures, filter the individuals, and remove the entire person from the list altogether. Powered by solely HTML, CSS, JQuery and Bootstrap, I believe "Hi, Phil" will surpass expectations and provide and clean quick way to keep up to date with people Phil meets on the fly.
+
+
+Most Recent Updated Link: https://designproject-awbubxcasl.now.sh/
 
 UI/UX Demo Project
 ================================
