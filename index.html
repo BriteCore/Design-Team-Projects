@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700,900" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>Design Project</title>
+</head>
+<body>
+	<div class="grid">
+		<div class="row">
+			<div class="col">
+				<div class='col-L-6 col-M-6 left'>
+					<div class="left-content">
+						<h1>Hi, Phil.</h1>
+						<p>Never miss a beat with people you meet!<br>
+						Click the plus button to get started adding people.</p><img class="arrow" height="30px" src="https://lampputieto.fi/wp-content/themes/lampputieto/assets/img/right.png" width="30px"> <a class="footer" href="https://bricechristian.github.io/" target="_blank">
+						<h2>Built by Brice</h2></a>
+					</div>
+				</div>
+				<div class="col-L-6 col-M-6 right">
+					<div class="right-content">
+						<h3 class="people-met">People You've Met</h3><input class="input-filter" placeholder="Filter by Name" type="text">
+						<div class='backdrop'>
+							<!-- Leave empty. This is just the gray background behind the lightbox. -->
+						</div>
+						<div class="col-L-12">
+							<div class="add-circle">
+								<a class='add' href="#!">+</a>
+							</div>
+						</div><!-- lightbox -->
+						<div class='box'>
+							<div class='close'>
+								x
+							</div>
+							<form>
+								<div>
+									<label for='Name'>Name</label> <input class='form-control name' name="name" placeholder='Name' type='text'>
+								</div>
+								<div>
+									<label for='Position'>Position</label> <input class='form-control position' placeholder='Position' type='text'>
+								</div>
+								<div>
+									<label for='Company'>Company</label> <input class='form-control company' placeholder='Company' type='text'>
+								</div>
+								<div>
+									<label for='Phone Number'>Phone</label> <input class='form-control phone' placeholder='Phone Number' type='text'>
+								</div>
+								<div>
+									<label for='Email'>Email</label> <input class='form-control email' placeholder='Email' type='email'>
+								</div>
+								<div>
+									<label for='Address'>Address</label> <input class='form-control address' placeholder='Address' type='text'>
+								</div>
+								<div>
+									<label for='Conversations'>Conversations</label>
+									<textarea class='form-control conversations' placeholder='Conversations'></textarea>
+								</div><button class='btn btn-default' type='submit'>Submit</button>
+							</form>
+						</div><!-- lightbox ends -->
+						<div class="list-results">
+							<ul class="list-results-ul"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" type="text/javascript">
+	</script> 
+	<script src="cookies.js">
+	</script> 
+	<script src="index.js" type="text/javascript">
+	</script>
+</body>
+</html>
