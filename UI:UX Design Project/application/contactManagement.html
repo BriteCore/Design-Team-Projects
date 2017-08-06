@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Management</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logoTiny.png"/>
+		<style>
+			html {
+		    	text-align:center;
+		    	background-color: rgba(94, 94, 94, 0.02);
+		    	margin: auto;
+			}
+			img {
+				padding: 1em;
+			}
+			.formFields {
+				font-family: "Helvetica Neue",Arial,sans-serif;
+    			font-size: 1.2em;
+			}
+			input[type=file] {
+				text-align: center;
+				margin: auto;
+			}
+			h1 {
+				font-family: 'Effra',sans-serif !important;
+			    font-weight: 800;
+			    color: #5e5e5e;
+			    font-style: normal;
+			    font-size: 4em;
+			}
+			input[type=text] {
+				padding: .5em .5em;
+				background-color: #D5D5D5;
+				box-sizing: border-box;
+    			border: .1em solid rgb(47, 45, 45);
+    			border-radius: .5em;
+			}
+			input[type=number] {
+				padding: .5em .5em;
+				box-sizing: border-box;
+				background-color: #D5D5D5;
+				box-sizing: border-box;
+    			border: .1em solid rgb(47, 45, 45);
+    			border-radius: .5em;
+			}
+			table {
+				background: #018ea7;
+				border: .5em #5e5e5e;
+				border-radius: 1.5em;
+				color: rgb(47, 45, 45);
+				margin:auto;
+				padding: 1em;
+			}
+			button {
+				border-radius:44em;
+				font-size: 1em;
+				font-family: 'Effra', sans-serif;
+				margin: .35em;
+			}
+			button:hover {
+				color:#5e5e5e!important;
+				background-color: rgb(47, 45, 45)!important;
+			}	
+			p {
+				font-family: "Helvetica Neue", Arial, sans-serif;
+			}
+			#directory {
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				font-size: 1.3em;
+				color: rgb(47, 45, 45);
+				background-color: #018ea7;
+				border: .5em #5e5e5e;
+				border-radius: 1.5em;
+				padding: .25em .25em;
+				margin: auto;
+				width: 30em;
+			}	
+		</style>
+	</head>
+	<body>
+		<div class="formBox">
+		<h1>Create a Contact</h1>
+		<div class="formFields">
+			<form>
+			<table style="float:center">				
+				<tr>
+					<td align="left"> First Name </td>
+					<td align="left"><input type="text" id="firstName" name="firstName"></td>
+				</tr>
+				<tr>
+					<td align="left"> Last Name </td>
+					<td align="left"><input type="text" id="lastName" name="lastName"></td>
+				</tr>
+				<tr>
+					<td align="left"> Position Title</td>
+					<td align="left"><input type="text" id="position" name="position"></td>
+				</tr>
+				<tr>
+					<td align="left"> Company </td>
+					<td align="left"><input type="text" id="company" name="company"></td>
+				</tr>
+				<tr>
+					<td align="left"> Cell-Phone </td>
+					<td align="left"><input type="number" id="cellPhone" name="cellPhone"></td>
+				</tr>
+				<tr>
+					<td align="left"> Work-Phone </td>
+					<td align="left"><input type="number" id="workPhone" name="workPhone"></td>
+				</tr>
+				<tr>
+					<td align="left"> E-mail </td>
+					<td align="left"><input type="text" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<td align="left"> Address </td>
+					<td align="left"><input type="text" id="address" name="address"></td>
+				</tr>
+				<tr>
+					<td align="left"> Past Conversations </td>
+					<td align="left"><input type="text" id="conversations" name="conversations"></td>
+				</tr>
+				<tr>
+					<td align="left"> Follow-Up Notes </td>
+					<td align="left"><input type="text" id="followUp" name="followUp"></td>
+				</tr>
+				<tr>
+					<td align="left"> Memorable Feature </td>
+					<td alighn="left"><input type="text" id="memorable" name="memorable"></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+		</div>
+		<div>
+		<p> Upload a picture: <div>
+		<input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+		</div></p>
+		<div>
+		<button onclick="submit()"><div> Submit Entry </div></button>
+		</div>
+		<div>
+		<button onclick="directory()"><div> View Previous Contact </div></button>
+		</div>
+		<div id="directory">
+			<div id="dfName"> 
+			</div>
+			<div id="dlName">
+			</div>
+			<div id="dPosition">
+			</div>
+			<div id="dCompany">
+			</div>
+			<div id="dCellPhone">
+			</div>
+			<div id="dWorkPhone">
+			</div>
+			<div id="dEmail">
+			</div>
+			<div id="dAddress">
+			</div>
+			<div id="dConversations">
+			</div>
+			<div id="dFollowUp">
+			</div>
+			<div id="dMemorable">
+			</div>
+		</div>
+		<div>
+		<img src="../images/logoEditedSM.png">
+		</div>
+		</div>
+		</div>
+		<div> Images and fonts courtesy of BriteCore.
+		</div>
+		<script>
+			"use strict";
+			function submit() {
+				window.open("./submit.html");
+				for (let i = 0; i < 1; i++) {
+					let value = document.getElementById('firstName').value;
+					let key = document.getElementById('firstName').key;
+					localStorage.setItem('firstName', value);
+					value = document.getElementById('lastName').value;	
+					key = document.getElementById('lastName').key;
+					localStorage.setItem('lastName', value);	
+					value = document.getElementById('position').value;	
+					key = document.getElementById('position').key;
+					localStorage.setItem('position', value);
+					value = document.getElementById('company').value;	
+					key = document.getElementById('company').key;
+					localStorage.setItem('company', value);	
+					value = document.getElementById('cellPhone').value;	
+					key = document.getElementById('cellPhone').key;
+					localStorage.setItem('cellPhone', value);
+					value = document.getElementById('workPhone').value;	
+					key = document.getElementById('workPhone').key;
+					localStorage.setItem('workPhone', value);
+					value = document.getElementById('email').value;	
+					key = document.getElementById('email').key;
+					localStorage.setItem('email', value);
+					value = document.getElementById('address').value;	
+					key = document.getElementById('address').key;
+					localStorage.setItem('address', value);	
+					value = document.getElementById('conversations').value;	
+					key = document.getElementById('conversations').key;
+					localStorage.setItem('conversations', value);
+					value = document.getElementById('followUp').value;	
+					key = document.getElementById('followUp').key;
+					localStorage.setItem('followUp', value);
+					value = document.getElementById('memorable').value;	
+					key = document.getElementById('memorable').key;
+					localStorage.setItem('memorable', value);										
+				}	
+			}
+			function directory() {
+				for (let i = 0; i < 1; i++) {
+					let storedfName = localStorage.getItem('firstName');
+					let storedlName = localStorage.getItem('lastName');
+					let storedPosition = localStorage.getItem('position');
+					let storedCompany = localStorage.getItem('company');
+					let storedCell = localStorage.getItem('cellPhone');
+					let storedWork = localStorage.getItem('workPhone');
+					let storedEmail = localStorage.getItem('email');
+					let storedAddress = localStorage.getItem('address');
+					let storedConversations = localStorage.getItem('conversations');
+					let storedFollowUp = localStorage.getItem('followUp');
+					let storedMemorable = localStorage.getItem('memorable');
+					document.getElementById("dfName").innerHTML = ("First Name: " + storedfName);
+					document.getElementById("dlName").innerHTML = ("Last Name: " + storedlName);
+					document.getElementById("dPosition").innerHTML = ("Position: " + storedPosition);
+					document.getElementById("dCompany").innerHTML = ("Company: " + storedCompany);
+					document.getElementById("dCellPhone").innerHTML = ("Cell-Phone: " + storedCell);
+					document.getElementById("dWorkPhone").innerHTML = ("Work-Phone: " + storedWork);
+					document.getElementById("dEmail").innerHTML = ("E-mail: " + storedEmail);
+					document.getElementById("dAddress").innerHTML = ("Address: " + storedAddress);
+					document.getElementById("dConversations").innerHTML = ("Previous Conversations: " + storedConversations);
+					document.getElementById("dFollowUp").innerHTML = ("Follow-Up: " + storedFollowUp);
+					document.getElementById("dMemorable").innerHTML = ("Memorable Feature: " + storedMemorable);					
+				}	
+			}
+		</script>
+	</body>
+</html>
