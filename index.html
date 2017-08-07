@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Contact App</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <meta name="viewport" content="width:device-width, maximum-scale:1, minimum-scale:1, user-scalable=no, initial-scale=1">
+</head>
+<body>
+    
+    <nav data-bind="css: {opened: navActive}">
+        <ul>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'dashboard')"><span class="lnr lnr-home"></span> Dashboard <i>2</i></a></li>
+            
+            <li><span>users</span></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'add-new-user')"><span class="lnr lnr-user"></span> Add new</a></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'all-users')"><span class="lnr lnr-users"></span> All users</a></li>
+            <li><a href="#"><span class="lnr lnr-rocket"></span> Import from...</a></li>
+            
+            <li><span>notifications</span></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'new-note')"><span class="lnr lnr-file-add"></span> New note</a></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'new-reminder')"><span class="lnr lnr-calendar-full"></span> New Reminder</a></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'all-notes')"><span class="lnr lnr-inbox"></span> Latest notes</a></li>
+            <li><a href="#"><span class="lnr lnr-magnifier"></span> Find notes by...</a></li>
+        </ul>
+    </nav>
+    
+    <main data-bind="css: {somethingfocused: isSomeInputFocused}">
+        <section class="dashboard" data-bind="css: {active: sectionActive() == 'dashboard'}">
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-1"></div>
+                <h5><span class="lnr lnr-star"></span> Andrzej Amdżej</h5>
+                <h6>Normal cursor @ Desktop Inc</h6>
+                <p>Andrzej have <strong>birthday</strong> today. He has a good rating in your contacts list. Send him best wishes.</p>
+                <div class="actions">
+                    <button type="button">Over facebook</button>
+                    <button type="button">Via email</button>
+                </div>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-2"></div>
+                <h5>Jessica Jessie</h5>
+                <h6>Coffee Mug @ CoffeeScript</h6>
+                <p><span class="lnr lnr-calendar-full"></span> <strong>Remember:</strong> Today @ 11:00 am <span class="lnr lnr-arrow-right"></span> Ask for a meeting.</p>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-3"></div>
+                <h5>Lindsey Hadoop</h5>
+                <h6>Character @ Life Co.</h6>
+                <p>You met Lindsey 3 days ago and rated her <span class="lnr lnr-smile"></span>. Send her "Thank you for a talk" email to stay in loop.</p>
+                <div class="actions">
+                    <button type="button">From template</button>
+                    <button type="button">Custom</button>
+                </div>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-4"></div>
+                <h5>Obcasyn Maruszczak</h5>
+                <h6>Prezes @ Szlachta Nie Pracuje</h6>
+                <p>Just a friendly reminder, you haven't had any interactions with this contact for a long time. Consider some action.</p>
+                <div class="actions">
+                    <button type="button">Remove contact</button>
+                    <button type="button">Write a message</button>
+                </div>
+            </div>
+            <div class="widget pinned">
+                <button class="close"></button>
+                <div class="avatar-5"></div>
+                <h5>Jake Jakyll Jones</h5>
+                <h6>Someone @ Noones</h6>
+                <p><span class="lnr lnr-pushpin"></span> <strong>Pinned note:</strong> Told she will send additional infromations soon.</p>
+            </div>
+        </section>
+        <section class="add-new-user" data-bind="css: {active: sectionActive() == 'add-new-user'}">
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-user"></span> Basics</h4>
+                <div class="form-element">
+                    <label>Name</label>
+                    <input type="text" placeholder="Type name here">
+                </div>
+                <div class="form-element">
+                    <label>Company</label>
+                    <input type="text" placeholder="Type company here">
+                </div>
+                <div class="form-element">
+                    <label>Position</label>
+                    <input type="text" placeholder="eg. chef executive">
+                </div>
+                <div class="form-element">
+                    <label>Photo</label>
+                    <p>
+                        <a href="#">Upload</a> &bull; <a href="#">Fetch from facebook</a> &bull; <a href="#">Fetch from linkedin</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="similar-user-already-exists"></div>
+            
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-phone-handset"></span> Contact data</h4>
+                <div class="form-element">
+                    <label>Phone</label>
+                    <input type="text" placeholder="9 digits">
+                </div>
+                <div class="form-element">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="sample@example.com">
+                </div>
+                <div class="form-element">
+                    <label>Address</label>
+                    <input type="text" placeholder="Type address here">
+                </div>
+                <div class="form-element">
+                    <label>Social Media</label>
+                    <p>
+                        <a href="#">Find on facebook</a> &bull; <a href="#">Find on linkedin</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="form-group widget">
+                <h4>Special dates</h4>
+                <ul>
+                    <li>07/12/1995 - Daughter's birthday <span class="lnr lnr-cross"></span></li>
+                    <li>07/15/2017 - Some tiny date <span class="lnr lnr-cross"></span></li>
+                </ul>
+                <button>Add new</button>
+            </div>
+            
+            <div class="form-group widget">
+                <h4>Rate your first impression</h4>
+                <div class="form-element big-buttons">
+                    <button><span class="lnr lnr-sad"></span></button>
+                    <button><span class="lnr lnr-neutral"></span></button>
+                    <button class="active"><span class="lnr lnr-mustache"></span></button>
+                    <button><span class="lnr lnr-smile"></span></button>
+                </div>
+            </div>
+            
+            <div class="submit">
+                <button>Save</button>
+                <button>Save &amp; add reminder</button>
+                <button>Save &amp; add note</button>
+            </div>
+
+            <!-- maybe already exists
+            photo / name / pos / company / phone / mail / address / special dates / social media / rating
+            save / save and add reminder / save and add note -->
+        </section>
+        <section class="all-users" data-bind="css: {active: sectionActive() == 'all-users'}">
+            <div class="form-group">
+                <div class="form-element"><input type="search" placeholder="Search for anything..." style="border-bottom: 3px solid #03A9F4;"></div>
+            </div>
+            <div class="widget">
+                <div class="flexy">
+                    <div>
+                        9 users total
+                    </div>
+                    <div class="text-right">
+                        Sort by: <a href="#">name</a> &bull; <a href="#">rating</a> &bull; <a href="#">company</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ko foreach: users() -->
+                <div class="widget">
+                    <div class="avatar-1" data-bind="attr: {class: 'avatar-' + (id()+1)}"></div>
+                    <h5><!-- ko text:name() --><!-- /ko --></h5>
+                    <h6><!-- ko text:position() --><!-- /ko --> @ <!-- ko text:company() --><!-- /ko --></h6>
+                </div>
+            <!-- /ko -->
+        </section>
+        <section class="new-note" data-bind="css: {active: sectionActive() == 'new-note'}">
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-user"></span> User</h4>
+                <div class="nice-btns">
+                    <button>Find</button>
+                    <button>Recent</button>
+                    <button>Create New</button>
+                </div>
+            </div>
+            
+            <div class="similar-user-already-exists"></div>
+            
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-pencil"></span> Text</h4>
+                <div class="form-element">
+                    <textarea placeholder="Type a note"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group widget">
+                <div class="form-element big-buttons">
+                    <input type="checkbox" id="isurgent">
+                    <label for="isurgent">This task is urgent</label>
+                </div>
+            </div>
+            
+            <div class="submit">
+                <button>Save</button>
+            </div>
+
+            <!-- maybe already exists
+            photo / name / pos / company / phone / mail / address / special dates / social media / rating
+            save / save and add reminder / save and add note -->
+        </section>
+        <section class="new-reminder" data-bind="css: {active: sectionActive() == 'new-reminder'}">
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-user"></span> User</h4>
+                <div class="nice-btns">
+                    <button>Find</button>
+                    <button>Recent</button>
+                    <button>Create New</button>
+                </div>
+            </div>
+            
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-pencil"></span> Text</h4>
+                <div class="form-element">
+                    <textarea placeholder="Type a note"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group widget">
+                <h4><span class="lnr lnr-calendar-full"></span> Due date</h4>
+                <div class="form-element">
+                    <input type="text" placeholder="Datepicker">
+                </div>
+            </div>
+            
+            <div class="submit">
+                <button>Save</button>
+            </div>
+
+            <!-- maybe already exists
+            photo / name / pos / company / phone / mail / address / special dates / social media / rating
+            save / save and add reminder / save and add note -->
+        </section>
+        <section class="all-notes" data-bind="css: {active: sectionActive() == 'all-notes'}">
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-2"></div>
+                <h5>Jessica Jessie</h5>
+                <h6>Coffee Mug @ CoffeeScript</h6>
+                <p>Really nice person, yet a bit controversial.</p>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-11"></div>
+                <h5>Astroid Marushchack</h5>
+                <h6>Tea Mug @ CoffeeScript</h6>
+                <p>This guy has something to do with canoeing.</p>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-10"></div>
+                <h5>Obcasyn Obcasynsky</h5>
+                <h6>Chef Mug @ CoffeeScript</h6>
+                <p>We met againt to talk about money, sadly he didn't want to give me any for nothing, so I will probably have to talk with some of his employees. $100 to borrow-forever is obviously too much for that guy.</p>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-8"></div>
+                <h5>Aston Kutnick</h5>
+                <h6>Cup&lt;T&gt; @ TypeScript</h6>
+                <p>Tried to beat this guy at fifa but it happened I was playing instead with washing machine the whole time.</p>
+            </div>
+            <div class="widget">
+                <button class="close"></button>
+                <div class="avatar-5"></div>
+                <h5>Bibi</h5>
+                <h6>&ndash; @ &ndash;</h6>
+                <p>Talk. NOT.</p>
+            </div>
+        </section>
+    </main>
+    
+    <header>
+        <h4 data-bind="text: sectionActive().replace(/-/g, ' ')"></h4>
+        <button type="button" class="trigger" data-bind="click:triggerNav"><span class="lnr lnr-menu"></span></button>
+    </header>
+    
+    <footer>
+        <ul>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'new-note')"><span class="lnr lnr-pencil"></span></a></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'add-new-user')"><span class="lnr lnr-user"></span></a></li>
+            <li><a href="#" data-bind="click: openSection.bind($root, 'new-reminder')"><span class="lnr lnr-calendar-full"></span></a></li>
+        </ul>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="static/js/dict.js"></script>
+    <script src="static/js/usersgenerator.js"></script>
+    <script src="static/js/base.js"></script>
+    <script>
+        var app = new App();
+        ko.applyBindings(app);
+    </script>
+</body>
+</html>
