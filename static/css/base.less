@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url(normalize.less);
+@import url(variables.less);
+@import url(core.less);
+
+nav {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition:.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
+    ul {
+        flex:0 0 auto;
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+        max-height:100vh;
+        overflow-y:auto;
+        
+        li {
+            padding: 6px 0;
+            
+            a {
+                text-decoration: none;
+                color:#333;
+                font-weight: 300;
+                font-size:18px;
+                
+                span {
+                    font-size:70%;
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+                
+                i {
+                    display: inline-block;
+                    margin-left:10px;
+                    position: relative;
+                    bottom:8px;
+                    font-size:12px;
+                    width:18px;
+                    height:18px;
+                    border-radius:50%;
+                    text-align: center;
+                    line-height:18px;
+                    background:#ff5722;
+                    color:#fff;
+                    font-style: normal;
+                }
+            }
+            
+            > span {
+                font-size: 13px;
+                color:#888;
+                font-weight: 700;
+                margin-top:24px;
+                display: block;
+                border-bottom:1px solid fade(#333,16%);
+            }
+        }
+    }
+    
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(40px, 0);
+        
+        ~ header, ~ footer {
+            opacity:.1;
+            transform: translate(0, -50px);
+        }
+        
+        ~ footer {
+            transform: translate(0, 60px);
+        }
+        
+        ~ main {
+            transform:translate(100%, 0);
+        }
+    }
+    
+    @media screen and (min-width: @mobile) {
+        opacity: 1;
+        visibility: visible;
+        padding-left:50px;
+        width:300px;
+        box-shadow:10px 0 22px fade(#000,8%);
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: fade(lighten(@bg1, 3%), 95%);
+    box-shadow: 0 10px 22px fade(#000,6%);
+    text-align: center;
+    line-height: 50px;
+    transition: .2s;
+    z-index:5;
+    
+    h4 {
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+        font-size:20px;
+        
+        &:first-letter {
+            text-transform: capitalize;
+        }
+    }
+    
+    .trigger {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translate(0, -45%);
+        font-size:18px;
+        cursor:pointer;
+        border: 0;
+        background:none;
+    }
+    
+    @media screen and (min-width: @mobile) {
+        display:none;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:60px;
+    background:fade(@bg1, 95%);
+    box-shadow: 0 -2px 3px fade(#000,6%), 0 -5px 9px fade(#000,21%), 0 -10px 16px fade(#000,6%), 0 -18px 28px fade(#000,5%), 0 -28px 48px fade(#000,5%), 0 -15px 64px -8px fade(#000,10%);
+    transition: .2s;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            flex:1;
+            text-align: center;
+            
+            a {
+                text-decoration: none;
+                display: block;
+                line-height: 60px;
+                color:#333;
+                font-size:20px;
+            }
+            
+            &:nth-child(2) {
+                
+                a {
+                    font-size:28px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width: @mobile) {
+        display:none;
+    }
+}
+
+main {
+    padding-top:50px;
+    position: relative;
+    height: 100vh;
+    transition:.2s;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    
+    section {
+        display:none;
+        padding:20px 20px 80px;
+        font-size:13px;
+        
+        &.active {
+            display:block;
+        }
+        
+        @media screen and (min-width: @mobile) {
+            max-width:900px;
+            padding-left:340px;
+        }
+    }
+    
+    &.somethingfocused {
+        
+        ~ header, ~ footer {
+            opacity:.1;
+            transform: translate(0, -50px);
+        }
+        
+        ~ footer {
+            transform: translate(0, 60px);
+        }
+    }
+}
+
+.widget {
+    padding: 20px;
+    background:fade(#fff,94%);
+    margin-bottom:25px;
+    position: relative;
+    box-shadow: 0 13px 18px -7px rgba(0,0,0,.2);
+    border-radius:3px;
+    
+    &.pinned {
+        background:fade(#ffecb3,94%);
+    }
+    
+    div[class^='avatar'] {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-image:url(../images/faces.png);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    @iterations: 11;
+    .mixin-loop (@i) when (@i > 0) {
+      .avatar-@{i} {
+        background-position:0 -@i*36px;
+      }
+      .mixin-loop(@i - 1);
+    }
+    .mixin-loop(@iterations);
+    
+    h5 {
+        padding-left: 46px;
+        padding-right:60px;
+        font-size:18px;
+        color:@accent1;
+        font-weight: 400;
+        margin:0 0 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+    
+    h6 {
+        padding-left: 46px;
+        padding-right:60px;
+        margin-top:5px;
+        font-size:13px;
+        color:#888;
+        font-weight: 400;
+        margin-bottom:10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+    
+    p {
+        font-size:12px;
+        line-height: 1.6;
+        color:#444;
+    }
+    
+    .actions {
+        margin: 20px -20px -20px -20px;
+        display:flex;
+        
+        button {
+            text-align: center;
+            flex:1;
+            border:none;
+            background:transparent;
+            padding:12px;
+            font-size:12px;
+            font-weight: bold;
+            
+            + button {
+                border-left:1px solid #eee;
+            }
+        }
+    }
+    
+    .close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 20px;
+        height: 20px;
+        transition: 0.35s cubic-bezier(0.53, -0.21, 0.38, 1.92);
+        background: none;
+        border: 0;
+        overflow: hidden;
+        z-index: 2;
+        cursor: pointer;
+        
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            margin-top: -1px;
+            background: #333;
+        }
+        
+        &:before {
+            transform: rotate(45deg);
+        }
+        
+        &:after {
+            transform: rotate(-45deg);
+        }
+        
+        &:hover {
+            transform: rotate(-90deg);
+            
+            &:before, &:after {
+                background: #F9564F;
+            }
+        }
+    }
+}
+
+.form-group {
+    
+    > h4 {
+        margin:0 0 30px;
+        opacity:.45;
+        // border-bottom:1px solid fade(#000,20%);
+        // font-size:16px;
+    }
+    
+    ul {
+        margin: 0 0 10px;
+        padding: 0 0 0 20px;
+        
+        li {
+            padding: 8px 0;
+        }
+    }
+    
+    button {
+        cursor: pointer;
+        border: none;
+        background: #fff;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+        border-radius: 2px;
+        padding: 4px 10px;
+        font-size: 13px;
+        opacity: .8;
+        transition: .2s;
+        
+        &:hover {
+            opacity: 1;
+        }
+        
+        &.active {
+            background:@shadow1;
+            color:#fff;
+            opacity:1;
+            box-shadow:none;
+        }
+    }
+    
+    .form-element {
+        margin: 10px 0;
+        
+        &.big-buttons {
+            
+            button {
+                padding:14px 20px;
+                font-size:20px;
+            }
+        }
+        
+        label {
+            display: block;
+            font-size:11px;
+            margin:15px 0 5px;
+            color:#666;
+        }
+        
+        a {
+            text-decoration: none;
+            color:#333;
+        }
+        
+        input, textarea, select {
+            background: none;
+            border: none;
+            border-bottom: 1px solid fade(#000,20%);
+            width: 100%;
+            padding: 8px 0;
+            font-size:14px;
+            transition:.2s;
+            
+            &:focus, &:active {
+                outline:none;
+                background:fade(#fff,20%);
+                padding-left:5px;
+            }
+        }
+        
+        textarea {
+            border-top:1px solid fade(#000,20%);
+            height:150px;
+            background:#f5f5f5;
+            padding:8px;
+            
+            &:focus, &:active {
+                padding-left:8px;
+            }
+        }
+    }
+}
+
+.submit {
+    cursor:default;
+    
+    button {
+        cursor: pointer;
+        border: none;
+        background: #fff;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+        border-radius: 2px;
+        padding: 9px 19px;
+        font-size: 15px;
+        opacity: .8;
+        transition: .2s;
+        
+        &:hover {
+            opacity: 1;
+        }
+        
+        &.active {
+            background:@shadow1;
+            color:#fff;
+            opacity:1;
+        }
+        
+        &:first-child {
+            background:@accent1;
+            color:#fff;
+        }
+    }
+}
+
+.flexy {
+    display:flex;
+    
+    > div {
+        flex:1;
+    }
+}
+
+.nice-btns {
+    display:flex;
+    
+    button {
+        flex:1;
+        margin:16px;
+        padding:16px;
+    }
+}
