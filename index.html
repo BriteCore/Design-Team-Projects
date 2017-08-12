@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
     />
 
+    <!-- Angulajs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
     <title>Kontakt Me App by Krishna Diamesso</title>
 
     <style>
@@ -36,44 +39,48 @@
         h6 {
             font-family: "Roboto";
         }
+
+        a {
+            text-decoration: none !important;
+        }
     </style>
 </head>
 
-<body class="w3-light-grey">
+<body class="w3-light-grey" ng-app="contactApp" ng-controller="appCtrl" ng-cloak>
 
     <div class="w3-content w3-margin-top" style="max-width:95%">
         <!-- Navigation Bar -->
-        <div>
-            <div class="w3-bar w3-white w3-padding w3-card-2">
-                <h4 class="w3-bar-item" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
-                <div class="w3-right w3-hide-small">
-                    <h4 href="#" class="w3-bar-item">Reminders</h4>
-                    <h4 href="#" class="w3-bar-item">|</h4>
-                    <h4 href="#" class="w3-bar-item">Contact List</h4>
-                    <h4 href="#" class="w3-bar-item">|</h4>
-                    <h4 href="#" class="w3-bar-item">Dashboard</h4>
-                </div>
+        <div class="w3-bar w3-white w3-padding w3-card-2">
+            <h4 class="w3-bar-item" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
+            <div class="w3-right w3-hide-small">
+                <h4 class="w3-bar-item"><a href="#">Reminders</a></h4>
+                <h4 class="w3-bar-item">|</h4>
+                <h4 class="w3-bar-item"><a href="#">Contact List</a></h4>
+                <h4 class="w3-bar-item">|</h4>
+                <h4 class="w3-bar-item"><a href="#">Dashboard</a></h4>
+                <h4 class="w3-bar-item">|</h4>
+                <h4 class="w3-bar-item"><i class="fa fa-user-circle-o fa-fw" style="font-size:24px; color: indigo"></i></h4>
             </div>
         </div>
         <!-- End Navigation bar -->
         <br>
         <!-- Search Bar -->
         <div class=" w3-card w3-white w3-padding">
-            <input class="w3-input w3-border-red" type="text" style="font-size:15px" placeholder="Search...">
+            <input class="w3-input w3-border-red" type="text" style="font-size:20px" placeholder="Search...">
         </div>
         <!-- End Search Bar -->
         <hr>
         <!-- Main Content -->
         <div class="w3-row-padding" style="padding-left: 0px; padding-right: 0px;">
             <!-- Profile Side -->
-            <div class="w3-col l4 w3-margin-bottom">
+            <div class="w3-col l4 m4 w3-margin-bottom">
                 <div class="w3-white w3-text-grey w3-card-4">
                     <br>
                     <div class="w3-center w3-container">
-                        <img src="./img/avatar-2.png" alt="Avatar" class="w3-card w3-padding" style="width:50%">
+                        <img src="./img/avatar-3.png" alt="Avatar" class="w3-card w3-padding" style="width:50%">
                     </div>
 
-                    <div class="w3-container w3-text-black">
+                    <div class="w3-container w3-text-black w3-margin-top">
                         <h2>John Doe</h2>
                     </div>
                     <hr>
@@ -90,7 +97,10 @@
             </div>
             <!-- End Profile Side -->
 
-            <div class="w3-col l8">
+            <!-- Content Side -->
+            <div class="w3-col l8 m8">
+
+                <!-- History Tab -->
                 <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
                     <h2 class="w3-text-indigo w3-padding-16">History</h2>
                     <div class="w3-container w3-card w3-margin-bottom">
@@ -98,8 +108,23 @@
                         <p>First Call with John was very pleasant. Their company is going through a merger that should be completed
                             in a couple of months.</p>
                     </div>
-                </div>
+                    <div class="w3-container w3-card w3-margin-bottom">
+                        <h5 class="w3-opacity"><b>Note</b></h5>
+                        <p>John was introduced by Audrey at the convention.</p>
+                    </div>
+                    <div class="w3-container w3-card w3-margin-bottom">
+                        <h5 class="w3-opacity"><b>Reminder</b></h5>
+                        <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
+                    </div>
+                    <div ng-repeat="note in noteArray">
+                        <div class="w3-container w3-card w3-margin-bottom">
+                                <h5 class="w3-opacity"><b>{{noteTitle}}</b></h5>
+                                <p>{{note}}</p>
+                        </div>
+                    </div>
+                </div> <!-- End History Tab -->
 
+                <!-- Reminder Tab -->
                 <div class=" w3-container w3-card-2 w3-white w3-margin-bottom ">
                         <h2 class="w3-text-indigo w3-padding-16 ">Reminder</h2>
                         <div style="overflow:hidden;">
@@ -114,19 +139,29 @@
                         <div class="w3-container w3-card w3-margin-bottom w3-padding">
                             <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
                         </div>
-                </div>
+                </div> <!-- End Reminder Tab -->
 
+                <!-- Notes Tab -->
                 <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
                     <h2 class="w3-text-indigo w3-padding-16">Notes</h2>
-                    <textarea name="note" id="" cols="80" rows="5" class="w3-margin-bottom" style="width:100%;margin: 0 auto"></textarea>
+                    <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom" style="width:100%;margin: 0 auto"></textarea>
+                    <button type="submit" class="w3-btn w3-black" ng-click="addNote()">Add Note</button>
+                    <hr>
                     <div class="w3-container w3-card w3-margin-bottom w3-padding">
-                        <p>John was introduced by Audrey at the convention.</p>
+                            <p>John was introduced by Audrey at the convention.</p>
+                        </div>
+                    <div ng-repeat="note in noteArray">
+                        <div class="w3-container w3-card w3-margin-bottom w3-padding">
+                            <p>{{note}}</p>
+                        </div>
                     </div>
-                </div>
+                </div> <!-- End Notes Tab -->
 
             </div>
+            <!-- End Content Side -->
 
         </div>
+        <!-- End Main Content -->
 
     </div>
 
@@ -136,6 +171,23 @@
                 inline: true,
                 sideBySide: true
             });
+        });
+    </script>
+
+    <script>
+        var app = angular.module("contactApp", []);
+        app.controller("appCtrl", function($scope){
+            $scope.message="hello";
+            $scope.note="";
+            $scope.noteArray =[];
+            $scope.noteTitle = "Note";
+            $scope.addNote = function() {
+                if ($scope.note !== '') {
+                    $scope.noteArray.push($scope.note);
+                    $scope.note ='';
+                }
+            }
+
         });
     </script>
 </body>
