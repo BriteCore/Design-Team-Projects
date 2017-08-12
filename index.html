@@ -52,7 +52,7 @@
         <!-- Navigation Bar -->
         <div class="w3-bar w3-white w3-padding w3-card-2">
             <h4 class="w3-bar-item" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
-            <div class="w3-right w3-hide-small">
+            <div class="w3-right w3-hide-small w3-hide-medium">
                 <h4 class="w3-bar-item"><a href="#">Reminders</a></h4>
                 <h4 class="w3-bar-item">|</h4>
                 <h4 class="w3-bar-item"><a href="#">Contact List</a></h4>
@@ -61,6 +61,7 @@
                 <h4 class="w3-bar-item">|</h4>
                 <h4 class="w3-bar-item"><i class="fa fa-user-circle-o fa-fw" style="font-size:24px; color: indigo"></i></h4>
             </div>
+            
         </div>
         <!-- End Navigation bar -->
         <br>
@@ -73,11 +74,11 @@
         <!-- Main Content -->
         <div class="w3-row-padding" style="padding-left: 0px; padding-right: 0px;">
             <!-- Profile Side -->
-            <div class="w3-col l4 m4 w3-margin-bottom">
+            <div class="w3-col l4 w3-margin-bottom">
                 <div class="w3-white w3-text-grey w3-card-4">
                     <br>
                     <div class="w3-center w3-container">
-                        <img src="./img/avatar-3.png" alt="Avatar" class="w3-card w3-padding" style="width:50%">
+                        <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding" style="width:50%">
                     </div>
 
                     <div class="w3-container w3-text-black w3-margin-top">
@@ -98,10 +99,10 @@
             <!-- End Profile Side -->
 
             <!-- Content Side -->
-            <div class="w3-col l8 m8">
+            <div class="w3-col l8">
 
                 <!-- History Tab -->
-                <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="reminder">
                     <h2 class="w3-text-indigo w3-padding-16">History</h2>
                     <div class="w3-container w3-card w3-margin-bottom">
                         <h5 class="w3-opacity"><b>Call</b></h5>
@@ -127,17 +128,26 @@
                 <!-- Reminder Tab -->
                 <div class=" w3-container w3-card-2 w3-white w3-margin-bottom ">
                         <h2 class="w3-text-indigo w3-padding-16 ">Reminder</h2>
-                        <div style="overflow:hidden;">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-8" style="width: 100%">
-                                        <div id="datetimepicker"></div>
+                        <div class="row">
+                            <div class='col-sm-6 w3-margin-bottom'>
+                                <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to...">
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker'>
+                                        <input type='text' class="form-control w3-input" id="dateReminder" placeholder="On..."/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="w3-container w3-card w3-margin-bottom w3-padding">
+                        <button type="submit" class="w3-btn w3-black" ng-click="" id="addReminder">Add Reminder</button>
+                        <div class="w3-container w3-card w3-section w3-padding">
                             <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
+                        </div>
+                        <div id="messageReminder">
                         </div>
                 </div> <!-- End Reminder Tab -->
 
@@ -148,8 +158,8 @@
                     <button type="submit" class="w3-btn w3-black" ng-click="addNote()">Add Note</button>
                     <hr>
                     <div class="w3-container w3-card w3-margin-bottom w3-padding">
-                            <p>John was introduced by Audrey at the convention.</p>
-                        </div>
+                        <p>John was introduced by Audrey at the convention.</p>
+                    </div>
                     <div ng-repeat="note in noteArray">
                         <div class="w3-container w3-card w3-margin-bottom w3-padding">
                             <p>{{note}}</p>
@@ -168,8 +178,25 @@
     <script type="text/javascript ">
         $(function () {
             $('#datetimepicker').datetimepicker({
-                inline: true,
-                sideBySide: true
+                stepping: 10,
+            });
+            moment().format("ddd, hA");
+
+            dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
+            $('#addReminder').on('click', function() {
+
+                reminder = $('#remindMe');
+                if ( reminder.val() !== '') {
+                    dateReminderH = $('#datetimepicker').data("DateTimePicker").date().format('h:mm A');
+                    dateReminder = $('#datetimepicker').data("DateTimePicker").date().format('dddd, MMMM Do YYYY');
+                    //console.log($('#datetimepicker').data("DateTimePicker").date().format('dddd, MMMM Do YYYY, h:mm a'));
+                    $("#messageReminder").append('<div class="w3-container w3-card w3-margin-bottom w3-padding"><p>'+reminder.val()+" <bold>on</bold> "+dateReminder+" at "+dateReminderH+'.</p></div>');
+
+                    $("#reminder").append('<div class="w3-container w3-card w3-margin-bottom"><h5 class="w3-opacity"><b>Reminder</b></h5><p>'+reminder.val()+" on "+dateReminder+" at "+dateReminderH+'.</p></div>');
+                    reminder.val('');
+                    $('#dateReminder').val('');
+
+                }
             });
         });
     </script>
@@ -186,8 +213,7 @@
                     $scope.noteArray.push($scope.note);
                     $scope.note ='';
                 }
-            }
-
+            };
         });
     </script>
 </body>
