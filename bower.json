@@ -1,0 +1,22 @@
+{
+  "name": "Kontakt Me",
+  "homepage": "https://github.com/DiamessoGroup/DesignProject",
+  "authors": [
+    "Krishna Diamesso <krishnadiamesso@gmail.com>"
+  ],
+  "description": "Contact Management App",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
+  }
+}
