@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
     //Calendar Function
     $('#datetimepicker').datetimepicker({
@@ -28,5 +28,44 @@ $(function () {
         $(this).toggleClass('w3-text-red');
     });
 
-
+    /* Floating Button */
+    var links = [
+        /* Main button */
+        {   
+            "bgcolor":"#f44336",
+            "icon":"+"
+        },
+        /* Hidden button list */
+        {
+            "url":"#",
+            "bgcolor":"#f44336",
+            "color":"white",
+            "icon":"<i class='fa fa-file-text'></i>",
+            "title": "Reminders"
+        },
+        {
+            "url":"#",
+            "bgcolor":"#f44336",
+            "color":"white",
+            "icon":"<i class='fa fa-users'></i>",
+            "title": "Contact List"
+        },
+        {
+            "url":"#",
+            "bgcolor":"#f44336",
+            "color":"white",
+            "icon":"<i class='fa fa-user-plus'></i>",
+            "title": "Create Contact"
+        },
+        {
+            "url":"#",
+            "bgcolor":"#f44336",
+            "color":"white",
+            "icon":"<i class='fa fa-home'></i>",
+            "title": "Dashboard"
+        }
+    ];
+    $('.kc_fab_wrapper').kc_fab(links);
+    
+      
 });
