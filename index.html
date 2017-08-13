@@ -33,20 +33,28 @@
     <title>Kontakt Me App by Krishna Diamesso</title>
 
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        html, body, h1, h2, h3, h4, h5, h6 {
             font-family: "Roboto";
         }
 
         a {
             text-decoration: none !important;
         }
+
+        .btn-circle.btn-lg {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            font-size: 24px;
+            line-height: 1.33;
+            border: 0 solid;
+            border-radius: 35px;
+            position:fixed;
+            bottom:15%;
+            right:3%;
+            z-index:10
+        }
+
     </style>
 </head>
 
@@ -71,9 +79,14 @@
         <br>
         <!-- Search Bar -->
         <div class=" w3-card w3-white w3-padding">
-            <input class="w3-input w3-border-red" type="text" style="font-size:20px" placeholder="Search...">
+            <input class="w3-input w3-border-blue fa" type="text" style="font-size:20px" placeholder="&#xf002 ...">
         </div>
         <!-- End Search Bar -->
+
+        <!-- Floating Button -->
+        <a href="#"><button type="button" class="w3-btn btn-circle btn-lg w3-red w3-card-4"><i class="fa fa-plus" style="font-size:25px"></i></button></a>
+        <!-- End Floating Button -->
+        
         <hr>
         <!-- Main Content -->
         <div class="w3-row-padding" style="padding-left: 0px; padding-right: 0px;">
@@ -90,7 +103,7 @@
                     </div>
                     <hr>
                     <div class="w3-center w3-container">
-                        <i class="fa fa-heart" style="font-size:25px; cursor:pointer" id="favorite"></i><br>
+                        <i class="fa fa-thumbs-up" style="font-size:25px; cursor:pointer" id="favorite"></i><br><br>
                         <span>Favorite</span>
                     </div>
                     <hr>
@@ -181,6 +194,62 @@
 
         </div>
         <!-- End Main Content -->
+
+        <!-- Create Contact -->
+        <form action="">
+            <div class="w3-white w3-padding-32 w3-container w3-card-4 w3-section">
+                <div class="w3-text-indigo w3-padding-16">
+                    <h2>Add Contact</h2>
+                </div>
+                <div class="w3-margin-top">
+                    <div class="w3-row">
+                        <div class="w3-col l5 m12 s12 w3-margin-bottom w3-padding-16">
+                            <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
+                            <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="First Name" required>
+                        </div>
+                        <div class="w3-col l5 m10 s10 w3-margin-bottom w3-padding-16">
+                            <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
+                            <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Last Name" required>
+                        </div>
+                        <div class="w3-col l2 m2 s2 w3-margin-bottom w3-padding-16">
+                                <label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i></label>
+                                <input type="checkbox" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Favorite">
+                        </div>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label for="name"><i class="fa fa-suitcase fa-fw w3-large w3-text-indigo"></i></label>
+                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Title" required>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label><i class="fa fa-building fa-fw w3-large w3-text-indigo"></i></label>
+                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Company" required>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label><i class="fa fa-phone fa-fw w3-large w3-text-indigo"></i></label>
+                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Phone" required>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label><i class="fa fa-envelope fa-fw w3-large w3-text-indigo"></i></label>
+                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Email" required>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label><i class="fa fa-location-arrow fa-fw w3-large w3-text-indigo"></i></label>
+                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Address" required>
+                    </div>
+                    <div class="w3-margin-bottom w3-padding-16">
+                        <label><i class="fa fa-image fa-fw w3-large w3-text-indigo"></i> Profile Picture</label>
+                        <input type="file" class="w3-input" style="width:95%" style="font-size:20px">
+                    </div>
+                </div>
+                <div class="w3-margin-bottom w3-padding-16" style="width:95%">
+                    <button type="submit" class="w3-btn w3-black w3-left">Add Contact</button>
+                    <button type="reset" class="w3-btn w3-black w3-right">Clear</button>
+                </div>
+            </div>
+        </form>
+        <!-- End Create Contact -->
+
+    </div>
 
     </div>
 
