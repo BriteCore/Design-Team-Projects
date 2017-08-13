@@ -30,32 +30,11 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+
     <title>Kontakt Me App by Krishna Diamesso</title>
 
-    <style>
-        html, body, h1, h2, h3, h4, h5, h6 {
-            font-family: "Roboto";
-        }
-
-        a {
-            text-decoration: none !important;
-        }
-
-        .btn-circle.btn-lg {
-            width: 70px;
-            height: 70px;
-            padding: 10px 16px;
-            font-size: 24px;
-            line-height: 1.33;
-            border: 0 solid;
-            border-radius: 35px;
-            position:fixed;
-            bottom:15%;
-            right:3%;
-            z-index:10
-        }
-
-    </style>
 </head>
 
 <body class="w3-light-grey" ng-app="contactApp" ng-controller="appCtrl" ng-cloak>
@@ -95,7 +74,7 @@
                 <div class="w3-white w3-text-grey w3-card-4">
                     <br>
                     <div class="w3-center w3-container">
-                        <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding" style="width:50%">
+                        <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding mainAvatarSize">
                     </div>
 
                     <div class="w3-container w3-text-black w3-margin-top">
@@ -103,7 +82,7 @@
                     </div>
                     <hr>
                     <div class="w3-center w3-container">
-                        <i class="fa fa-thumbs-up" style="font-size:25px; cursor:pointer" id="favorite"></i><br><br>
+                        <i class="fa fa-thumbs-up favoriteThumb" id="favorite"></i><br><br>
                         <span>Favorite</span>
                     </div>
                     <hr>
@@ -176,7 +155,7 @@
                 <!-- Notes Tab -->
                 <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
                     <h2 class="w3-text-indigo w3-padding-16">Notes</h2>
-                    <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding" style="width:100%;margin: 0 auto"></textarea>
+                    <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding noteTabText"></textarea>
                     <button type="submit" class="w3-btn w3-black" ng-click="addNote()">Add Note</button>
                     <hr>
                     <div class="w3-container w3-card w3-margin-bottom w3-padding">
@@ -205,43 +184,43 @@
                     <div class="w3-row">
                         <div class="w3-col l5 m12 s12 w3-margin-bottom w3-padding-16">
                             <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                            <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="First Name" required>
+                            <input type="text" class="w3-input contactFormLength" placeholder="First Name" required>
                         </div>
                         <div class="w3-col l5 m10 s10 w3-margin-bottom w3-padding-16">
                             <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                            <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Last Name" required>
+                            <input type="text" class="w3-input contactFormLength" placeholder="Last Name" required>
                         </div>
                         <div class="w3-col l2 m2 s2 w3-margin-bottom w3-padding-16">
                                 <label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i></label>
-                                <input type="checkbox" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Favorite">
+                                <input type="checkbox" class="w3-input" placeholder="Favorite">
                         </div>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label for="name"><i class="fa fa-suitcase fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Title" required>
+                        <input type="text" class="w3-input contactFormLength"  placeholder="Title" required>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label><i class="fa fa-building fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Company" required>
+                        <input type="text" class="w3-input contactFormLength"  placeholder="Company" required>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label><i class="fa fa-phone fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Phone" required>
+                        <input type="text" class="w3-input contactFormLength" placeholder="Phone" required>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label><i class="fa fa-envelope fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Email" required>
+                        <input type="text" class="w3-input contactFormLength" placeholder="Email" required>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label><i class="fa fa-location-arrow fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input" style="width:95%" style="font-size:20px" placeholder="Address" required>
+                        <input type="text" class="w3-input contactFormLength"  placeholder="Address" required>
                     </div>
                     <div class="w3-margin-bottom w3-padding-16">
                         <label><i class="fa fa-image fa-fw w3-large w3-text-indigo"></i> Profile Picture</label>
-                        <input type="file" class="w3-input" style="width:95%" style="font-size:20px">
+                        <input type="file" class="w3-input contactFormLength">
                     </div>
                 </div>
-                <div class="w3-margin-bottom w3-padding-16" style="width:95%">
+                <div class="w3-margin-bottom w3-padding-16 contactFormLength">
                     <button type="submit" class="w3-btn w3-black w3-left">Add Contact</button>
                     <button type="reset" class="w3-btn w3-black w3-right">Clear</button>
                 </div>
@@ -250,54 +229,9 @@
         <!-- End Create Contact -->
 
     </div>
+    <script src="./static/js/app-jquery.js"></script>
+    <script src="./static/js/app-angularjs.js"></script>
 
-    </div>
-
-    <script type="text/javascript ">
-        $(function () {
-            $('#datetimepicker').datetimepicker({
-                stepping: 10,
-            });
-            moment().format("ddd, hA");
-
-            dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
-            $('#addReminder').on('click', function() {
-
-                reminder = $('#remindMe');
-                if ( reminder.val() !== '') {
-                    dateReminderH = $('#datetimepicker').data("DateTimePicker").date().format('h:mm A');
-                    dateReminder = $('#datetimepicker').data("DateTimePicker").date().format('dddd, MMMM Do YYYY');
-                    //console.log($('#datetimepicker').data("DateTimePicker").date().format('dddd, MMMM Do YYYY, h:mm a'));
-                    $("#messageReminder").append('<div class="w3-container w3-card w3-margin-bottom w3-padding"><p>'+reminder.val()+" <bold>on</bold> "+dateReminder+" at "+dateReminderH+'.</p></div>');
-
-                    $("#reminder").append('<div class="w3-container w3-card w3-margin-bottom"><h5 class="w3-opacity"><b>Reminder</b></h5><p>'+reminder.val()+" on "+dateReminder+" at "+dateReminderH+'.</p></div>');
-                    reminder.val('');
-                    $('#dateReminder').val('');
-
-                }
-            });
-
-            $('#favorite').on('click', function() {
-                $(this).toggleClass('w3-text-red');
-            });
-        });
-    </script>
-
-    <script>
-        var app = angular.module("contactApp", []);
-        app.controller("appCtrl", function($scope){
-            $scope.message="hello";
-            $scope.note="";
-            $scope.noteArray =[];
-            $scope.noteTitle = "Note";
-            $scope.addNote = function() {
-                if ($scope.note !== '') {
-                    $scope.noteArray.push($scope.note);
-                    $scope.note ='';
-                }
-            };
-        });
-    </script>
 </body>
 
 </html>
