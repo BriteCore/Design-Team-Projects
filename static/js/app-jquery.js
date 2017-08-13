@@ -1,9 +1,11 @@
 $(function () {
+
+    //Calendar Function
     $('#datetimepicker').datetimepicker({
         stepping: 10,
     });
-    moment().format("ddd, hA");
 
+    //Add Reminder Message to History
     dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
     $('#addReminder').on('click', function() {
 
@@ -21,7 +23,10 @@ $(function () {
         }
     });
 
+    //Toggle Favorite Button Color
     $('#favorite').on('click', function() {
         $(this).toggleClass('w3-text-red');
     });
+
+
 });
