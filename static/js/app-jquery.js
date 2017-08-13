@@ -38,28 +38,28 @@ $(document).ready(function () {
         /* Hidden button list */
         {
             "url":"#",
-            "bgcolor":"#f44336",
+            "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-file-text'></i>",
             "title": "Reminders"
         },
         {
             "url":"#",
-            "bgcolor":"#f44336",
+            "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-users'></i>",
             "title": "Contact List"
         },
         {
             "url":"#",
-            "bgcolor":"#f44336",
+            "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-user-plus'></i>",
             "title": "Create Contact"
         },
         {
             "url":"#",
-            "bgcolor":"#f44336",
+            "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-home'></i>",
             "title": "Dashboard"

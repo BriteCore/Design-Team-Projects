@@ -46,23 +46,26 @@
     <div class="w3-content w3-margin-top" style="max-width:95%">
         <!-- Navigation Bar -->
         <div class="w3-bar w3-white w3-padding w3-card-2">
-            <h4 class="w3-bar-item" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
-            <div class="w3-right w3-hide-small w3-hide-medium">
-                <h4 class="w3-bar-item"><a href="#">Reminders</a></h4>
-                <h4 class="w3-bar-item">|</h4>
-                <h4 class="w3-bar-item"><a href="#">Contact List</a></h4>
-                <h4 class="w3-bar-item">|</h4>
-                <h4 class="w3-bar-item"><a href="#">Dashboard</a></h4>
-                <h4 class="w3-bar-item">|</h4>
-                <h4 class="w3-bar-item"><i class="fa fa-user-circle-o fa-fw" style="font-size:24px; color: indigo"></i></h4>
+            <h4 class="w3-bar-item w3-text-indigo" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
+            <div class="w3-right">
+                <!-- <span class="w3-hide-small w3-hide-medium">
+                    <h4 class="w3-bar-item"><a href="#">Reminders</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                    <h4 class="w3-bar-item"><a href="#">Contact List</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                    <h4 class="w3-bar-item"><a href="#">Dashboard</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                </span> -->
+                <!-- <h4 class="w3-bar-item"><i class="fa fa-user-circle-o fa-fw" style="font-size:24px; color: #3F51B5"></i></h4> -->
+                <img src="./static/img/avatar-2.svg" alt="Avatar" class="avatarIcon">
             </div>
-            
         </div>
         <!-- End Navigation bar -->
         <br>
         <!-- Search Bar -->
-        <div class=" w3-card w3-white w3-padding">
-            <input class="w3-input w3-border-blue fa" type="text" style="font-size:20px" placeholder="&#xf002 ...">
+        <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+            <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Search...">
+            <!-- <hr> -->
         </div>
         <!-- End Search Bar -->
 
@@ -74,7 +77,6 @@
             </div>
         <!-- End Floating Button -->
         
-        <hr>
         <!-- Main Content -->
         <div class="w3-row-padding" style="padding-left: 0px; padding-right: 0px;">
             <!-- Profile Side -->
@@ -152,7 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="w3-btn w3-black" ng-click="" id="addReminder">Add Reminder</button>
+                        <button type="submit" class="w3-btn buttonColorTheme" id="addReminder">Add Reminder</button>
                         <div class="w3-container w3-card w3-section w3-padding">
                             <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
                         </div>
@@ -164,7 +166,7 @@
                 <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
                     <h2 class="w3-text-indigo w3-padding-16">Notes</h2>
                     <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding noteTabText"></textarea>
-                    <button type="submit" class="w3-btn w3-black" ng-click="addNote()">Add Note</button>
+                    <button type="submit" class="w3-btn buttonColorTheme" ng-click="addNote()">Add Note</button>
                     <hr>
                     <div class="w3-container w3-card w3-margin-bottom w3-padding">
                         <p>John was introduced by Audrey at the convention.</p>
@@ -229,8 +231,8 @@
                     </div>
                 </div>
                 <div class="w3-margin-bottom w3-padding-16 contactFormLength">
-                    <button type="submit" class="w3-btn w3-black w3-left">Add Contact</button>
-                    <button type="reset" class="w3-btn w3-black w3-right">Clear</button>
+                    <button type="submit" class="w3-btn buttonColorTheme w3-left">Add Contact</button>
+                    <button type="reset" class="w3-btn buttonColorTheme w3-right">Clear</button>
                 </div>
             </div>
         </form>
