@@ -1,4 +1,4 @@
-var app = angular.module("contactApp", []);
+var app = angular.module("contactApp", ["ngRoute"]);
 
 app.controller("appCtrl", function($scope){
     $scope.message="hello";
@@ -11,4 +11,26 @@ app.controller("appCtrl", function($scope){
             $scope.note ='';
         }
     };
+});
+
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "./../../templates/contact-profile.html"
+    })
+    .when("/reminders", {
+        templateUrl : "./../../templates/reminders.html"
+    })
+    .when("/contactList", {
+        templateUrl : "./../../templates/contact-list.html"
+    })
+    .when("/createContact", {
+        templateUrl : "./../../templates/create-contact.html"
+    })
+    .when("/dashboard", {
+        templateUrl : "./../../templates/dashboard.html"
+    })
+    .otherwise({
+        templateUrl : "./../../templates/contact-profile.html"
+    });
 });

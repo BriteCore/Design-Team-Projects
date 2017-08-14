@@ -1,0 +1,109 @@
+<!-- Main Content -->
+<div class="w3-row-padding" style="">
+    <!-- Profile Side -->
+    <div class="w3-col l4 w3-margin-bottom">
+        <div class="w3-white w3-text-grey w3-card-4">
+            <br>
+            <div class="w3-center w3-container">
+                <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding mainAvatarSize">
+            </div>
+
+            <div class="w3-container w3-text-black w3-margin-top">
+                <h2>John Doe</h2>
+            </div>
+            <hr>
+            <div class="w3-center w3-container">
+                <i class="fa fa-thumbs-up favoriteThumb" id="favorite"></i><br><br>
+                <span>Favorite</span>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Ceo</p>
+                <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-indigo"></i>Complex Inc.</p>
+                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>555-444-3333</p>
+                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>johndoe@complexinc.com</p>
+                <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-large w3-text-indigo"></i>34 Lincoln Street, Queens
+                    Park, NY 10034</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Profile Side -->
+
+    <!-- Content Side -->
+    <div class="w3-col l8">
+
+        <!-- History Tab -->
+        <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="reminder">
+            <h2 class="w3-text-indigo w3-padding-16">History</h2>
+            <div class="w3-container w3-card w3-margin-bottom">
+                <h5 class="w3-opacity"><b>Call</b></h5>
+                <p>First Call with John was very pleasant. Their company is going through a merger that should be completed
+                    in a couple of months.</p>
+            </div>
+            <div class="w3-container w3-card w3-margin-bottom">
+                <h5 class="w3-opacity"><b>Note</b></h5>
+                <p>John was introduced by Audrey at the convention.</p>
+            </div>
+            <div class="w3-container w3-card w3-margin-bottom">
+                <h5 class="w3-opacity"><b>Reminder</b></h5>
+                <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
+            </div>
+            <div ng-repeat="note in noteArray">
+                <div class="w3-container w3-card w3-margin-bottom">
+                    <h5 class="w3-opacity"><b>{{noteTitle}}</b></h5>
+                    <p>{{note}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- End History Tab -->
+
+        <!-- Reminder Tab -->
+        <div class=" w3-container w3-card-2 w3-white w3-margin-bottom ">
+            <h2 class="w3-text-indigo w3-padding-16 ">Reminder</h2>
+            <div class="row">
+                <div class='col-sm-6 w3-margin-bottom'>
+                    <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to...">
+                </div>
+                <div class='col-sm-6'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker'>
+                            <input type='text' class="form-control w3-input" id="dateReminder" placeholder="On..." />
+                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="w3-btn buttonColorTheme" id="addReminder">Add Reminder</button>
+            <div class="w3-container w3-card w3-section w3-padding">
+                <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
+            </div>
+            <div id="messageReminder">
+            </div>
+        </div>
+        <!-- End Reminder Tab -->
+
+        <!-- Notes Tab -->
+        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-indigo w3-padding-16">Notes</h2>
+            <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding noteTabText"></textarea>
+            <button type="submit" class="w3-btn buttonColorTheme" ng-click="addNote()">Add Note</button>
+            <hr>
+            <div class="w3-container w3-card w3-margin-bottom w3-padding">
+                <p>John was introduced by Audrey at the convention.</p>
+            </div>
+            <div ng-repeat="note in noteArray">
+                <div class="w3-container w3-card w3-margin-bottom w3-padding">
+                    <p>{{note}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Notes Tab -->
+
+    </div>
+    <!-- End Content Side -->
+
+</div>
+<!-- End Main Content -->

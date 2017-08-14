@@ -8,8 +8,8 @@
     <!-- W3 CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Google Font -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <!-- Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,6 +25,8 @@
     
     <!-- Angulajs -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- Angularjs Routing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -72,177 +74,15 @@
         <!-- Floating Button -->
         <!-- <button type="button" class="w3-btn btn-circle btn-lg w3-red w3-card-4"><i class="fa fa-plus" style="font-size:25px"></i></button> -->
 
-        <div class="kc_fab_wrapper">
-
-        </div>
+        <div class="kc_fab_wrapper"></div>
         <!-- End Floating Button -->
     </div>
 
-    <!-- Main Content -->
-    <div class="w3-row-padding" style="">
-        <!-- Profile Side -->
-        <div class="w3-col l4 w3-margin-bottom">
-            <div class="w3-white w3-text-grey w3-card-4">
-                <br>
-                <div class="w3-center w3-container">
-                    <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding mainAvatarSize">
-                </div>
+    <div ng-view></div>
+    
 
-                <div class="w3-container w3-text-black w3-margin-top">
-                    <h2>John Doe</h2>
-                </div>
-                <hr>
-                <div class="w3-center w3-container">
-                    <i class="fa fa-thumbs-up favoriteThumb" id="favorite"></i><br><br>
-                    <span>Favorite</span>
-                </div>
-                <hr>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Ceo</p>
-                    <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-indigo"></i>Complex Inc.</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>555-444-3333</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>johndoe@complexinc.com</p>
-                    <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-large w3-text-indigo"></i>34 Lincoln Street,
-                        Queens Park, NY 10034</p>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Profile Side -->
-
-        <!-- Content Side -->
-        <div class="w3-col l8">
-
-            <!-- History Tab -->
-            <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="reminder">
-                <h2 class="w3-text-indigo w3-padding-16">History</h2>
-                <div class="w3-container w3-card w3-margin-bottom">
-                    <h5 class="w3-opacity"><b>Call</b></h5>
-                    <p>First Call with John was very pleasant. Their company is going through a merger that should be completed
-                        in a couple of months.</p>
-                </div>
-                <div class="w3-container w3-card w3-margin-bottom">
-                    <h5 class="w3-opacity"><b>Note</b></h5>
-                    <p>John was introduced by Audrey at the convention.</p>
-                </div>
-                <div class="w3-container w3-card w3-margin-bottom">
-                    <h5 class="w3-opacity"><b>Reminder</b></h5>
-                    <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
-                </div>
-                <div ng-repeat="note in noteArray">
-                    <div class="w3-container w3-card w3-margin-bottom">
-                        <h5 class="w3-opacity"><b>{{noteTitle}}</b></h5>
-                        <p>{{note}}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End History Tab -->
-
-            <!-- Reminder Tab -->
-            <div class=" w3-container w3-card-2 w3-white w3-margin-bottom ">
-                <h2 class="w3-text-indigo w3-padding-16 ">Reminder</h2>
-                <div class="row">
-                    <div class='col-sm-6 w3-margin-bottom'>
-                        <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to...">
-                    </div>
-                    <div class='col-sm-6'>
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker'>
-                                <input type='text' class="form-control w3-input" id="dateReminder" placeholder="On..." />
-                                <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="w3-btn buttonColorTheme" id="addReminder">Add Reminder</button>
-                <div class="w3-container w3-card w3-section w3-padding">
-                    <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
-                </div>
-                <div id="messageReminder">
-                </div>
-            </div>
-            <!-- End Reminder Tab -->
-
-            <!-- Notes Tab -->
-            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-                <h2 class="w3-text-indigo w3-padding-16">Notes</h2>
-                <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding noteTabText"></textarea>
-                <button type="submit" class="w3-btn buttonColorTheme" ng-click="addNote()">Add Note</button>
-                <hr>
-                <div class="w3-container w3-card w3-margin-bottom w3-padding">
-                    <p>John was introduced by Audrey at the convention.</p>
-                </div>
-                <div ng-repeat="note in noteArray">
-                    <div class="w3-container w3-card w3-margin-bottom w3-padding">
-                        <p>{{note}}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Notes Tab -->
-
-        </div>
-        <!-- End Content Side -->
-
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Create Contact -->
-    <div class="w3-white w3-padding-32 w3-container w3-card-4 w3-section" style="margin-left:16px; margin-right: 16px;">
-        <form action="">
-            <div class="w3-text-indigo w3-padding-16">
-                <h2>Add Contact</h2>
-            </div>
-            <div class="w3-margin-top">
-                <div class="w3-row">
-                    <div class="w3-col l5 m12 s12 w3-margin-bottom w3-padding-16">
-                        <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input contactFormLength" placeholder="First Name" required>
-                    </div>
-                    <div class="w3-col l5 m9 s8 w3-margin-bottom w3-padding-16">
-                        <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                        <input type="text" class="w3-input contactFormLength" placeholder="Last Name" required>
-                    </div>
-                    <div class="w3-col l2 m3 s4 w3-margin-bottom w3-padding-16">
-                        <input type="checkbox" class="w3-check" placeholder="Favorite"><label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i>Favorite</label><br>
-
-                    </div>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label for="name"><i class="fa fa-suitcase fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Title" required>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label><i class="fa fa-building fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Company" required>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label><i class="fa fa-phone fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Phone" required>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label><i class="fa fa-envelope fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Email" required>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label><i class="fa fa-location-arrow fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Address" required>
-                </div>
-                <div class="w3-margin-bottom w3-padding-16">
-                    <label><i class="fa fa-image fa-fw w3-large w3-text-indigo"></i> Profile Picture</label>
-                    <input type="file" class="w3-input contactFormLength">
-                </div>
-            </div>
-            <div class="w3-margin-bottom w3-padding-16 contactFormLength">
-                <button type="submit" class="w3-btn buttonColorTheme w3-left">Add Contact</button>
-                <button type="reset" class="w3-btn buttonColorTheme w3-right">Clear</button>
-            </div>
-        </form>
-    </div>
-    <!-- End Create Contact -->
-    <script src="./static/js/app-jquery.js"></script>
-    <script src="./static/js/app-angularjs.js"></script>
+    <script src="./static/js/app-jquery.js" type="text/javascript"></script>
+    <script src="./static/js/app-angularjs.js" type="text/javascript"></script>
 
 </body>
 

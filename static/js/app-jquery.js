@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
 
     //Calendar Function
     $('#datetimepicker').datetimepicker({
@@ -37,32 +37,39 @@ $(document).ready(function () {
         },
         /* Hidden button list */
         {
-            "url":"#",
+            "url":"#!reminders",
             "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-file-text'></i>",
             "title": "Reminders"
         },
         {
-            "url":"#",
+            "url":"#!contactList",
             "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-users'></i>",
             "title": "Contact List"
         },
         {
-            "url":"#",
+            "url":"#!createContact",
             "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-user-plus'></i>",
             "title": "Create Contact"
         },
         {
-            "url":"#",
+            "url":"#!dashboard",
             "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-home'></i>",
             "title": "Dashboard"
+        },
+        {
+            "url":"#/!",
+            "bgcolor":"#3F51B5",
+            "color":"white",
+            "icon":"<i class='fa fa-home'></i>",
+            "title": "Contact Profile"
         }
     ];
     $('.kc_fab_wrapper').kc_fab(links);
