@@ -1,0 +1,74 @@
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-circle.btn-lg {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border: 0 solid;
+    border-radius: 35px;
+    position:fixed;
+    bottom:5%;
+    right:3%;
+    z-index:10
+}
+
+.contactFormLength {
+    width: 95%;
+}
+
+.noteTabText {
+    width:100%;
+    margin: 0 auto;
+}
+
+.favoriteThumb {
+    font-size:25px;
+    cursor:pointer;
+}
+
+.iconGeneral {
+    font-size:20px;
+    cursor:pointer;
+}
+
+.mainAvatarSize {
+    width:50%;
+}
+
+.buttonColorTheme {
+    background: #1A237E; 
+    color:white;
+}
+
+.avatarIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.1px solid #BDBDBD;
+}
+
+/* Scrollbar hidden */
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;
+}
+
+.panelCard {
+    background: #CCDAF3;
+}
+
+#profile span {
+    color: #232635;
+}

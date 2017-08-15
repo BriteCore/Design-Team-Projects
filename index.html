@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- DatePicker -->
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+    />
+    
+    <!-- Angulajs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- Angularjs Routing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    
+    <!-- Floating Button -->
+    <link rel="stylesheet" href="./static/css/kc.fab.css">
+    <script src="./static/js/kc.fab.min.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+
+    <title>Kontakt Me App by Krishna Diamesso</title>
+
+</head>
+
+<body class="w3-light-grey" ng-app="contactApp" ng-controller="appCtrl" ng-cloak>
+
+    <div class="w3-margin-top" style="padding-left: 8px; padding-right:8px; margin-right: 8px; margin-left: 8px">
+        <!-- Navigation Bar -->
+        <div class="w3-bar w3-white w3-padding w3-card-2">
+            <h4 class="w3-bar-item w3-black w3-text-white" style="letter-spacing:4px"><strong>KONTAKT.me</strong></h4>
+            <div class="w3-right">
+                <!-- <span class="w3-hide-small w3-hide-medium">
+                    <h4 class="w3-bar-item"><a href="#">Reminders</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                    <h4 class="w3-bar-item"><a href="#">Contact List</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                    <h4 class="w3-bar-item"><a href="#">Dashboard</a></h4>
+                    <h4 class="w3-bar-item">|</h4>
+                </span> -->
+                <!-- <h4 class="w3-bar-item"><i class="fa fa-user-circle-o fa-fw" style="font-size:24px; color: #3F51B5"></i></h4> -->
+                <img src="./static/img/avatar-2.svg" alt="Avatar" class="avatarIcon">
+            </div>
+        </div>
+        <!-- End Navigation bar -->
+        <br>
+        <!-- Search Bar -->
+        <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+            <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Search...">
+            <!-- <hr> -->
+        </div>
+        <!-- End Search Bar -->
+
+        <!-- Floating Button -->
+        <!-- <button type="button" class="w3-btn btn-circle btn-lg w3-red w3-card-4"><i class="fa fa-plus" style="font-size:25px"></i></button> -->
+
+        <div class="kc_fab_wrapper"></div>
+        <!-- End Floating Button -->
+    </div>
+
+    <div ng-view></div>
+    
+
+    <script src="./static/js/app-jquery.js" type="text/javascript"></script>
+    <script src="./static/js/app-angularjs.js" type="text/javascript"></script>
+
+</body>
+
+</html>
