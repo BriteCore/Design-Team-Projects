@@ -46,27 +46,27 @@ app.controller("appCtrl", function($scope, addNoteService){
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "./../../templates/contact-profile.html",
+        templateUrl : "templates/contact-profile.html",
         controller : "appCtrl"
     })
     .when("/reminders", {
-        templateUrl : "./../../templates/reminders.html",
+        templateUrl : "templates/reminders.html",
         controller : "appCtrl"
     })
     .when("/contactList", {
-        templateUrl : "./../../templates/contact-list.html",
+        templateUrl : "templates/contact-list.html",
         controller : "appCtrl"
     })
     .when("/createContact", {
-        templateUrl : "./../../templates/create-contact.html",
+        templateUrl : "templates/create-contact.html",
         controller : "appCtrl"
     })
     .when("/dashboard", {
-        templateUrl : "./../../templates/dashboard.html",
+        templateUrl : "templates/dashboard.html",
         controller : "appCtrl"
     })
     .otherwise({
-        templateUrl : "./../../templates/contact-profile.html",
+        templateUrl : "templates/contact-profile.html",
         controller : "appCtrl"
     });
 });
