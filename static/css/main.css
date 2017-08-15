@@ -64,3 +64,11 @@ body {
     width: 0px;  /* remove scrollbar space */
     background: transparent;
 }
+
+.panelCard {
+    background: #CCDAF3;
+}
+
+#profile span {
+    color: #232635;
+}
