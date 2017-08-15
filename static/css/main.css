@@ -34,6 +34,11 @@ a {
     cursor:pointer;
 }
 
+.iconGeneral {
+    font-size:20px;
+    cursor:pointer;
+}
+
 .mainAvatarSize {
     width:50%;
 }
@@ -48,4 +53,14 @@ a {
     height: 50px;
     border-radius: 50%;
     border: 0.1px solid #BDBDBD;
+}
+
+/* Scrollbar hidden */
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;
 }

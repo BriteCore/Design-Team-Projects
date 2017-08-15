@@ -1,13 +1,14 @@
 $(function () {
 
     //Calendar Function
-    $('#datetimepicker').datetimepicker({
+    /* $('#datetimepicker').datetimepicker({
         stepping: 10,
-    });
+    }); */
 
     //Add Reminder Message to History
-    dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
-    $('#addReminder').on('click', function() {
+    /* dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
+    console.log(dateReminderCondition); */
+    /* $('body').on('click','#addReminder', function() {
 
         reminder = $('#remindMe');
         if ( reminder.val() !== '') {
@@ -21,12 +22,12 @@ $(function () {
             $('#dateReminder').val('');
 
         }
-    });
+    }); */
 
     //Toggle Favorite Button Color
-    $('#favorite').on('click', function() {
+    /* $('body').on('click','#favorite', function() {
         $(this).toggleClass('w3-text-red');
-    });
+    }); */
 
     /* Floating Button */
     var links = [
@@ -36,13 +37,13 @@ $(function () {
             "icon":"+"
         },
         /* Hidden button list */
-        {
+        /* {
             "url":"#!reminders",
             "bgcolor":"#3F51B5",
             "color":"white",
             "icon":"<i class='fa fa-file-text'></i>",
             "title": "Reminders"
-        },
+        }, */
         {
             "url":"#!contactList",
             "bgcolor":"#3F51B5",
@@ -68,7 +69,7 @@ $(function () {
             "url":"#/!",
             "bgcolor":"#3F51B5",
             "color":"white",
-            "icon":"<i class='fa fa-home'></i>",
+            "icon":"<i class='fa fa-address-book'></i>",
             "title": "Contact Profile"
         }
     ];

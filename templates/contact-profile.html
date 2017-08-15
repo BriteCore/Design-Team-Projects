@@ -8,12 +8,20 @@
                 <img src="./static/img/avatar-3.png" alt="Avatar" class="w3-card w3-padding mainAvatarSize">
             </div>
 
-            <div class="w3-container w3-text-black w3-margin-top">
-                <h2>John Doe</h2>
+            <div class=" w3-row w3-container w3-text-black w3-margin-top">
+                <div class="w3-col l10">
+                    <h2>John Doe</h2>
+                </div>
+                <div class="w3-col l1">
+                    <h2><i class="fa fa-pencil" style="font-size:15px; cursor:pointer;"></i></h2>
+                </div>
+                <div class="w3-col l1">
+                    <h2><i class="fa fa-trash" style="font-size:15px; cursor:pointer;"></i></h2>
+                </div>
             </div>
             <hr>
             <div class="w3-center w3-container">
-                <i class="fa fa-thumbs-up favoriteThumb" id="favorite"></i><br><br>
+                <i class="fa fa-thumbs-up favoriteThumb" id="favorite" ng-click="favoriteClick()"></i><br><br>
                 <span>Favorite</span>
             </div>
             <hr>
@@ -24,7 +32,6 @@
                 <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>johndoe@complexinc.com</p>
                 <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-large w3-text-indigo"></i>34 Lincoln Street, Queens
                     Park, NY 10034</p>
-
             </div>
         </div>
     </div>
@@ -67,7 +74,7 @@
                 </div>
                 <div class='col-sm-6'>
                     <div class="form-group">
-                        <div class='input-group date' id='datetimepicker'>
+                        <div class='input-group date' id='datetimepicker' cal-directive="{stepping: 10}">
                             <input type='text' class="form-control w3-input" id="dateReminder" placeholder="On..." />
                             <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
