@@ -27,7 +27,7 @@ An agency will not have authority to operate in all the states this carrier will
 
 ### Manage Agent and Agency Licenses per State
 
-For each state, a carrier will need to track the licenses an agency has. An agency has to have a license for each state they sell insurance in. An example of what these licenses look like (can be found at NIPR, which issues them)[https://www.nipr.com/rules_nc_rl.htm#anchor-state_offerings].
+For each state, a carrier will need to track the licenses an agency has. An agency has to have a license for each state they sell insurance in. An example of what these licenses look like [can be found at NIPR, which issues them](https://www.nipr.com/rules_nc_rl.htm#anchor-state_offerings).
 
 Additionally, all of the agents employed by an agency need their own licenses as well. The insurance company will need to enter data about the license, including when it was issued, when it will expire, and they will want to upload a pdf copy of it.
 
