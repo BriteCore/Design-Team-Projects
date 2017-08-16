@@ -19,7 +19,7 @@ A new client to the BriteCore system is going to be writing insurance policies i
 
 This client would like to have more tools available to them to manage their agency workforce across so many states. 
 
-## User Stories
+## Use Cases
 
 ### Manage Active States for An Agency
 
@@ -43,21 +43,18 @@ Finally, a company will have a wide-range of policies that it can offer customer
 
 Most carriers have around 7-9 distinct policy types.
 
+## Primary Goal
+We would like to see you come up with an intuitive design that incorporates these advanced management features along with the standard contact information that BriteCore already displays for agents and agencies. You can do this in any way you choose (one page, splitting information up across pages, etc). 
 
-Primary Goal
-------------
+We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups. You should also create a static high-fidelty prototype in HTML/CSS for your design. If your design has many pages, only one needs to be mocked up in code. 
 
-Your primary goal is to create an interface that is extremely usable, intuitive, and responsive. This app will be used primarily on a mobile device, but should translate just as well to the desktop. The interface should be a working HTML/CSS prototype, but it is expected that some functionality will not be complete. We’re mostly interested in how well you design an interface that is intuitive and functional.
+Bonus Points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce. Super bonus points for hooking up some interesting functionality using jQuery/javascript.
 
-Bonus Points for anything else you can come up with that would be really helpful in an app like this. There are many additions that would make this really useful to our actual current sales team. Super bonus points for hooking up some interesting functionality using jQuery/javascript.
+## Testing
 
-Testing
--------
+User testing is an important part of what we do at BriteCore. At some point in this process, user test your prototype with someone and record the testing session. For this project, only one test is needed. This will help demonstrate that you know how to incorporate user feedback into your design process. 
 
-Capture video and feedback from multiple users at various stages of your design process and demonstrate that you understand how to incorporate user feedback into excellent design. The best designs are forged through the fires of real world user interaction. We want to see that you can analyze user feedback and incorporate it into your process.
-
-Delivery
---------
+## Delivery
 
 Your final deliverables will be:
  - Functional app prototype
@@ -66,12 +63,10 @@ Your final deliverables will be:
 
 Feel free to share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
 
-Questions
----------
+## Questions
 
  - For questions, please contact will@britecore.com
 
-Finished?
----------
+## Finished?
 
 When you're done with the above project, please submit your changes in the form of a pull request back to the IWS repo.
