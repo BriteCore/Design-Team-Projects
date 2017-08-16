@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Sales Contact Management App</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="static/js/scripts.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/beaa447a7a.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+	<div class="home height100">
+		<nav class="add-menu">
+			<a class="add-task" href="addtask.html">
+			<img src="static/images/Add-Task.png" srcset="static/images/Add-Task@2x.png" alt="Add Task" width="57" height="84" />
+			</a>
+			<a class="add-contact" href="addcontact.html">
+			<img src="static/images/Add-Contact.png" srcset="static/images/Add-Contact@2x.png" alt="Add Contact" width="78" height="106" />
+			</a>
+			<a class="create-email" href="createemail.html">
+			<img src="static/images/Create-Email.png" srcset="static/images/Create-Email@2x.png" alt="Create Email" width="77" height="84" />
+			</a>
+			<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>		
+		</nav>
+	  	<div class="fluid-container height100">
+	  		<div class="row height100">
+	  			<div class="col-sm-3 main-menu-container">
+	  				<div class="hidden-xs logo"><img src="static/images/Logo-white-text.png" srcset="static/images/Logo-white-text@2x.png" alt="Sales Contacts" width="153" height="69" /></div>
+				  	<nav class="main-menu">
+						<ul>
+							<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs">Home</span></a></li>
+							<li class="hidden-xs"><a id="desktop-overlay-menu"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></li>
+							<li><a href="messages.html"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hidden-xs">Messages</span></a></li>
+							<li class="visible-xs"><button class="menuButton" id="overlay-menu" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button></li>
+							<li><a href="contacts.html"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs">Contacts</span></a></li>
+							<li><a href="reports.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs">Reports</span></a></li>
+						</ul>
+					</nav>
+				</div><!-- /.main-menu-container -->
+				<div class="col-sm-9 desktop-pull-right height100">
+				  <header class="header">
+						<div class="fluid-container">
+							<div class="userbar">
+								<div id="userbarmenu">
+									<img src="static/images/phil.jpg" srcset="static/images/phil@2x.jpg" alt="user photo" width="60" height="60" />
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									<div class="userbar-menu">
+										<ul>
+											<li><a href="editprofile.html">Edit Profile</a></li>
+											<li><a href="index.html">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<h1>Contacts</h1>
+						</div>
+					</header>
+					<main class="contact-list">
+						<form class="search-container">
+							<div class="search-box">
+								<label for="search">Search:</label><br>
+								<span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span><input name="search" type="text" class="search">
+							</div>
+						</form>
+						<a class="nameplate" href="adamevans.html">
+							<img src="static/images/Adam-Evans.jpg" srcset="static/images/Adam-Evans@2x.jpg" alt="user photo" width="78" height="78" />
+							<span class="contact-info">
+								<strong>Adam Evans</strong><br>
+								<em>ABC Company</em>
+							</span>
+							<span class="more-arrow">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</span>
+						</a>
+						<a class="nameplate" href="johnsmith.html">
+							<img src="static/images/john-smith.png" srcset="static/images/john-smith@2x.png" alt="user photo" width="78" height="78" />
+							<span class="contact-info">
+								<strong>John Smith</strong><br>
+								<em>ABC Enterprise</em>
+							</span>
+							<span class="more-arrow">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</span>
+						</a>
+					</main>
+				</div><!-- /.col-sm-9 -->
+			</div><!-- /.row -->
+  		</div><!-- /.fluid-container -->
+  	</div><!-- /.home -->
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Sales Contact Management App</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="static/js/scripts.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/beaa447a7a.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+	<div class="home height100">
+		<nav class="add-menu">
+			<a class="add-task" href="addtask.html">
+			<img src="static/images/Add-Task.png" srcset="static/images/Add-Task@2x.png" alt="Add Task" width="57" height="84" />
+			</a>
+			<a class="add-contact" href="addcontact.html">
+			<img src="static/images/Add-Contact.png" srcset="static/images/Add-Contact@2x.png" alt="Add Contact" width="78" height="106" />
+			</a>
+			<a class="create-email" href="createemail.html">
+			<img src="static/images/Create-Email.png" srcset="static/images/Create-Email@2x.png" alt="Create Email" width="77" height="84" />
+			</a>
+			<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>		
+		</nav>
+	  	<div class="fluid-container height100">
+	  		<div class="row height100">
+	  			<div class="col-sm-3 main-menu-container">
+	  				<div class="hidden-xs logo"><img src="static/images/Logo-white-text.png" srcset="static/images/Logo-white-text@2x.png" alt="Sales Contacts" width="153" height="69" /></div>
+				  	<nav class="main-menu">
+						<ul>
+							<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs">Home</span></a></li>
+							<li class="hidden-xs"><a id="desktop-overlay-menu"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></li>
+							<li><a href="messages.html"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hidden-xs">Messages</span></a></li>
+							<li class="visible-xs"><button class="menuButton" id="overlay-menu" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button></li>
+							<li><a href="contacts.html"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs">Contacts</span></a></li>
+							<li><a href="reports.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs">Reports</span></a></li>
+						</ul>
+					</nav>
+				</div><!-- /.main-menu-container -->
+				<div class="col-sm-9 desktop-pull-right height100">
+				  <header class="header">
+						<div class="fluid-container">
+							<div class="userbar">
+								<div id="userbarmenu">
+									<img src="static/images/phil.jpg" srcset="static/images/phil@2x.jpg" alt="user photo" width="60" height="60" />
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									<div class="userbar-menu">
+										<ul>
+											<li><a href="editprofile.html">Edit Profile</a></li>
+											<li><a href="index.html">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<h1>Home</h1>
+						</div>
+					</header>
+					<main class="home-page height100">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tasks</a></li>
+							<li role="presentation" id="historytab"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Activity History</a></li>
+						</ul>
+
+			  			<div class="fluid-container height100">
+				  			<!-- Tab panes -->
+				  			<div class="tab-content height100" id="tasks">
+								<div role="tabpanel" class="tab-pane active" id="home">
+
+									<div id="ui-datepicker-div"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">August</span>&nbsp;<span class="ui-datepicker-year">2017</span></div></div></div>
+
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+											  <h4 class="panel-title">
+											    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											      Today, August 10
+											    </a>
+											  </h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body">
+													<p class="task">Call Doug Funnie</p>
+													<p class="task">Email Adam Evans</p>
+												</div>
+											</div>
+										</div><!-- /.panel -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													August 11
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							  					<div class="panel-body">
+							    					<p class="task">Call Corey Matthews</p>
+							  					</div>
+											</div>
+										</div><!-- /.panel -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingThree">
+												<h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													  August 12
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+												<div class="panel-body">
+													<p class="task">Email Doug Funnie</p>
+													<p class="task">Call Adam Evans</p>
+													<p class="task">Email Corey Matthews</p>
+													<p class="task">Email Adam Evans</p>
+												</div>
+											</div>
+										</div><!-- /.panel -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingFour">
+												<h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+													August 13
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+												<div class="panel-body">
+													<p class="task">Email Doug Funnie</p>
+													<p class="task">Call Adam Evans</p>
+													<p class="task">Email Corey Matthews</p>
+													<p class="task">Email Adam Evans</p>
+												</div>
+											</div>
+										</div><!-- /.panel -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingFive">
+												<h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+													  August 14
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+												<div class="panel-body">
+													<p class="task">Email Doug Funnie</p>
+													<p class="task">Call Adam Evans</p>
+													<p class="task">Email Corey Matthews</p>
+													<p class="task">Email Adam Evans</p>
+												</div>
+											</div>
+										</div><!-- /.panel -->
+										<p class="loadmore"><a href="#">Load More Tasks</a></p>
+									</div><!-- /.panel-group -->
+								</div><!-- /.tab-pane -->
+								<div role="tabpanel" class="tab-pane height100" id="profile">
+
+									<div id="ui-datepicker-div2"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">August</span>&nbsp;<span class="ui-datepicker-year">2017</span></div></div></div>
+
+									<!-- activity -->
+									<div class="activity">
+										<div class="icon-container">
+											<div class="row">
+												<div class="col-xs-8">
+													<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+													<span class="contact-info">
+														<strong>Adam Evans</strong><br>
+														<em>ABC Company</em>
+													</span>
+												</div>
+												<div class="col-xs-4">
+													<em>8:29 AM</em><br>
+													<a href="adamevans.html">Contact Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.activity -->
+									<!-- activity -->
+									<div class="activity">
+										<div class="icon-container">
+											<div class="row">
+												<div class="col-xs-8">
+													<span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+													<span class="contact-info">
+														<strong>Adam Evans</strong><br>
+														<em>ABC Company</em>
+													</span>
+												</div>
+												<div class="col-xs-4">
+													<em>Yesterday</em><br>
+													<a href="adamevans.html">Contact Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.activity -->
+									<!-- activity -->
+									<div class="activity">
+										<div class="icon-container">
+											<div class="row">
+												<div class="col-xs-8">
+													<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+													<span class="contact-info">
+														<strong>(555)555-5555</strong><br>
+													</span>
+												</div>
+												<div class="col-xs-4">
+													<em>Yesterday</em><br>
+													<a href="555.html">Contact Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.activity -->
+									<!-- activity -->
+									<div class="activity">
+										<div class="icon-container">
+											<div class="row">
+												<div class="col-xs-8">
+													<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+													<span class="contact-info">
+														<strong>Adam Evans</strong><br>
+														<em>ABC Company</em>
+													</span>
+												</div>
+												<div class="col-xs-4">
+													<em>Yesterday</em><br>
+													<a href="adamevans.html">Contact Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.activity -->
+									<!-- activity -->
+									<div class="activity">
+										<div class="icon-container">
+											<div class="row">
+												<div class="col-xs-8">
+													<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+													<span class="contact-info">
+														<strong>Adam Evans</strong><br>
+														<em>ABC Company</em>
+													</span>
+												</div>
+												<div class="col-xs-4">
+													<em>Yesterday</em><br>
+													<a href="adamevans.html">Contact Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.activity -->
+									<p class="loadmore"><a href="#">Load More Activities</a></p>
+								</div><!-- /.tab-pane -->
+							</div><!-- /.tab-content -->
+						</div><!-- /.fluid-container -->
+					</main>
+				</div><!-- /.col-sm-9 -->
+			</div><!-- /.row -->
+  		</div><!-- /.fluid-container -->
+  	</div><!-- /.home -->
+</body>
+</html>
