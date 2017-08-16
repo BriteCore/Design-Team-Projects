@@ -7,7 +7,7 @@ app.factory('addNoteService', function() {
     return service;
 });
 
-app.controller("appCtrl", function($scope, addNoteService){
+app.controller("appCtrl", function($scope, $http, addNoteService){
     $scope.message="hello";
     $scope.note="";
     $scope.noteArray = addNoteService.model;;
@@ -22,6 +22,13 @@ app.controller("appCtrl", function($scope, addNoteService){
     $scope.favoriteClick = function () {
             angular.element('#favorite').toggleClass('w3-text-red');
     };
+
+    $http.get("static/data/contact-list.json")
+    .then(function(response) {
+        $scope.contactListData = response.data;
+    }, function myError(response) {
+        console.log(response.statusText + " "+ response.status);
+    });
 
     // $scope.dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
     // console.log($scope.dateReminderCondition);
