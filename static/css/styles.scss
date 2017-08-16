@@ -635,7 +635,7 @@ a.button-big {
 
 
 .tab-content {
-	margin:0 -15px -220px;
+	margin:0 -15px;
 
 	&:after {
 		content:"";
@@ -827,7 +827,6 @@ main.home-page {
 		clear:both;
 		content:"";
 		display: block;
-		height:1px;
 		width:100%;
 	}
 

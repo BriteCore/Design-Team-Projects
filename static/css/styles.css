@@ -463,7 +463,7 @@ a.button-big {
 
 /* ------------------ COLLAPSE ------------------ */
 .tab-content {
-  margin: 0 -15px -220px; }
+  margin: 0 -15px; }
   .tab-content:after {
     content: "";
     clear: both;
@@ -602,7 +602,6 @@ main.home-page {
     clear: both;
     content: "";
     display: block;
-    height: 1px;
     width: 100%; }
   main.home-page .ui-datepicker-header {
     width: 100%; }
