@@ -7,9 +7,7 @@ This outlines a recent problem we ran into and came up with a design solution fo
 
 BriteCore is a web-based platform insurance companies use to manage their business. Insurance agents usually act as sales representatives for insurance companies. They market various policies and coverages to people, in return for a commission from the insurance company. In most cases, agents are not directly employed by an insurance company. Instead, an agent will work with several different insurance companies and try to get the best deal for their customers.
 
-Sometimes, agents are successful enough that they will form an agency. This is an independent business that employs multiple agents.
-
-An insurance company can manage the agents and agencies work with from the 'Contacts' (basically a CRM) module of BriteCore.
+Agencies are independent businesses that employ multiple agents. An insurance company can manage the agents and agencies they work with from the 'Contacts' (basically a CRM) module of BriteCore.
 
 The current design displays all the agents working for an agency, and displays contact information for each one, along with contact information for the agency itself.
 
@@ -50,17 +48,12 @@ We’re mostly interested in how well you design an interface that is extremely 
 
 Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce.
 
-## Testing
-
-User testing is an important part of our design process at BriteCore. At some point in this project, user test your prototype with someone and record the testing session. For this project, only one test is needed. This will help demonstrate that you know how to incorporate user feedback into your design process. 
-
 ## Delivery
 
 Your final deliverables will be:
  - HTML/CSS Design Prototype
  - Any documentation around your design process (Can be stored in a google drive folder you share)
- - Test video
-
+ 
 Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
 
 ## Questions
