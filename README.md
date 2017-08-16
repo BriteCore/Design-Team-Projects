@@ -48,20 +48,20 @@ We would like to see you come up with an intuitive design that incorporates thes
 
 We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups. You should also create a static high-fidelty prototype in HTML/CSS for your design. If your design has many pages, only one needs to be mocked up in code. 
 
-Bonus Points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce. Super bonus points for hooking up some interesting functionality using jQuery/javascript.
+Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce.
 
 ## Testing
 
-User testing is an important part of what we do at BriteCore. At some point in this process, user test your prototype with someone and record the testing session. For this project, only one test is needed. This will help demonstrate that you know how to incorporate user feedback into your design process. 
+User testing is an important part of our design process at BriteCore. At some point in this project, user test your prototype with someone and record the testing session. For this project, only one test is needed. This will help demonstrate that you know how to incorporate user feedback into your design process. 
 
 ## Delivery
 
 Your final deliverables will be:
- - Functional app prototype
- - Any documentation around your design process
- - Test videos
+ - HTML/CSS Design Prototype
+ - Any documentation around your design process (Can be stored in a google drive folder you share)
+ - Test video
 
-Feel free to share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
+Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
 
 ## Questions
 
