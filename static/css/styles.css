@@ -77,7 +77,7 @@ nav.add-menu {
     opacity: 1;
     z-index: 9999; }
   nav.add-menu a.add-contact {
-    bottom: 150px;
+    bottom: 250px;
     left: 50%;
     margin-left: -39px;
     position: absolute; }
@@ -85,7 +85,7 @@ nav.add-menu {
       nav.add-menu a.add-contact {
         top: 150px; } }
   nav.add-menu a.create-email {
-    bottom: 68px;
+    bottom: 168px;
     left: 50%;
     margin-left: 40px;
     position: absolute; }
@@ -93,7 +93,7 @@ nav.add-menu {
       nav.add-menu a.create-email {
         top: 68px; } }
   nav.add-menu a.add-task {
-    bottom: 68px;
+    bottom: 168px;
     left: 50%;
     margin-left: -100px;
     position: absolute; }
@@ -103,7 +103,7 @@ nav.add-menu {
   nav.add-menu button.overlay-close {
     background: transparent;
     border: 0;
-    bottom: 16px;
+    bottom: 116px;
     left: 50%;
     margin-left: -28px;
     padding: 0;
