@@ -41,7 +41,7 @@ Finally, a company will have a wide-range of policies that it can offer customer
 - Dwelling Fire Policies (Rental Coverage)
 - Liability Protection Policies
 
-Most carriers have around 7-9 distinct policy types.
+Most carriers have around 7-9 distinct policy types. They will want to specify which policy types an agency can submit quotes for. This is somewhat related to the type of license an agency has, but it isn't a direct correlation.
 
 ## Primary Goal
 We would like to see you come up with an intuitive design that incorporates these advanced management features along with the standard contact information that BriteCore already displays for agents and agencies. You can do this in any way you choose (one page, splitting information up across pages, etc). 
