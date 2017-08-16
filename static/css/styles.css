@@ -684,7 +684,7 @@ a.add {
     display: inline-block;
     float: left;
     height: 30px;
-    margin-right: 16px;
+    margin-right: 8px;
     position: relative;
     width: 30px; }
     .relationship-items .icon:after {
@@ -765,6 +765,9 @@ main.message-list {
   top: 0 !important;
   width: 100%;
   z-index: 9999 !important; }
+
+.datepickeradjust {
+  position: fixed !important; }
 
 table.ui-datepicker-calendar {
   margin: auto;

@@ -62,7 +62,14 @@ $(document).ready(function() {
   $('#datepicker').on('focus', function(e) {
     e.preventDefault(); e.stopPropagation();
     window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
-});
+    $( "#ui-datepicker-div" ).addClass
+    ('datepickeradjust');
+  });
+
+  $('#datepicker').on('focusout', function(e) {
+    $( "#ui-datepicker-div" ).removeClass
+    ('datepickeradjust');
+  });
 
 });
 // FULLY REFERENCE JQUERY AFTER THIS
