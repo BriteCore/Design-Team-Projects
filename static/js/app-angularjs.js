@@ -7,7 +7,21 @@ app.factory('addNoteService', function() {
     return service;
 });
 
+app.factory('addReminderService', function() {
+    var service = {
+        model: []
+    }
+    return service;
+});
+
 app.factory('addUser', function() {
+    var service = {
+        model: []
+    }
+    return service;
+});
+
+app.factory('ctrlReminderService', function() {
     var service = {
         model: []
     }
@@ -30,8 +44,7 @@ app.directive('file', function(){
     };
 });
 
-app.controller("appCtrl", function($scope, $http, addNoteService, addUser){
-    $scope.message="hello";
+app.controller("appCtrl", function($scope, $http, addNoteService, addReminderService, ctrlReminderService, addUser){
     $scope.note="";
     $scope.userArray = addUser.model;
     $scope.noteArray = addNoteService.model;;
@@ -40,6 +53,21 @@ app.controller("appCtrl", function($scope, $http, addNoteService, addUser){
         if ($scope.note !== '') {
             $scope.noteArray.push($scope.note);
             $scope.note ='';
+        }
+    };
+    
+    $scope.reminder="";
+    $scope.ctrlReminder ="";
+    $scope.reminderMessage= "";
+    $scope.reminderTitle = "Reminder";
+    $scope.ctrlReminderArray = ctrlReminderService.model;
+    $scope.reminderArray = addReminderService.model;;
+    $scope.addReminder = function() {
+        if ($scope.reminderMessage !== '') {
+            $scope.reminderArray.push($scope.reminderMessage);
+            $scope.ctrlReminderArray.push($scope.ctrlReminder);
+            $scope.reminderMessage ='';
+            $scope.ctrlReminder = "";
         }
     };
 
@@ -65,7 +93,8 @@ app.controller("appCtrl", function($scope, $http, addNoteService, addUser){
         "favorite": ""
     };
 
-    $scope.createUser = function(e) {
+    $scope.createdUser="";
+    $scope.createUser = function() {
         $scope.userArray.push($scope.user);
         $scope.user = {
             "avatar": "",
@@ -75,7 +104,13 @@ app.controller("appCtrl", function($scope, $http, addNoteService, addUser){
             "company": "",
             "favorite": ""
         };
+        $scope.createdUser="Your contact has been added.";
     };
+
+    $scope.clear= function() {
+        $scope.createdUser="";
+    }
+    
     // $scope.dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
     // console.log($scope.dateReminderCondition);
     /* $('body').on('click','#addReminder', function() {

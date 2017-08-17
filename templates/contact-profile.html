@@ -1,3 +1,13 @@
+<!-- Search Bar -->
+<div class="w3-margin-top" style="padding-left: 8px; padding-right:8px; margin-right: 8px; margin-left: 8px">
+    <!-- Search Bar -->
+    <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+        <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Search a contact...">
+        <!-- <hr> -->
+    </div>
+</div>
+<!-- End Search Bar -->
+
 <!-- Main Content -->
 <div class="w3-row-padding" style="">
     <!-- Profile Side -->
@@ -47,23 +57,29 @@
         <!-- History Tab -->
         <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="reminder">
             <h2 class="w3-text-indigo w3-padding-16">History</h2>
-            <div class="w3-container w3-card w3-margin-bottom panelCard">
-                <h5 class="w3-opacity"><b>Call</b></h5>
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote">
+                <h5 class="w3-opacity"><b>Note</b></h5>
                 <p>First Call with John was very pleasant. Their company is going through a merger that should be completed
                     in a couple of months.</p>
             </div>
-            <div class="w3-container w3-card w3-margin-bottom panelCard">
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote">
                 <h5 class="w3-opacity"><b>Note</b></h5>
                 <p>John was introduced by Audrey at the convention.</p>
             </div>
-            <div class="w3-container w3-card w3-margin-bottom panelCard">
+            <div class="w3-container w3-card w3-margin-bottom panelCardReminder">
                 <h5 class="w3-opacity"><b>Reminder</b></h5>
                 <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
             </div>
             <div ng-repeat="note in noteArray">
-                <div class="w3-container w3-card w3-margin-bottom panelCard">
+                <div class="w3-container w3-card w3-margin-bottom panelCardNote">
                     <h5 class="w3-opacity"><b>{{noteTitle}}</b></h5>
                     <p>{{note}}</p>
+                </div>
+            </div>
+            <div ng-repeat="reminder in reminderArray">
+                <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCardReminder">
+                    <h5 class="w3-opacity"><b>{{reminderTitle}}</b></h5>
+                    <p>{{reminder}} on {{ctrlReminderArray[$index]}}</p>
                 </div>
             </div>
         </div>
@@ -74,19 +90,23 @@
             <h2 class="w3-text-indigo w3-padding-16 ">Reminder</h2>
             <div class="row">
                 <div class='col-sm-6 w3-margin-bottom'>
-                    <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to...">
+                    <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to..." ng-model="reminderMessage">
                 </div>
                 <div class='col-sm-6'>
-                    <div class="w3-margin-bottom" moment-picker="ctrl.meeting" format="LLL" min-view="month" today="true" change="ctrl.onChange(newValue, oldValue)">
-                        on <i class="fa fa-calendar fa-fw" style="font-size:20px"></i>{{ ctrl.meeting }}
+                    <div class="w3-margin-bottom" moment-picker="ctrlReminder" format="LLL" min-view="month" today="true" change="ctrl.onChange(newValue, oldValue)">
+                        on <i class="fa fa-calendar fa-fw" style="font-size:20px"></i>{{ ctrlReminder }}
                     </div>
                 </div>
             </div>
-            <button type="submit" class="w3-btn buttonColorTheme" id="addReminder">Add Reminder</button>
-            <div class="w3-container w3-card w3-section w3-padding-16 panelCard">
+            <button type="submit" class="w3-btn buttonColorTheme" id="addReminder" ng-click="addReminder()">Add Reminder</button>
+            <div class="w3-container w3-card w3-section w3-padding-16 panelCardReminder">
                 <p>Business dinner with John @ Red Lobster on September 23, 2017 at 07:00 pm.</p>
             </div>
-            <div id="messageReminder">
+            <div id="messageReminder"></div>
+            <div ng-repeat="reminder in reminderArray">
+                <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCardReminder">
+                    <p>{{reminder}} on {{ctrlReminderArray[$index]}}</p>
+                </div>
             </div>
         </div>
         <!-- End Reminder Tab -->
@@ -97,11 +117,11 @@
             <textarea name="note" id="" cols="80" rows="5" ng-model="note" class="w3-margin-bottom w3-padding noteTabText"></textarea>
             <button type="submit" class="w3-btn buttonColorTheme" ng-click="addNote()">Add Note</button>
             <hr>
-            <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCard">
+            <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCardNote">
                 <p>John was introduced by Audrey at the convention.</p>
             </div>
             <div ng-repeat="note in noteArray">
-                <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCard">
+                <div class="w3-container w3-card w3-margin-bottom w3-padding-16 panelCardNote">
                     <p>{{note}}</p>
                 </div>
             </div>

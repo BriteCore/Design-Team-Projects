@@ -29,7 +29,7 @@
         "lastName": "Wells",
         "title": "Web Strategist",
         "company": "Apple",
-        "favorite": "Yes"
+        "favorite": true
     },
     {
         "avatar": "users-9.svg",
@@ -37,7 +37,7 @@
         "lastName": "Dixon",
         "title": "Data Scientist",
         "company": "Ubisoft",
-        "favorite": ""
+        "favorite": true
     },
     {
         "avatar": "users-6.svg",
@@ -53,7 +53,7 @@
         "lastName": "Gray",
         "title": "Accountant",
         "company": "Canon",
-        "favorite": "Yes"
+        "favorite": true
     },
     {
         "avatar": "users-16.svg",
@@ -61,6 +61,6 @@
         "lastName": "Bailey",
         "title": "Front End Developer",
         "company": "Oracle",
-        "favorite": "Yes"
+        "favorite": true
     }
 ]

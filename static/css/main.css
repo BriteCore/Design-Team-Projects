@@ -65,8 +65,13 @@ body {
     background: transparent;
 }
 
-.panelCard {
-    background: #CCDAF3;
+.panelCardNote {
+    background: #7E57C2;
+    color: white;
+}
+.panelCardReminder {
+    background: #26A69A;
+    color:white;
 }
 
 #profile span {

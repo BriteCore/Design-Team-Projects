@@ -1,3 +1,12 @@
+<!-- Search Bar -->
+<div class="w3-margin-top" style="padding-left: 8px; padding-right:8px; margin-right: 8px; margin-left: 8px">
+    <!-- Search Bar -->
+    <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+        <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Search a contact...">
+        <!-- <hr> -->
+    </div>
+</div>
+<!-- End Search Bar -->
 <div class="w3-row-padding">
     <div class="w3-col l4 m4 w3-margin-bottom w3-padding-8">
         <div class=" w3-container w3-red w3-card-4">
@@ -29,30 +38,39 @@
     <div class="w3-col l6 w3-margin-bottom">
         <div class="w3-padding-16  w3-card w3-container w3-white">
             <h3 class="w3-text-indigo">Upcoming Reminders</h3>
-                <div class="w3-row w3-margin-top w3-card w3-container w3-margin-bottom panelCard">
-                       <h4><strong>For: </strong>Jane Sullivan</h4>
-                       <div class="w3-col l9"><p>Business Dinner with Jane @ Red Lobster</p></div>
-                       <div class="w3-col l3 w3-tiny "><p>23 Sept. @ 06:30 PM</p></div>      
+                <div class="w3-row w3-card w3-container w3-margin-bottom panelCardReminder" ng-repeat="reminder in reminderArray">
+                    <h4><strong>For: </strong>John Doe</h4>
+                    <div class="w3-col l9"><p>{{reminder}}</p></div>
+                    <div class="w3-col l3 w3-tiny "><p>{{ctrlReminderArray[$index]}}</p></div>      
                 </div>
-                <div class="w3-row w3-card w3-container w3-margin-bottom panelCard">
-                       <h4><strong>For: </strong>Ryan Black</h4>
-                       <div class="w3-col l9"><p>Proposal review for a social application @ The Hiltons</p></div>
-                       <div class="w3-col l3 w3-tiny "><p>10 Oct. @ 02:15 PM</p></div>      
+                <div class="w3-row w3-margin-top w3-card w3-container w3-margin-bottom panelCardReminder">
+                    <h4><strong>For: </strong>Jane Sullivan</h4>
+                    <div class="w3-col l9"><p>Business Dinner with Jane @ Red Lobster</p></div>
+                    <div class="w3-col l3 w3-tiny "><p>23 Sept. @ 06:30 PM</p></div>      
+                </div>
+                <div class="w3-row w3-card w3-container w3-margin-bottom panelCardReminder">
+                    <h4><strong>For: </strong>Ryan Black</h4>
+                    <div class="w3-col l9"><p>Proposal review for a social application @ The Hiltons</p></div>
+                    <div class="w3-col l3 w3-tiny "><p>10 Oct. @ 02:15 PM</p></div>      
                 </div>
         </div>
     </div>
     <div class="w3-col l6 w3-margin-bottom">
         <div class="w3-card w3-container w3-padding-16 w3-white">
             <h3 class="w3-text-indigo">Latest Notes</h3>
-            <div class="w3-container w3-card w3-margin-bottom panelCard w3-margin-top">
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote" ng-repeat="note in noteArray">
+                <h4><strong>For: </strong> John Doe</h4>
+                <p>{{note}}</p>
+            </div>
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote w3-margin-top">
                 <h4><strong>For: </strong>John Doe</h4>
                 <p>John was introduced by Audrey at the convention</p>
             </div>
-            <div class="w3-container w3-card w3-margin-bottom panelCard">
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote">
                 <h4><strong>For: </strong> Alexander Ross</h4>
                 <p>Alexander's company is going through a merger.</p>
             </div>
-            <div class="w3-container w3-card w3-margin-bottom panelCard">
+            <div class="w3-container w3-card w3-margin-bottom panelCardNote">
                 <h4><strong>For: </strong> Scott Fenstein</h4>
                 <p>Met Scott at the HTC Developer Conference</p>
             </div>
