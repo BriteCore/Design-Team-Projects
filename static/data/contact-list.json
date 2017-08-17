@@ -5,7 +5,7 @@
         "lastName": "Smith",
         "title": "Visual Designer",
         "company": "Tesla",
-        "favorite": false
+        "favorite": ""
     },
     {
         "avatar": "users-2.svg",
@@ -13,7 +13,7 @@
         "lastName": "Brooks",
         "title": "VP of Software",
         "company": "Google",
-        "favorite": false
+        "favorite": ""
     },
     {
         "avatar": "users-3.svg",
@@ -21,7 +21,7 @@
         "lastName": "Philipsson",
         "title": "Information Systems Manager",
         "company": "Nike",
-        "favorite": true
+        "favorite": ""
     },
     {
         "avatar": "users-4.svg",
@@ -29,7 +29,7 @@
         "lastName": "Wells",
         "title": "Web Strategist",
         "company": "Apple",
-        "favorite": false
+        "favorite": "Yes"
     },
     {
         "avatar": "users-9.svg",
@@ -37,7 +37,7 @@
         "lastName": "Dixon",
         "title": "Data Scientist",
         "company": "Ubisoft",
-        "favorite": false
+        "favorite": ""
     },
     {
         "avatar": "users-6.svg",
@@ -45,7 +45,7 @@
         "lastName": "Jenkins",
         "title": "Marketing Manager",
         "company": "Adobe",
-        "favorite": false
+        "favorite": ""
     },
     {
         "avatar": "users-14.svg",
@@ -53,7 +53,7 @@
         "lastName": "Gray",
         "title": "Accountant",
         "company": "Canon",
-        "favorite": false
+        "favorite": "Yes"
     },
     {
         "avatar": "users-16.svg",
@@ -61,6 +61,6 @@
         "lastName": "Bailey",
         "title": "Front End Developer",
         "company": "Oracle",
-        "favorite": true
+        "favorite": "Yes"
     }
 ]

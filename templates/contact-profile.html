@@ -77,13 +77,8 @@
                     <input type="text" class="w3-input" id="remindMe" placeholder="Remind me to...">
                 </div>
                 <div class='col-sm-6'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker' cal-directive="{stepping: 10}">
-                            <input type='text' class="form-control w3-input" id="dateReminder" placeholder="On..." />
-                            <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                    <div class="w3-margin-bottom" moment-picker="ctrl.meeting" format="LLL" min-view="month" today="true" change="ctrl.onChange(newValue, oldValue)">
+                        on <i class="fa fa-calendar fa-fw" style="font-size:20px"></i>{{ ctrl.meeting }}
                     </div>
                 </div>
             </div>

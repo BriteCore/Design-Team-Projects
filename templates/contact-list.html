@@ -1,3 +1,11 @@
+<div class="w3-margin-top" style="padding-left: 8px; padding-right:8px; margin-right: 8px; margin-left: 8px">
+    <!-- Search Bar -->
+    <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+        <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Filter your contact list..." ng-model="entry">
+        <!-- <hr> -->
+    </div>
+</div>
+<!-- End Search Bar -->
 <div class="w3-row-padding">
     <div class="w3-col l3 w3-margin-top">
         <div class="w3-card w3-container w3-white w3-padding-16 ">
@@ -12,7 +20,7 @@
 
             <hr>
             <h4>Filter by</h4>
-            <input type="checkbox" name="favorite" value="favorite" ng-model="favoriteChecked" ng-false-value=""> <label for="favorite"><i class="fa fa-thumbs-up" style="font-size:15px"></i> Favorite</label>
+            <input type="checkbox" name="favorite" value="favorite" ng-model="favoriteChecked" ng-false-value="" ng-true-value="'Yes'"> <label for="favorite"><i class="fa fa-thumbs-up" style="font-size:15px"></i> Favorite</label>
         </div>
     </div>
     <div class="w3-col l9 w3-margin-top">
@@ -26,7 +34,7 @@
                     <th>Company</th>
                     <th>Favorite</th>
                 </tr>
-                <tr ng-repeat="contact in contactListData | filter: entry | orderBy: sortOrder | filter: favoriteChecked">
+                <tr ng-repeat="contact in contactListData.concat(userArray) | filter: entry | orderBy: sortOrder | filter: favoriteChecked">
                     <td><img ng-src="static/img/avatars/{{contact.avatar}}" style="width: 32px; height:32px; border-radius: 50%; border:1px solid grey;"></td>
                     <td>{{contact.firstName}}</td>
                     <td>{{contact.lastName}}</td>
@@ -34,6 +42,14 @@
                     <td>{{contact.company}}</td>
                     <td>{{contact.favorite}}</td>
                 </tr>
+                <!-- <tr ng-repeat="user in userArray | filter: entry | orderBy: sortOrder | filter: favoriteChecked">
+                    <td><img ng-src="static/img/avatars/{{user.avatar}}" style="width: 32px; height:32px; border-radius: 50%; border:1px solid grey;"></td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.title}}</td>
+                    <td>{{user.company}}</td>
+                    <td>{{user.favorite}}</td>
+                </tr> -->
             </table>
         </div>
     </div>

@@ -1,4 +1,4 @@
-var app = angular.module("contactApp", ["ngRoute"]);
+var app = angular.module("contactApp", ["ngRoute", "moment-picker"]);
 
 app.factory('addNoteService', function() {
     var service = {
@@ -7,9 +7,33 @@ app.factory('addNoteService', function() {
     return service;
 });
 
-app.controller("appCtrl", function($scope, $http, addNoteService){
+app.factory('addUser', function() {
+    var service = {
+        model: []
+    }
+    return service;
+});
+
+app.directive('file', function(){
+    return {
+        scope: {
+            file: '='
+        },
+        link: function(scope, el, attrs){
+            el.bind('change', function(event){
+                var files = event.target.files;
+                var file = files[0];
+                scope.file = file ? file.name : undefined;
+                scope.$apply();
+            });
+        }
+    };
+});
+
+app.controller("appCtrl", function($scope, $http, addNoteService, addUser){
     $scope.message="hello";
     $scope.note="";
+    $scope.userArray = addUser.model;
     $scope.noteArray = addNoteService.model;;
     $scope.noteTitle = "Note";
     $scope.addNote = function() {
@@ -26,10 +50,32 @@ app.controller("appCtrl", function($scope, $http, addNoteService){
     $http.get("static/data/contact-list.json")
     .then(function(response) {
         $scope.contactListData = response.data;
+
     }, function myError(response) {
         console.log(response.statusText + " "+ response.status);
     });
 
+
+    $scope.user = {
+        "avatar": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "company": "",
+        "favorite": ""
+    };
+
+    $scope.createUser = function(e) {
+        $scope.userArray.push($scope.user);
+        $scope.user = {
+            "avatar": "",
+            "firstName": "",
+            "lastName": "",
+            "title": "",
+            "company": "",
+            "favorite": ""
+        };
+    };
     // $scope.dateReminderCondition = $('#datetimepicker').data("DateTimePicker").date();
     // console.log($scope.dateReminderCondition);
     /* $('body').on('click','#addReminder', function() {

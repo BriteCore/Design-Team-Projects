@@ -6,50 +6,50 @@
         </div>
         <div class="w3-margin-top">
             <div class="w3-margin-bottom w3-padding-8">
-                    <input type="checkbox" placeholder="Favorite"> <label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i>Favorite</label><br>
+                    <input type="checkbox" placeholder="Favorite" ng-model="user.favorite"> <label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i>Favorite</label><br>
             </div>  
             <div class="w3-row">
                 <div class="w3-col l6 w3-margin-bottom w3-padding-8">
                     <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="First Name" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="First Name" ng-model="user.firstName" required>
                 </div>
                 <div class="w3-col l6 w3-margin-bottom w3-padding-8">
                     <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Last Name" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Last Name" ng-model="user.lastName" required>
                 </div>
                 
             </div>
             <div class="w3-row">
                 <div class="w3-margin-bottom w3-padding-8 w3-col l6">
                     <label for="name"><i class="fa fa-suitcase fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Title" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Title" ng-model="user.title" required>
                 </div>
                 <div class="w3-margin-bottom w3-padding-8 w3-col l6">
                     <label><i class="fa fa-building fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Company" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Company" ng-model="user.company" required>
                 </div>
             </div>
             <div>
                 <div class="w3-margin-bottom w3-padding-8 w3-col l6">
                     <label><i class="fa fa-phone fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Phone" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Phone" ng-model="user.phone" required>
                 </div>
                 <div class="w3-margin-bottom w3-padding-8 w3-col l6">
                     <label><i class="fa fa-envelope fa-fw w3-large w3-text-indigo"></i></label>
-                    <input type="text" class="w3-input contactFormLength" placeholder="Email" required>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Email" ng-model="user.email" required>
                 </div>
             </div>
             <div class="w3-margin-bottom w3-padding-8">
                 <label><i class="fa fa-location-arrow fa-fw w3-large w3-text-indigo"></i></label>
-                <input type="text" class="w3-input contactFormLength" placeholder="Address" required>
+                <input type="text" class="w3-input contactFormLength" placeholder="Address"  ng-model="user.address" required>
             </div>
             <div class="w3-margin-bottom w3-padding-8">
                 <label><i class="fa fa-image fa-fw w3-large w3-text-indigo"></i> Profile Picture</label>
-                <input type="file" class="w3-input contactFormLength">
+                <input type="file" class="w3-input contactFormLength" data-file="user.avatar">
             </div>
         </div>
         <div class="w3-margin-bottom w3-padding-16 contactFormLength">
-            <button type="submit" class="w3-btn buttonColorTheme w3-left">Add Contact</button>
+            <button type="submit" class="w3-btn buttonColorTheme w3-left" ng-click="createUser()">Add Contact</button>
             <button type="reset" class="w3-btn buttonColorTheme w3-right">Clear</button>
         </div>
     </form>
