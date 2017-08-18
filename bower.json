@@ -1,0 +1,20 @@
+{
+  "name": "Kontakt Me",
+  "homepage": "https://github.com/DiamessoGroup/DesignProject",
+  "authors": [
+    "Krishna Diamesso <krishnadiamesso@gmail.com>"
+  ],
+  "description": "Contact Management App",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-moment-picker": "moment-picker#^0.10.1"
+  }
+}

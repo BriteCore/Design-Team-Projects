@@ -1,0 +1,67 @@
+<!-- Search Bar -->
+<div class="w3-margin-top" style="padding-left: 8px; padding-right:8px; margin-right: 8px; margin-left: 8px">
+    <!-- Search Bar -->
+    <div class=" w3-card w3-white w3-padding w3-margin-bottom">
+        <input class="w3-input " type="text" style="font-size:15px; border-bottom: 1px solid #7986CB" id="searchBar" placeholder="Search a contact...">
+        <!-- <hr> -->
+    </div>
+</div>
+<!-- End Search Bar -->
+<!-- Create Contact -->
+<div class="w3-white w3-padding-16 w3-container w3-card-4 w3-section" style="margin-left:16px; margin-right: 16px;">
+    <form action="" name="Form">
+        <div class="w3-text-indigo w3-padding-4">
+            <h2>Add Contact</h2>
+        </div>
+        <div class="w3-margin-top">
+            <div class="w3-margin-bottom w3-padding-8">
+                    <input type="checkbox" placeholder="Favorite" ng-model="user.favorite"> <label><i class="fa fa-thumbs-up fa-fw w3-large w3-text-indigo"></i>Favorite</label><br>
+            </div>  
+            <div class="w3-row">
+                <div class="w3-col l6 w3-margin-bottom w3-padding-8">
+                    <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="First Name" ng-model="user.firstName" name="user.firstName" required>
+                </div>
+                <div class="w3-col l6 w3-margin-bottom w3-padding-8">
+                    <label for="name"><i class="fa fa-user fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Last Name" ng-model="user.lastName" name="user.lastName" required>
+                </div>
+                
+            </div>
+            <div class="w3-row">
+                <div class="w3-margin-bottom w3-padding-8 w3-col l6">
+                    <label for="name"><i class="fa fa-suitcase fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Title" ng-model="user.title">
+                </div>
+                <div class="w3-margin-bottom w3-padding-8 w3-col l6">
+                    <label><i class="fa fa-building fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Company" ng-model="user.company">
+                </div>
+            </div>
+            <div>
+                <div class="w3-margin-bottom w3-padding-8 w3-col l6">
+                    <label><i class="fa fa-phone fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Phone" ng-model="user.phone">
+                </div>
+                <div class="w3-margin-bottom w3-padding-8 w3-col l6">
+                    <label><i class="fa fa-envelope fa-fw w3-large w3-text-indigo"></i></label>
+                    <input type="text" class="w3-input contactFormLength" placeholder="Email" ng-model="user.email">
+                </div>
+            </div>
+            <div class="w3-margin-bottom w3-padding-8">
+                <label><i class="fa fa-location-arrow fa-fw w3-large w3-text-indigo"></i></label>
+                <input type="text" class="w3-input contactFormLength" placeholder="Address"  ng-model="user.address">
+            </div>
+            <div class="w3-margin-bottom w3-padding-8">
+                <label><i class="fa fa-image fa-fw w3-large w3-text-indigo"></i> Profile Picture</label>
+                <input type="file" class="w3-input contactFormLength" data-file="user.avatar">
+            </div>
+        </div>
+        <p class="w3-text-red">{{createdUser}}</p>
+        <div class="w3-margin-bottom w3-padding-16 contactFormLength">
+            <button type="submit" class="w3-btn buttonColorTheme w3-left" ng-click="createUser()">Add Contact</button>
+            <button type="reset" class="w3-btn buttonColorTheme w3-right" ng-click="clear()">Clear</button>
+        </div>
+    </form>
+</div>
+<!-- End Create Contact -->

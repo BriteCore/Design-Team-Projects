@@ -1,0 +1,66 @@
+[
+    {
+        "avatar": "users-1.svg",
+        "firstName": "Frank",
+        "lastName": "Smith",
+        "title": "Visual Designer",
+        "company": "Tesla",
+        "favorite": ""
+    },
+    {
+        "avatar": "users-2.svg",
+        "firstName": "Erik",
+        "lastName": "Brooks",
+        "title": "VP of Software",
+        "company": "Google",
+        "favorite": ""
+    },
+    {
+        "avatar": "users-3.svg",
+        "firstName": "Dianna",
+        "lastName": "Philipsson",
+        "title": "Information Systems Manager",
+        "company": "Nike",
+        "favorite": ""
+    },
+    {
+        "avatar": "users-4.svg",
+        "firstName": "Edward",
+        "lastName": "Wells",
+        "title": "Web Strategist",
+        "company": "Apple",
+        "favorite": true
+    },
+    {
+        "avatar": "users-9.svg",
+        "firstName": "Freddie",
+        "lastName": "Dixon",
+        "title": "Data Scientist",
+        "company": "Ubisoft",
+        "favorite": true
+    },
+    {
+        "avatar": "users-6.svg",
+        "firstName": "Adam",
+        "lastName": "Jenkins",
+        "title": "Marketing Manager",
+        "company": "Adobe",
+        "favorite": ""
+    },
+    {
+        "avatar": "users-14.svg",
+        "firstName": "Amy",
+        "lastName": "Gray",
+        "title": "Accountant",
+        "company": "Canon",
+        "favorite": true
+    },
+    {
+        "avatar": "users-16.svg",
+        "firstName": "Sophie",
+        "lastName": "Bailey",
+        "title": "Front End Developer",
+        "company": "Oracle",
+        "favorite": true
+    }
+]
