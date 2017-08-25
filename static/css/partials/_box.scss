@@ -1,0 +1,26 @@
+// -------------------------------
+// BOX
+// -------------------------------
+section.box{
+
+	position: absolute;
+	height: calc(100% - 50px);
+	width: 66vw;
+	top: 50px;
+	right: -100%;
+	z-index: 2;
+
+	background: #FFF;
+	border: 1px solid #e5e5e5;
+	box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+	padding: 0px 40px;
+
+	transition: right 0.75s ease-in-out;
+
+	&.active{
+		right: 0px;
+	}
+
+
+}

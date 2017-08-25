@@ -1,0 +1,71 @@
+// -------------------------------
+// FILTER
+// -------------------------------
+.filter-container{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.25);
+
+	display: none;
+}
+
+.filter{
+
+	width: 100%;
+	max-width: 600px;
+	margin: 5em auto 0;
+
+	background: #FFF;
+	border: 1px solid #e5e5e5;
+
+	animation-name: filter-move;
+	animation-duration: 0.25s;
+	animation-timing-function: ease-out;
+
+	.panel-heading{
+
+		.btn-filter-cancel{
+			color: #666;
+
+			&:hover{
+				color: #333;
+			}
+		}
+	}
+
+	.col-sm-6{
+
+		&:nth-child(1){
+
+			.panel-body{
+				border-right: 1px solid #e5e5e5;
+			}
+
+		}
+
+		.panel-body{
+
+			height: 179px;
+			overflow-y: scroll;
+		}
+		
+	}
+
+	.panel-footer{
+		background: #FFF;
+		border: 1px solid #e5e5e5;
+	}
+}
+
+@keyframes filter-move{
+
+	from{ margin-top: calc(5em + 75px); }
+	to{ margin-top: 5em; }
+
+}
