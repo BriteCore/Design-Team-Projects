@@ -1,0 +1,300 @@
+$font: proxima-nova, sans-serif;
+$Orange: #0dc4dc;
+$White: #ffffff;
+$canvasColor: #eaeaea;
+$inblock :inline-block;
+$textColor: #787878;
+$textColor2: #020202;
+$textSize1: 23px;
+$textSize2: 20px;
+
+
+$inputHeight: 30px;
+$inputWidth: 280px;
+$inputWidth2: 280px/2;
+$inputWidth3: 280px-100px;
+$inputWidth4: 280px-35px;
+
+
+/*sidebar*/
+$barWidth: 200px;
+$barColor: radial-gradient(circle at 50% 5%, #000000, #221f1e);
+
+//padding for "lessons" & "add course" btn
+$h1padding: 64px 0px 0px 62px;
+
+/*non-active buttons*/
+$sideFontsize: 1.5em;
+$btnWidth: 160px;
+$sidebtnPadding: 50 0 50 25;
+$sidebtnColor: rgba(0, 0, 0, 0.0);
+
+/*active buttons*/
+$activeColor: #0dc4dc;
+$activeBorder: #0dc4dc 8px solid;
+
+$iconSize: 24px;
+$iconSize2: 18px;
+$iconPadding:10px;
+
+
+/* Video Modules */
+$statusPadding: 3px 3px 3px 3px;
+$center: center;
+$grey: #ecf0f1;
+$boxHeight: 136px;
+$boxWidth: 292px;
+$radius: 8px;
+$boxShadow: #bdc3c7 0 5px 5px; 
+$statucColor: #0dc4dc;
+
+
+
+
+/* Dashboard */
+
+body {background-color: $canvasColor; font-family: $font;}
+a {text-decoration: none;}
+p,h1,#btnText,#activeText {font-family: $font; font-size: $sideFontsize; color: $textColor;}
+ul {padding:0;}
+
+#content,#sidebar{display: $inblock;}
+#content {position:absolute;padding: $h1padding; width: 100%;height: 100%;}
+
+#sidebar {width: $barWidth; height: 100%; background-image: $barColor;}
+
+#sideBtn {width: $btnWidth; padding: $sidebtnPadding; background-color: $sidebtnColor; cursor: pointer;}
+
+#activeBtn {border-left: $activeBorder; color: $activeColor; width: $btnWidth; padding: $sidebtnPadding; cursor: pointer;}
+#activeText {color: $activeColor; text-decoration: none;}
+
+#btnText {color: $White; text-decoration: none;}
+
+.buttonWrapper{padding-top: 80px;}
+
+#activeIcon {color: $Orange; font-size: $iconSize; padding-right: $iconPadding;}
+#icon {color: $White; font-size: $iconSize; padding-right: $iconPadding;}
+
+#addCourse {font-size: $textSize2; color: $textColor2; margin-top: 36px;}
+#addIcon {margin: 0px 0px 0px 10px;}
+
+/* Video Modules */
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
+
+h1,h2, #title, #subtitle {font-family: $font; font-weight: 300;}
+
+.status {font-family: $font; color: $White; font-weight: 200; font-size: 18px; text-align: $center; padding: $statusPadding}
+#update {font-size: 18px; color: $textColor2; padding: 0px 0px 2px 0px;}
+#date {color: #020202; padding: 0px 0px 0px 45px;}
+#date2 {color: #020202; padding: 0px 0px 0px 65px;}
+
+.body {background-color: $grey;}
+
+.container {width: $boxWidth; height: 160px; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+#containerMember {width: $boxWidth; height: $boxHeight; margin: 3em 3em 1em 0px; padding-bottom: 1.5em; background-color: $White; display: $inblock; -webkit-box-shadow: $boxShadow; -moz-box-shadow: $boxShadow;box-shadow: $boxShadow;}
+
+#memberModal {width: 495px; height: 440px; margin: 3em 3em 1em 0px; padding-bottom: 1.5em; background-color: $White; display: $inblock; -webkit-box-shadow: $boxShadow; -moz-box-shadow: $boxShadow;box-shadow: $boxShadow;text-align: initial;}
+
+.bg {width: 305px;}
+
+#title {margin: 20px 20px 0px; font-size: $textSize1; color: $textColor; position: relative;}
+
+#subtitle {margin: 0px 0px 0px 20px; font-size: $textSize2; color: $textColor; position: absolute;}
+
+.active {width: 86px; height: 30px; margin: -25px 21px 0px 186px; border-radius: 6px; background-color: $statucColor;    position: absolute;}
+.draft {width: 86px; height: 30px; margin: -25px 21px 0px 186px; border-radius: 6px; background-color: $textColor; position: absolute;}
+
+.avgTaken {padding: 80px 0px 0px 20px;}
+
+#avgColor {color:#00ff16; font-size: $iconSize2;}
+#avgColor2 {color: $textColor2; font-size: $iconSize2;}
+
+#avgScore {margin: 0px 0px 0px 90px;}
+
+#settings {font-size: 32px; color: $textColor;padding: 60px 0px 0px 20px;}
+
+
+ 
+
+
+
+/* Settings Page */
+
+#settingHeader {font-size: $textSize2; color: $textColor; margin-top: 36px;}
+#line {width: 923px; border: solid 1px #dddddd;margin-top: 20px;}
+
+#inputModify1 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 45px;}
+#inputModify2 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 35px;}
+#inputModify3 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 7px;}
+#inputModify4 { height: $inputHeight;width: $inputWidth; font-size: $textSize2; margin-top: 10px;}
+#inputModify5 { height: $inputHeight;width: $inputWidth + 30px;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+#inputModify6 { height: $inputHeight;width: $inputWidth3;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+#inputModify7 { height: $inputHeight;width: $inputWidth4;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+
+.pswdBtn {height: $inputHeight; width: 180px; background-color: $textColor; padding: 5px 0px 0px 25px; color: $White; margin: 30px 0px 0px 225px;}
+
+#topInline {display: $inblock; padding-bottom: 10px; margin-bottom: 0px;}
+
+.expDate {margin: 16.08px 0px 16.08px 0px; float: right; color: $textColor;}
+
+
+/* Account Page */
+
+.activeToggle {color: $Orange; border-bottom: solid + $Orange; display: $inblock;}
+.passiveToggle {color: $textColor; display: $inblock}
+#spacer {display:inline-block; width: 45px;}
+#spacer2 {display:inline-block; width: 20px;}
+
+#accountHeader {font-size: $iconSize2; color: $textColor; margin-top: 36px; display: inline-grid;}
+#accountHeader2 {font-size: $iconSize2; color: $textColor; margin-top: 36px;}
+#accountHeader3 {font-size: $iconSize2; color: $textColor; margin-top: -60px; display: inline-grid; padding-left: 300px;}
+#nameAdjacent {display: $inblock;margin-left: 20px;}
+#nameNext {display: block;}
+
+//Buttons
+.saveBtn {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White; margin: 30px 0px 0px 490px;cursor: pointer;}
+
+.saveBtn2 {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White;margin: 40px 0px 0px 385px;cursor: pointer;}
+
+.cancelBtn {height: $inputHeight; width: 90px; background-color: $textColor; padding: 5px 0px 0px 20px; color: $White;margin: -30px 0px 0px 270px;cursor: pointer;}
+
+.closeBtn {height: $inputHeight; width: 90px; background-color: $textColor; padding: 7px 0px 0px 25px; color: $White;margin: 60px 0px 0px 365px; cursor: pointer;}
+
+.dropdownBtn {height: $inputHeight; width: 235px; background-color: $canvasColor; border: solid 1px #dddddd; padding: 5px 0px 0px 25px;color: #bdc3c7 ;margin: 60px 0px 0px 0px; cursor: pointer; -webkit-box-shadow: 0px 2px 0.5px 0px rgba(0,0,0, 0.25);position: relative;}
+
+
+.container2 {width: 495px; height: $boxHeight*2; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+.contentContainer {width: 495px; height: 420px; margin: 0em 0em 0em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;text-align: initial;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+#headerModal {display: block; overflow: hidden; position: relative; height: 217px; padding-bottom: 2em; 
+-moz-border-radius-topleft: $radius;
+-webkit-border-top-left-radius: $radius;
+border-top-left-radius: $radius;
+-moz-border-radius-topright: $radius;
+-webkit-border-top-right-radius: $radius;
+border-top-right-radius: $radius;}
+
+.bgModal {width: 305px*1.75;}
+#floatRight {float: right;}
+
+.activeModal {margin: -15px 21px 0px 390px; border-radius: 6px; background-color: $statucColor;}
+.statContainer {display: inline-block;width: 198px; margin: 0px 0px 0px 20px;}
+
+.responsesContainer{display: inline-block;width: 198px;float: right; margin: 0px 20px 0px 0px;}
+
+
+//.content {margin-top: 45px;}
+
+#statTitle {margin-bottom: 15px}
+
+.statCell {margin: 5px 0px 5px 0px; display: block;}
+
+
+.line {border-bottom: 1px solid #dddddd; height: 1px; width: 137px;flex: 1;margin-left: 64px;}
+
+.updateContainer {margin: 40px 0px 0px 20px;}
+
+.updateTitle {margin-bottom: 15px;}
+
+
+.contentModal {color: $textColor; margin-top: 45px;}
+
+.overlay {position: fixed;top: 0;left: 0;height: 100%;width: 100%;background-color: rgba(0,0,0,0.5);z-index: 1; display: none;}
+
+.modal {text-align: center;z-index: 2;}
+
+
+
+//Member
+//#nameAdjacent {font-size: $iconSize2:}
+
+#addMember {font-size: $textSize2; color: $textColor2; margin-top: 23px;cursor: pointer;}
+
+.memberName {padding: 20px 0px 0px 0px;}
+
+.memberEmail {padding: 60px 0px 0px 0px;}
+
+.memberAdmin {padding: 100px 0px 0px 0px;}
+
+#subtitle2 {margin: 0px 0px 0px 20px; font-size: $iconSize2; color: $Orange; position: absolute;}
+
+#subtitle3 {margin: 100px 0px 0px 180px; font-size: $iconSize2; color: $textColor; position: absolute;}
+
+#subtitle4 {margin: 0px 0px 0px 20px; font-size: $textSize1; color: $textColor; position: absolute;}
+
+#adminActive {padding: 25px 0px 0px 330px; font-size: $iconSize2; color: $Orange; position: absolute;}
+
+
+//Toggle
+
+.switch{
+    opacity: 0;
+}
+.switch-Btn {
+    left: 390px;
+    width: 80px;
+    height: 40px;
+    background: #e5e5e5;
+    position: relative;
+    cursor:"";
+    border-radius: 20px;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.4)
+}
+.switch-Btn:before{
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    background: #FFFFFF;
+    left: 2px;
+    top: 2px;
+    content: "";
+    transition: all 150ms ease-out;
+    border-radius: 50%;
+    box-shadow:  0 8px 6px -6px rgba(0,0,0,0.2);
+}
+input[type=checkbox]:checked + .switch-Btn:before {
+    left: 42px;
+} 
+input[type=checkbox]:checked + .switch-Btn {
+    background: #0dc4dc;
+}
+#inputHeader {display: inline-grid;}
+
+#premium {font-weight: 600;}
+
+#chevron {padding: 0px 0px 0px 140px;}
+
+#stateTags {padding: 20px 0px 0px 65px;}
+#stateTags2 {padding:20px 0px 0px 100px;}
+
+#stateCert {list-style: none;padding: 10px 0px 0px 300px;}
+
+#stateActive {color: $statucColor;}
+
+#stateMargin {margin-top: 10px;}
+
+#iconPad {padding-right: 10px;}

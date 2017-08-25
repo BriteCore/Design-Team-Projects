@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<div id="sidebar">
+    <div class="buttonWrapper">
+        <nav role="navigation">
+        <ul>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-home" aria-hidden="true" id="icon"></i>
+                <a href="home.html" id="btnText">Home</a>
+            </li>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-book" aria-hidden="true" id="icon"></i>
+                <a href="index.html" id="btnText">Policy</a>
+            </li>
+            <li class="sidebar-navItem" id="activeBtn">
+                <i class="fa fa-user" aria-hidden="true" id="activeIcon"></i>
+                <a href="account.html" id="activeText">Account</a>
+            </li>
+        </ul>
+        </nav>
+    
+    </div> 
+    <a href="settings.html"><i class="fa fa-cog" aria-hidden="true" id="settings"></i></a>
+</div>
+
+<main id="content">
+    <a href="account.html">
+	<h1 class="passiveToggle" id="topInline">Account</h1>
+    </a>    
+    <span id="spacer"></span> <span id="spacer"></span>
+    <a href="memberadd.html">
+    <h1 class="activeToggle" id="topInline">Member</h1>
+    </a>    
+    <a class="module"><div id="addMember">Add member<i class="fa fa-plus-circle" aria-hidden="true" id="addIcon"></i></div></a>
+
+    
+    
+<a href="" class="module" id="containerMember">
+    <div class="content">
+        <div class="memberName" id="subtitle">Jeremy Lenguyen</div>
+        <div class="memberEmail" id="subtitle">jeremy@email.com</div>
+        <span class="memberAdmin" id="subtitle2">Active</span><span id="subtitle3">#123456789</span>
+    </div>
+</a>
+<a href="" class="module" id="containerMember" data-backdrop="static" data-keyboard="false">
+    <div class="content">
+        <div class="memberName" id="subtitle">Will Guldin</div>
+        <div class="memberEmail" id="subtitle">will@email.com</div>
+        <span class="memberAdmin" id="subtitle2">Active</span><span id="subtitle3">#123456789</span>
+    </div>
+</a>
+
+<div class="overlay">
+    <div class="content">
+    <div class="modal">
+    <div  id="memberModal">
+        <div class="memberName" id="subtitle4">Add member</div>
+        <span id="adminActive">Active</span>
+        <span><label class="switch">
+            <input type="checkbox"/>
+            <div class="switch-Btn"></div></label>
+                <div id="nameAdjacent">
+        <div id="accountHeader2">
+        <span id="inputHeader">First name: <input type="text" name="First name" id="inputModify6"></span>
+        <span id="spacer2"></span>    
+        <span id="inputHeader">Last name: <input type="text" name="First name" id="inputModify7"></span>    
+        </div>
+    </div>
+    <div id="nameAdjacent">
+    <span id="accountHeader">License #: <input type="text" name="Last name" id="inputModify7"></span>
+    <span id="spacer2"></span>     
+    <span id="inputHeader">Exp. Date: <input type="text" name="First name" id="inputModify6"></span>    
+    </div>
+    <div id="nameAdjacent">
+    <div id="accountHeader">Email: <input type="text" name="Email" id="inputModify7"></div>
+    </div> 
+        </span>
+        <div class="saveBtn2">Save</div>
+        <div class="cancelBtn">Cancel</div>
+    </div>
+        </div>
+ </div>    
+</div>    
+    
+</main>

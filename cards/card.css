@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1,h2,span, #title, #subtitle{
+  font-family: proxima-nova thin, sans-serif;
+  color: #787878;
+  font-weight: 300;
+}
+.status {
+  font-family: proxima-nova, sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+}
+body {
+  background-color: #ecf0f1; }
+
+header {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 136px;
+  padding-bottom: 2em;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.container {
+  width: 292px;
+  height: 272px;
+  margin: 3em auto 1em auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 5px;
+  padding-bottom: 1.5em;
+  background-color: #ffffff;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px; }
+
+.bg{
+  width: 305px;
+}
+
+#title {
+  margin: 20px 20px 0px;
+  font-size: 23px;
+  position: relative;
+}
+#subtitle {
+  margin: 0px 0px 0px 20px;
+  font-size: 20px;
+  position: absolute;
+}
+.active {
+    width: 86px;
+    height: 30px;
+    margin: -15px 21px 0px 186px;
+    position: fixed;
+    border-radius: 6px;
+    background-color: #00bfcc;
+}
+.avgTaken {
+  margin: 35px 0px 0px 20px;
+}
+#avgColor {
+  color: #00ff16;
+}
+#avgScore {
+  margin: 0px 0px 0px 90px;
+}
+

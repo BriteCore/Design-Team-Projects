@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<div id="sidebar">
+    <div class="buttonWrapper">
+        <nav role="navigation">
+        <ul>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-home" aria-hidden="true" id="icon"></i>
+                <a href="home.html" id="btnText">Home</a>
+            </li>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-book" aria-hidden="true" id="icon"></i>
+                <a href="index.html" id="btnText">Policy</a>
+            </li>
+            <li class="sidebar-navItem" id="activeBtn">
+                <i class="fa fa-user" aria-hidden="true" id="activeIcon"></i>
+                <a href="#" id="activeText">Agency</a>
+            </li>
+        </ul>
+        </nav>
+    
+    </div> 
+    <a href="settings.html"><i class="fa fa-cog" aria-hidden="true" id="settings"></i></a>
+</div>
+
+<main id="content">
+    <a href="account.html">
+	<h1 class="activeToggle" id="topInline">Agency</h1>
+    </a>    
+    <span id="spacer"></span> <span id="spacer"></span>
+    <a href="memberadd.html">
+    <h1 class="passiveToggle" id="topInline">Member</h1>
+    </a>    
+
+    <div id="settingHeader">License information</div>
+    <div id="line"></div>
+    <div class="dropdownBtn">State<span id="chevron"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
+    <div id="nameAjacent">
+        <div id="accountHeader3">License # <input type="text" name="First name" id="inputModify4"></div>
+    </div>    
+    <div class="saveBtn">Save</div>
+        <div>
+        <ul id="stateCert">
+            <li id="stateMargin"><i class="fa fa-times-circle" aria-hidden="true" id="iconPad"></i><span id="stateActive">CALIFORNIA</span><span id="stateTags">exp. 10/17/19</span>
+            </li>
+               <li id="stateMargin"><i class="fa fa-times-circle" aria-hidden="true" id="iconPad"></i><span id="stateActive">ALASKA</span><span id="stateTags2">exp. 12/25/19</span></li>
+            <li></li>
+        </ul>
+    </div>
+</main>
