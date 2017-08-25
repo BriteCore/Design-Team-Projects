@@ -1,0 +1,29 @@
+// -------------------------------
+// NAV
+// -------------------------------
+nav.navbar{
+
+	margin-bottom: 0px;
+	z-index: 4;
+
+	.navbar-header{
+
+		.navbar-brand{
+			border-right: 1px solid #e5e5e5;
+		}
+
+	}
+
+	.navbar-nav{
+
+		.active a{
+			color: #FFF;
+			background: #3498db;
+		}
+
+		a{
+			border-right: 1px solid #e5e5e5;
+		}
+	}
+
+}

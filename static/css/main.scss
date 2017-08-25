@@ -1,0 +1,35 @@
+// -------------------------------
+// IMPORT FILES
+// -------------------------------
+@import 'partials/general';
+@import 'partials/nav';
+@import 'partials/table';
+@import 'partials/box';
+@import 'partials/form';
+@import 'partials/filter';
+
+.btn-danger{
+	background-color: #e74c3c;
+	border-color: #c0392b;
+}
+
+.btn-success{
+	background-color: #2ecc71;
+	border-color: #27ae60;
+}
+
+.btn-info{
+	background-color: #3498db;
+	border-color: #2980b9;
+}
+// -------------------------------
+// MEDIA QUERIES
+// -------------------------------
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (max-width: 767px){
+	@import 'partials/max_767';
+}

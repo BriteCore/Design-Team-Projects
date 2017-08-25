@@ -1,0 +1,53 @@
+// -------------------------------
+// GENERAL
+// -------------------------------
+html, body{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body{
+
+	font-family: 'Lato', sans-serif;
+
+	h1, h2, h3, h4, h5, h6{
+		color: #666;
+	}
+
+	h1{
+		font-size: 2em;
+		padding: 0 0 10px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	a{
+		transition: all 0.25s ease;
+	}
+
+	section{
+
+		.row{
+			margin: 15px 0px;
+		}
+
+	}
+
+	.pagination>.active>a,
+	.pagination>.active>a:focus,
+	.pagination>.active>a:hover,
+	.pagination>.active>span,
+	.pagination>.active>span:focus,
+	.pagination>.active>span:hover{
+		background-color: #3498db;
+		border-color: #2980b9;
+	}
+
+	.pagination>li>a:focus,
+	.pagination>li>a:hover,
+	.pagination>li>span:focus,
+	.pagination>li>span:hover{
+		color: #3498db;
+	}
+
+}

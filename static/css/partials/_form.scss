@@ -1,0 +1,26 @@
+// -------------------------------
+// FORM
+// -------------------------------
+form{
+
+	.form-group{
+
+		input{
+			margin-bottom: 15px;
+		}
+
+	}
+
+	.row{
+
+		.col-xs-4{
+			padding: 0px 5px 0px 0px;
+
+			input{
+				margin-bottom: 0px;
+			}
+		}
+
+	}
+
+}
