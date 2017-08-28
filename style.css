@@ -212,60 +212,69 @@ h1, h2, h3 #title, #subtitle {
   height: 30px;
   width: 280px;
   font-size: 20px;
-  margin-left: 45px; }
+  margin-left: 45px;
+  border: solid .5px #dddddd; }
 
 #inputModify2 {
   height: 30px;
   width: 280px;
   font-size: 20px;
-  margin-left: 35px; }
+  margin-left: 35px;
+  border: solid .5px #dddddd; }
 
 #inputModify3 {
   height: 30px;
   width: 280px;
   font-size: 20px;
-  margin-left: 7px; }
+  margin-left: 7px;
+  border: solid .5px #dddddd; }
 
 #inputModify4 {
   height: 30px;
   width: 280px;
   font-size: 20px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  border: solid .5px #dddddd; }
 
 #inputModify5 {
   height: 30px;
   width: 310px;
   font-size: 20px;
   margin: 10px 0px 0px 0px;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  border: solid .5px #dddddd; }
 
 #inputModify6 {
   height: 30px;
   width: 180px;
   font-size: 20px;
   margin: 10px 0px 0px 0px;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  border: solid .5px #dddddd; }
 
 #inputModify7 {
   height: 30px;
   width: 245px;
   font-size: 20px;
   margin: 10px 0px 0px 0px;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  border: solid .5px #dddddd; }
 
 #inputModify8 {
   height: 30px;
   width: 440px;
   font-size: 20px;
   margin: 10px 0px 0px 0px;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  border: solid .5px #dddddd; }
 
 #inputModify9 {
   height: 30px;
   width: 165px;
   font-size: 20px;
   margin: 10px 0px 0px 0px;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  border: solid .5px #dddddd; }
 
 .pswdBtn {
   height: 30px;

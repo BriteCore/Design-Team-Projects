@@ -134,15 +134,15 @@ h1,h2,h3 #title, #subtitle {font-family: $font; font-weight: 300;}
 #settingHeader {font-size: $textSize2; color: $textColor; margin-top: 36px;}
 #line {width: 923px; border: solid 1px #dddddd;margin-top: 20px;}
 
-#inputModify1 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 45px;}
-#inputModify2 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 35px;}
-#inputModify3 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 7px;}
-#inputModify4 { height: $inputHeight;width: $inputWidth; font-size: $textSize2; margin-top: 10px;}
-#inputModify5 { height: $inputHeight;width: $inputWidth + 30px;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
-#inputModify6 { height: $inputHeight;width: $inputWidth3;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
-#inputModify7 { height: $inputHeight;width: $inputWidth4;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
-#inputModify8 { height: $inputHeight;width: $inputWidth5;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
-#inputModify9 { height: $inputHeight;width: $inputWidth6;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+#inputModify1 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 45px;border: solid .5px #dddddd;}
+#inputModify2 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 35px;border: solid .5px #dddddd;}
+#inputModify3 { height: $inputHeight;width: $inputWidth;font-size: $textSize2; margin-left: 7px;border: solid .5px #dddddd;}
+#inputModify4 { height: $inputHeight;width: $inputWidth; font-size: $textSize2; margin-top: 10px;border: solid .5px #dddddd;}
+#inputModify5 { height: $inputHeight;width: $inputWidth + 30px;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;border: solid .5px #dddddd;}
+#inputModify6 { height: $inputHeight;width: $inputWidth3;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;border: solid .5px #dddddd;}
+#inputModify7 { height: $inputHeight;width: $inputWidth4;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;border: solid .5px #dddddd;}
+#inputModify8 { height: $inputHeight;width: $inputWidth5;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;border: solid .5px #dddddd;}
+#inputModify9 { height: $inputHeight;width: $inputWidth6;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;border: solid .5px #dddddd;}
 
 .pswdBtn {height: $inputHeight; width: 180px; background-color: $textColor; padding: 5px 0px 0px 25px; color: $White; margin: 30px 0px 0px 225px;}
 
