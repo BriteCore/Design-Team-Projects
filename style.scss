@@ -14,6 +14,8 @@ $inputWidth: 280px;
 $inputWidth2: 280px/2;
 $inputWidth3: 280px-100px;
 $inputWidth4: 280px-35px;
+$inputWidth5: 280px+160px;
+$inputWidth6: 165px;
 
 
 /*sidebar*/
@@ -82,7 +84,7 @@ ul {padding:0;}
 
 * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
 
-h1,h2, #title, #subtitle {font-family: $font; font-weight: 300;}
+h1,h2,h3 #title, #subtitle {font-family: $font; font-weight: 300;}
 
 .status {font-family: $font; color: $White; font-weight: 200; font-size: 18px; text-align: $center; padding: $statusPadding}
 #update {font-size: 18px; color: $textColor2; padding: 0px 0px 2px 0px;}
@@ -139,6 +141,8 @@ h1,h2, #title, #subtitle {font-family: $font; font-weight: 300;}
 #inputModify5 { height: $inputHeight;width: $inputWidth + 30px;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
 #inputModify6 { height: $inputHeight;width: $inputWidth3;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
 #inputModify7 { height: $inputHeight;width: $inputWidth4;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+#inputModify8 { height: $inputHeight;width: $inputWidth5;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
+#inputModify9 { height: $inputHeight;width: $inputWidth6;font-size: $textSize2; margin: 10px 0px 0px 0px;background-color: #eaeaea;}
 
 .pswdBtn {height: $inputHeight; width: 180px; background-color: $textColor; padding: 5px 0px 0px 25px; color: $White; margin: 30px 0px 0px 225px;}
 
@@ -155,21 +159,25 @@ h1,h2, #title, #subtitle {font-family: $font; font-weight: 300;}
 #spacer2 {display:inline-block; width: 20px;}
 
 #accountHeader {font-size: $iconSize2; color: $textColor; margin-top: 36px; display: inline-grid;}
+#tableHeader {font-size: $iconSize2; color: $textColor; margin-top: 20px; display:inline-grid;}
 #accountHeader2 {font-size: $iconSize2; color: $textColor; margin-top: 36px;}
 #accountHeader3 {font-size: $iconSize2; color: $textColor; margin-top: -60px; display: inline-grid; padding-left: 300px;}
 #nameAdjacent {display: $inblock;margin-left: 20px;}
+#tableAdjacent {display: $inblock;padding-left: 245px;}
 #nameNext {display: block;}
 
 //Buttons
 .saveBtn {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White; margin: 30px 0px 0px 490px;cursor: pointer;}
 
-.saveBtn2 {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White;margin: 40px 0px 0px 385px;cursor: pointer;}
+.saveBtn2 {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White;margin: 30px 0px 0px 385px;cursor: pointer;}
+
+.saveBtn3 {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 15px; color: $White;margin: 30px 0px 0px 595px; padding: 7px 0px 0px 30px; cursor: pointer;}
 
 .cancelBtn {height: $inputHeight; width: 90px; background-color: $textColor; padding: 5px 0px 0px 20px; color: $White;margin: -30px 0px 0px 270px;cursor: pointer;}
 
 .closeBtn {height: $inputHeight; width: 90px; background-color: $textColor; padding: 7px 0px 0px 25px; color: $White;margin: 60px 0px 0px 365px; cursor: pointer;}
 
-.dropdownBtn {height: $inputHeight; width: 235px; background-color: $canvasColor; border: solid 1px #dddddd; padding: 5px 0px 0px 25px;color: #bdc3c7 ;margin: 60px 0px 0px 0px; cursor: pointer; -webkit-box-shadow: 0px 2px 0.5px 0px rgba(0,0,0, 0.25);position: relative;}
+.dropdownBtn {height: $inputHeight; width: 145px; background-color: $canvasColor; border: solid 1px #dddddd; padding: 5px 0px 0px 25px;color: #bdc3c7 ;margin: 30px 0px 0px 0px; cursor: pointer; -webkit-box-shadow: 0px 2px 2.5px -1px rgba(0, 0, 0, 0.25);position: relative;}
 
 
 .container2 {width: 495px; height: $boxHeight*2; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
@@ -282,19 +290,31 @@ input[type=checkbox]:checked + .switch-Btn:before {
 input[type=checkbox]:checked + .switch-Btn {
     background: #0dc4dc;
 }
-#inputHeader {display: inline-grid;}
+#inputHeader { font-size: 18px; color: #787878; margin-top: 20px; display: inline-grid;}
 
 #premium {font-weight: 600;}
 
-#chevron {padding: 0px 0px 0px 140px;}
+#chevron {padding: 0px 0px 0px 60px;}
 
-#stateTags {padding: 20px 0px 0px 65px;}
-#stateTags2 {padding:20px 0px 0px 100px;}
 
-#stateCert {list-style: none;padding: 10px 0px 0px 300px;}
 
-#stateActive {color: $statucColor;}
+.agencyBox { height: 410px;border: solid .5px #dddddd; width: 705px; background-color: #ffffff; margin: 10px 0px 0px 0px;}
+.agencyBox2 { height: 410px;border: solid .5px #dddddd; width: 705px; background-color: #ffffff; margin: 10px 0px 0px 0px;}
 
-#stateMargin {margin-top: 10px;}
+#agencyTable {margin: 30px 0px 0px 0px;height: 445px; overflow: auto;}
 
-#iconPad {padding-right: 10px;}
+.tableTabs {font-size: $textSize2; color: #bdc3c7; padding: 0px 55px 0px 0px;}
+
+
+.tableTabs2 { font-size: 20px; color: #0dc4dc; padding: 0px 0px 10px 0px; border-bottom: solid;}
+
+#addLogo {height: 190px; width: 200px; border: dashed 2px #DDDDDD;}
+
+.boxLogo { position: absolute; padding: 25px 0px 0px 20px;}
+
+#headerLogo {text-align: center; color: #dddddd;
+padding: 60px 0px 0px 0px;}
+
+#sectionLogo {
+    position: relative;
+}

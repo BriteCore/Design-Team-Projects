@@ -80,7 +80,7 @@ ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1, h2, #title, #subtitle {
+h1, h2, h3 #title, #subtitle {
   font-family: proxima-nova, sans-serif;
   font-weight: 300; }
 
@@ -253,6 +253,20 @@ h1, h2, #title, #subtitle {
   margin: 10px 0px 0px 0px;
   background-color: #eaeaea; }
 
+#inputModify8 {
+  height: 30px;
+  width: 440px;
+  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+  background-color: #eaeaea; }
+
+#inputModify9 {
+  height: 30px;
+  width: 165px;
+  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+  background-color: #eaeaea; }
+
 .pswdBtn {
   height: 30px;
   width: 180px;
@@ -295,6 +309,12 @@ h1, h2, #title, #subtitle {
   margin-top: 36px;
   display: inline-grid; }
 
+#tableHeader {
+  font-size: 18px;
+  color: #787878;
+  margin-top: 20px;
+  display: inline-grid; }
+
 #accountHeader2 {
   font-size: 18px;
   color: #787878;
@@ -310,6 +330,10 @@ h1, h2, #title, #subtitle {
 #nameAdjacent {
   display: inline-block;
   margin-left: 20px; }
+
+#tableAdjacent {
+  display: inline-block;
+  padding-left: 245px; }
 
 #nameNext {
   display: block; }
@@ -329,7 +353,17 @@ h1, h2, #title, #subtitle {
   background-color: #0dc4dc;
   padding: 5px 0px 0px 26px;
   color: #ffffff;
-  margin: 40px 0px 0px 385px;
+  margin: 30px 0px 0px 385px;
+  cursor: pointer; }
+
+.saveBtn3 {
+  height: 30px;
+  width: 90px;
+  background-color: #0dc4dc;
+  padding: 5px 0px 0px 15px;
+  color: #ffffff;
+  margin: 30px 0px 0px 595px;
+  padding: 7px 0px 0px 30px;
   cursor: pointer; }
 
 .cancelBtn {
@@ -352,14 +386,14 @@ h1, h2, #title, #subtitle {
 
 .dropdownBtn {
   height: 30px;
-  width: 235px;
+  width: 145px;
   background-color: #eaeaea;
   border: solid 1px #dddddd;
   padding: 5px 0px 0px 25px;
   color: #bdc3c7;
-  margin: 60px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   cursor: pointer;
-  -webkit-box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 2.5px -1px rgba(0, 0, 0, 0.25);
   position: relative; }
 
 .container2 {
@@ -539,31 +573,62 @@ input[type=checkbox]:checked + .switch-Btn {
   background: #0dc4dc; }
 
 #inputHeader {
+  font-size: 18px;
+  color: #787878;
+  margin-top: 20px;
   display: inline-grid; }
 
 #premium {
   font-weight: 600; }
 
 #chevron {
-  padding: 0px 0px 0px 140px; }
+  padding: 0px 0px 0px 60px; }
 
-#stateTags {
-  padding: 20px 0px 0px 65px; }
+.agencyBox {
+  height: 410px;
+  border: solid .5px #dddddd;
+  width: 705px;
+  background-color: #ffffff;
+  margin: 10px 0px 0px 0px; }
 
-#stateTags2 {
-  padding: 20px 0px 0px 100px; }
+.agencyBox2 {
+  height: 410px;
+  border: solid .5px #dddddd;
+  width: 705px;
+  background-color: #ffffff;
+  margin: 10px 0px 0px 0px; }
 
-#stateCert {
-  list-style: none;
-  padding: 10px 0px 0px 300px; }
+#agencyTable {
+  margin: 30px 0px 0px 0px;
+  height: 445px;
+  overflow: auto; }
 
-#stateActive {
-  color: #0dc4dc; }
+.tableTabs {
+  font-size: 20px;
+  color: #bdc3c7;
+  padding: 0px 55px 0px 0px; }
 
-#stateMargin {
-  margin-top: 10px; }
+.tableTabs2 {
+  font-size: 20px;
+  color: #0dc4dc;
+  padding: 0px 0px 10px 0px;
+  border-bottom: solid; }
 
-#iconPad {
-  padding-right: 10px; }
+#addLogo {
+  height: 190px;
+  width: 200px;
+  border: dashed 2px #DDDDDD; }
+
+.boxLogo {
+  position: absolute;
+  padding: 25px 0px 0px 20px; }
+
+#headerLogo {
+  text-align: center;
+  color: #dddddd;
+  padding: 60px 0px 0px 0px; }
+
+#sectionLogo {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
