@@ -1,0 +1,71 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<div id="sidebar">
+    <div class="buttonWrapper">
+        <nav role="navigation">
+        <ul>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-home" aria-hidden="true" id="icon"></i>
+                <a href="home.html" id="btnText">Home</a>
+            </li>
+            <li class="sidebar-navItem" id="sideBtn">
+                <i class="fa fa-book" aria-hidden="true" id="icon"></i>
+                <a href="index.html" id="btnText">Policy</a>
+            </li>
+            <li class="sidebar-navItem" id="activeBtn">
+                <i class="fa fa-user" aria-hidden="true" id="activeIcon"></i>
+                <a href="#" id="activeText">Agency</a>
+            </li>
+        </ul>
+        </nav>
+    
+    </div> 
+    <a href="settings.html"><i class="fa fa-cog" aria-hidden="true" id="settings"></i></a>
+</div>
+
+<main id="content">
+    <a href="account.html">
+        <h1 class="activeToggle" id="topInline">Agency</h1>
+    </a>    
+    <span id="spacer"></span> <span id="spacer"></span>
+    <a href="memberadd.html">
+        <h1 class="passiveToggle" id="topInline">Member</h1>
+    </a>    
+
+    <div id="settingHeader">License information</div>
+    <div id="line"></div>
+    <div id="agencyTable">
+        <span class="tableTabs">Existing</span>
+        <span class="tableTabs2">New Agency</span>
+        <div class="agencyBox">
+    <div id="sectionLogo">
+    <span class="boxLogo">
+        <div id="addLogo">
+            <div id="headerLogo">
+                <h3>Add logo</h3>
+            </div>
+        </div>
+    </span>    
+    <span id="tableAdjacent">
+    <div id="tableHeader">Agency name: <input type="text" name="Last name" id="inputModify7"></div>
+    <span id="spacer2"></span>    
+    <span id="inputHeader">State: <input type="text" name="First name" id="inputModify9"></span>    
+    <div id="tableHeader">Address Line 1: <input type="text" name="Last name" id="inputModify8"></div>      
+    <div id="tableHeader">Address Line 2: <input type="text" name="Last name" id="inputModify8"></div>                      
+    </span>
+    </div>    
+            
+    <div id="nameAdjacent">
+    <span id="tableHeader">License #: <input type="text" name="Last name" id="inputModify7"></span>
+        <span id="spacer2"></span>     
+        <span id="inputHeader">Issue Date: <input type="text" name="First name" id="inputModify6"></span>
+        <span id="spacer2"></span>              
+       <span id="inputHeader">Exp. Date: <input type="text" name="First name" id="inputModify6"></span>                   
+    </div>
+    <div class="saveBtn3">Add</div>        
+        </div>
+    </div>    
+    
+</main>
