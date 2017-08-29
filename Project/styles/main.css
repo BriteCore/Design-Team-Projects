@@ -1,0 +1,493 @@
+body {
+  font-family: "Effra";
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1749px) {
+#main-body {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+}
+
+@media only screen and (min-width: 1751px) {
+#main-body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+}
+
+/* ----------------------------------------- Head ----------------------------------------- */
+@media only screen and (min-width: 961px) and (max-width: 1749px) {
+#logo {
+  margin-left: 7%;
+  margin-top: 50px;
+  max-width: 250px;
+  margin-bottom: 50px;
+}}
+
+@media only screen and (min-width: 1751px) {
+#logo {
+  margin-left: 20%;
+  margin-top: 50px;
+  max-width: 250px;
+  margin-bottom: 50px;
+}}
+
+@media only screen and (max-width: 960px) {
+  #logo {
+    margin-top: 50px;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+  }
+}
+
+
+#head {
+  background-color: #E4EEEF;
+  width: 100%;
+}
+
+/* ----------------------------------------- Title and Buttons ----------------------------------------- */
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: #6D6E70;
+}
+
+h2 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #6D6E70;
+}
+
+h3 {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  color: #6D6E70;
+  margin: 0px;
+  padding-top: 5px;
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  border-width: 0px;
+  margin-right: 15px;
+}
+
+button:hover {
+  color: #E4EEEF;
+  cursor: pointer;
+}
+
+button:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+button.light-blue {
+  background-color: #008da6;
+}
+
+button.dark-blue {
+  background-color: #364f54;
+}
+
+.add-new-button {
+  letter-spacing: .4px;
+}
+
+.state-button {
+  background-color: #E4EEEF ;
+  color: #008da6;
+  letter-spacing: .4px;
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.state-button:hover {
+  color: #364f54;
+}
+
+@media only screen and (min-width: 961px) {
+#states {
+  display: inline-flex;
+}}
+
+@media only screen and (max-width: 960px) {
+#states {
+  display: flex;
+  flex-direction: column;
+  }
+
+.state-button {
+  margin-top: 10px;
+}
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+
+/* ----------------------------------------- Large Screen Buttons ----------------------------------------- */
+@media only screen and (min-width: 961px) {
+
+#top-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.top-child-2 {
+  color: white;
+  margin-top: 15px;
+}
+
+.top-child-3 {
+  display: none;
+} }
+
+/* ----------------------------------------- Mobile  Buttons ----------------------------------------- */
+@media only screen and (max-width: 960px) {
+
+#top-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-child-2 {
+  display: none;
+}
+
+.top-child-3 {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.m-glass-white {
+  max-width: 15px;
+  padding-bottom: 2.5px;
+  margin-right: 5px;
+}
+
+.add-new-button{
+  width: 120px;
+  letter-spacing: .4px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+}
+
+/* ----------------------------------------- End Large Screen Buttons ----------------------------------------- */
+
+/* ----------------------------------------- Filter Styles ----------------------------------------- */
+
+.m-glass {
+  max-width: 20px;
+}
+
+
+.keyword-filter {
+  border: none;
+  margin: 20px 10px 20px 5px;
+  width: 200px;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+input {
+  font-size: 12px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(109, 110, 112, .1);
+  letter-spacing: .3px;
+  margin-right: 15px;
+  padding: 3px 3px 3px 6px;
+}
+
+input:focus {
+  border: #008da6 solid thin;
+  box-shadow: none;
+  outline: none;
+}
+
+
+.filter-button, .clear-button {
+  padding: 5px;
+}
+
+.filter-button {
+  background-color: #008DA6;
+  border-radius: 5px;
+  width: 75px;
+  color: white;
+  letter-spacing: .3px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.clear-button {
+  letter-spacing: .3px;
+  font-size: 12px;
+  text-align: center;
+  color: #6D6E70;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.clear-button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------------------------------- Hide Filters for Small screens----------------------------------------- */
+@media only screen and (max-width: 960px) {
+  #filter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1078px) {
+
+.search-input {
+  width: 150px;
+}}
+
+/* ----------------------------------------- Show Filters for Large Screens ----------------------------------------- */
+
+@media only screen and (min-width: 961px) {
+
+.advanced-filter {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  display: none;
+}
+
+.advanced-filter-border {
+  display: flex;
+  justify-content: center;
+  border-top: solid;
+  border-width: 1.2px;
+  border-color:rgba(109, 110, 112, .3);
+  margin-left: 0px;
+
+}
+
+.tab {
+  width: 175px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  background-color: white;
+  padding-top: 10px;
+  border-width: thin;
+  border-color: rgba(109, 110, 112, .3);
+  color: #6D6E70;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.filter-icon {
+  width: 15px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 3px;
+}}
+
+@media only screen and (min-width: 1079px) {
+
+.search-input {
+  width: 250px;
+}}
+
+/* ----------------------------------------- Table Styles ----------------------------------------- */
+
+/* ----------------------------------------- Table Styles - Mobile ----------------------------------------- */
+
+@media only screen and (max-width: 960px) {
+  table{
+    font-size: 11px;
+  }
+
+  .edit, .edit-head, .remove, .remove-head {
+    display: none;
+  }
+
+  th, td {
+    text-align: center;
+  }
+
+  .column-1 {
+    padding-left: 10px;
+  }
+
+  #select-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+#status-break {
+  display: none;
+}
+}
+
+/* ----------------------------------------- End Table Styles - Mobile ----------------------------------------- */
+
+#select-all, #deselect-all, #remove-selected {
+  padding-right: 5px;
+  padding-left: 5px;
+  letter-spacing: .3px;
+  font-size: 12px;
+  color: #6D6E70;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#select-all:hover, #deselect-all:hover, #remove-selected:hover{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+
+table {
+  border: solid;
+  border-color: rgba(109, 110, 112, .3);
+  border-width: thin;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.table-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+th {
+  background-color:rgba(109, 110, 112, .3);
+  height: 55px;
+}
+
+td {
+  height: 45px;
+  color: #6D6E70;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(109, 110, 112, .1);
+}
+
+.client-name {
+  font-weight: bold;
+  color: #6D6E70;
+  text-decoration: none;
+}
+
+.client-name:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+th.center, td.center {
+  text-align: center;
+}
+
+tr img {
+  width: 18px;
+}
+
+#remove-selected {
+  margin-bottom: 150px;
+}
+
+.edit, .remove, .download {
+  opacity: 0.5;
+}
+
+.edit:hover, .remove:hover, .download:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.edit-head, .remove-head, .download-head {
+    font-size: 12px;
+}
+
+.active-status {
+  color: green;
+}
+
+.soon-status {
+  color: orange;
+}
+
+.expired-status {
+  color: red;
+}
+
+
+
+
+/* ----------------------------------------- Footer ----------------------------------------- */
+
+#foot {
+  bottom: 0px;
+  width: 100%;
+  position: relative;
+}
+
+#grey-foot {
+  background-color: #6d6e70;
+  height: 50px;
+}
+
+#black-foot {
+  background-color: black;
+  height:75px;
+}
+
+p.foot {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  margin: 0px;
+}
+
+.data-space {
+  height: 1000px;
+}
