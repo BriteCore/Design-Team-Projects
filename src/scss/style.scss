@@ -1,0 +1,177 @@
+$bg-color: #f4f4f4;
+$main-color: #1691A7;
+$sidebar-gray: #EAEAEA;
+$dark-gray: #9E9E9E;
+$table-gray: #FBFBFB;
+
+body {
+    
+    background: $bg-color;
+    font-family: 'Roboto', sans-serif;
+
+    /* ------------ General ------------- */
+
+    .btn-primary {
+
+        background-color: $main-color;
+        border-color: darken($main-color, 5%);
+        
+        &:hover {
+            background-color: darken($main-color, 5%);
+            border-color: darken($main-color, 10%);
+        }
+
+    }
+
+    /* ------------ Utilities ------------- */
+    .top-buffer {
+        margin-top: 20px;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }    
+
+    /* ------------- Top Nav -------------- */
+    .navbar {
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        @media (max-width: 992px) {
+            padding: 15px;
+        }
+        
+        .navbar-brand {
+            .logo {
+                width: 180px;
+            }
+        }
+
+        .navbar-nav {
+
+            .logout {
+                border-left: 1px solid $bg-color;
+                padding-left: 10px;
+            }
+    
+            .nav-link {
+                padding: 1.1rem !important;
+    
+                .oi-account-logout {
+                    margin-right: 10px;
+                }
+            }
+    
+            .active {
+    
+                .nav-link {
+    
+                    color: $main-color !important;
+                    background-color: #FBFBFB;
+    
+                }
+            }
+        }
+
+    }
+
+    /* ------------ Sidebar -------------- */
+    .sidebar {
+
+        background-color: $sidebar-gray;
+        height: 100vh;
+
+    }
+
+    /* ------------ Filter --------------- */
+
+    .filter {
+        
+        h5, p, ul {
+            margin-bottom: 0;
+        }
+
+        p {
+            color: $main-color;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+
+            li {
+                color: #666666;
+            }
+        }
+
+    }
+
+    /* -------------- Main --------------- */
+
+    main {
+
+        .table-header {
+
+            .nav-tabs {
+                border-bottom: 0;
+    
+                .nav-link.active {
+                    color: $main-color;
+                    border: 0;
+    
+                    h3 {
+                        margin-bottom: 0;
+                        padding: 0.3rem;
+                    }                
+    
+                }
+    
+                .nav-link {
+                    color: $dark-gray;
+                }
+            }
+
+            button {
+                margin-top: 15px;
+                background-color: #fff;
+            }
+
+        }
+
+        .table {
+            background-color: #fff;
+
+            thead{
+                    
+                th {
+                    font-weight: bold;
+                    border-bottom: 0;
+
+                    &:nth-child(-n+6) {
+                        border-top: 0;
+                    }
+                }
+
+            }
+
+            tbody{
+
+                tr:nth-of-type(odd) {
+                    background-color: #fbfbfb !important;
+                
+                }    
+            }            
+
+            .secondary {
+                color: $dark-gray;
+            }
+
+            .table-icon {
+                width: 16px;
+            }
+        
+        }
+    }
+
+}
