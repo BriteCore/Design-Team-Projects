@@ -1,0 +1,75 @@
+body {
+  background: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  /* ------------ General ------------- */
+  /* ------------ Utilities ------------- */
+  /* ------------- Top Nav -------------- */
+  /* ------------ Sidebar -------------- */
+  /* ------------ Filter --------------- */
+  /* -------------- Main --------------- */ }
+  body .btn-primary {
+    background-color: #1691A7;
+    border-color: #137d90; }
+    body .btn-primary:hover {
+      background-color: #137d90;
+      border-color: #106a7a; }
+  body .top-buffer {
+    margin-top: 20px; }
+  body .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  body .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    @media (max-width: 992px) {
+      body .navbar {
+        padding: 15px; } }
+    body .navbar .navbar-brand .logo {
+      width: 180px; }
+    body .navbar .navbar-nav .logout {
+      border-left: 1px solid #f4f4f4;
+      padding-left: 10px; }
+    body .navbar .navbar-nav .nav-link {
+      padding: 1.1rem !important; }
+      body .navbar .navbar-nav .nav-link .oi-account-logout {
+        margin-right: 10px; }
+    body .navbar .navbar-nav .active .nav-link {
+      color: #1691A7 !important;
+      background-color: #FBFBFB; }
+  body .sidebar {
+    background-color: #EAEAEA;
+    height: 100vh; }
+  body .filter h5, body .filter p, body .filter ul {
+    margin-bottom: 0; }
+  body .filter p {
+    color: #1691A7; }
+  body .filter ul {
+    list-style: none;
+    padding-left: 1rem; }
+    body .filter ul li {
+      color: #666666; }
+  body main .table-header .nav-tabs {
+    border-bottom: 0; }
+    body main .table-header .nav-tabs .nav-link.active {
+      color: #1691A7;
+      border: 0; }
+      body main .table-header .nav-tabs .nav-link.active h3 {
+        margin-bottom: 0;
+        padding: 0.3rem; }
+    body main .table-header .nav-tabs .nav-link {
+      color: #9E9E9E; }
+  body main .table-header button {
+    margin-top: 15px;
+    background-color: #fff; }
+  body main .table {
+    background-color: #fff; }
+    body main .table thead th {
+      font-weight: bold;
+      border-bottom: 0; }
+      body main .table thead th:nth-child(-n+6) {
+        border-top: 0; }
+    body main .table tbody tr:nth-of-type(odd) {
+      background-color: #fbfbfb !important; }
+    body main .table .secondary {
+      color: #9E9E9E; }
+    body main .table .table-icon {
+      width: 16px; }
