@@ -1,5 +1,4 @@
 # Design Team Project
-======================
 
 This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process and seeing how you work.
 
