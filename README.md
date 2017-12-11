@@ -12,9 +12,9 @@ Since BriteCore was created to work mostly with property-based insurance, the sy
 
 Any kind of insurance requires a certain amount of information to be collected from the customer in order to figure out how much the insurance policy will cost. These questions include things like:
 
-"How many square feet is the home" - For a Homeowners Policy
-"Have you had a speeding ticket in the last year" - For an automobile policy
-"When is your birthday" - For a life insurance policy
+- "How many square feet is the home" - For a Homeowners Policy
+- "Have you had a speeding ticket in the last year" - For an automobile policy
+- "When is your birthday" - For a life insurance policy
 
 We need a way for insurance carriers to setup and manage the questions they are asking their customers.
 
