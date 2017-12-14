@@ -22,19 +22,19 @@ We need a way for insurance carriers to setup and manage the questions they are 
 
 We would like to see you come up with a solution that allows insurers to define their own custom inputs for any type of insurance. This will include creating a design to view and create input fields that will then be presented to users while they complete insurance applications.
 
-Each input is expected to have a label, and most importantly a 'type'. This type will determine much about how the input is presented and it's UX. These types include, but are not limited to, 'date', 'number', 'currency', 'text', and 'select (multiple present options with a single choice).'
+Each input is expected to have a label, and most importantly a 'type'. This type will determine much about how the input is presented and it's UX. These types include, but are not limited to, 'date', 'number', 'currency', 'text', and 'select (multiple preset options with a single choice).'
 
-We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups, with a focus on a solid UX. You should also create a static high-fidelty prototype in HTML/CSS for your design that showcases your UI abilities, and ability to deliver a polished final product.
+We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups, with a focus on a solid UX. You should also create a single, static high-fidelty prototype in HTML/CSS for your design that showcases your UI abilities, and ability to deliver a polished final product.
 
 Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for our clients using this design.
 
 ### Delivery
 
 Your final deliverables will be:
-- HTML/CSS Design Prototype
 - Documentation around your design process (Can be stored in a google drive folder you share)
+- HTML/CSS Design Prototype
 
-Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
+Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges. The more you share, the more we can steer you and make sure you don’t waste any time.
 
 ## Questions
 
