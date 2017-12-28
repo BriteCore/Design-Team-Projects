@@ -26,6 +26,8 @@ We need a way for insurance carriers to setup and manage the questions they are 
 
 To meet this need, we've come up with a page where insurance companies can setup individual questions they ask people. We've come up with this mockup for the design:
 
+![Design Mockup](/Screen Shot 2017-12-28 at 4.21.44 PM.png)
+
 Some aspects of this page in particular:
 * The central part of the page layout (main card) should adapt to fill the browser window.
 * The reference name is automatically generated from the user-entered label on blur.
@@ -35,8 +37,7 @@ Some aspects of this page in particular:
 Most importantly, we are looking for you to implement this design in a way that shows how you might work in a larger designs system, based heavily on a component-first architecture. We'll be looking at all aspects of your front end, including JS, CSS and HTML structure. 
 
 No backend work is needed for this, as long as your page is interactive.
-
-Super bonus points for using both SCSS and Vue.js in your project.
+*Super bonus points for using both SCSS and Vue.js in your project.*
 
 ### Delivery
 
