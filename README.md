@@ -44,7 +44,9 @@ Finally, the right-hand side of this page also features an area called 'Field Gr
 
 ## Primary Goal
 
-Most importantly, we are looking for you to implement this design in a way that shows how you might work in a larger design system, based heavily on a component-first architecture. We'll be looking at all aspects of your front end, including JS, CSS and HTML structure. 
+Most importantly, we are looking for you to implement this design in a way that shows how you might work in a larger design system, based heavily on a component-first architecture. We'll be looking at all aspects of your front end, including JS, CSS and HTML structure.
+
+Overall, we aren't looking for someone who can make pixel-perfect copies of mockups. Instead, we're looking for a team member who can help us iterate on our design work and empower us to create better user experiences. 
 
 No backend work is needed for this, as long as your page is interactive.
 *Super bonus points for using both SCSS and Vue.js in your project.*
