@@ -1,6 +1,6 @@
 # Design Team Project
 
-Our design team is currently in the process of redesiging all aspects for our app, BriteCore, which insurance companies use to manage their internal business (think of it almost as an industry-specific CMS).
+Our design team is currently in the process of redesiging all aspects of our app, BriteCore, which insurance companies use to manage their internal business (think of it almost as an industry-specific CMS).
 
 The app is being broken up from one large monolithic application into smaller modules, with a unified front end. Almost all of our developers are backend experts, and we're now finding that it would be helpful to have a front-end expert to work alongside the design team.
 
@@ -22,17 +22,27 @@ Any kind of insurance requires a certain amount of information to be collected f
 
 We need a way for insurance carriers to setup and manage the questions they are asking their customers.
 
-## Primary Goal
+## Details
 
-To meet this need, we've come up with a page where insurance companies can setup individual questions they ask people. We've come up with this mockup for the design:
+To meet this need, we've come up with a solution that allows insurers to define their own custom inputs for any type of insurance. 
+
+We've come up with this mockup for the design:
 
 ![Design Mockup](https://github.com/IntuitiveWebSolutions/DesignProject/blob/frontend-dev-project/Screen%20Shot%202017-12-28%20at%204.21.44%20PM.png)
 
+Each input is expected to have a label, and most importantly a 'type'. This type will determine much about how the input is presented and it's UX. These types include, but are not limited to, 'date', 'number', 'currency', 'text', and 'select (multiple preset options with a single choice).'
+
 Some aspects of this page in particular:
 * The central part of the page layout (main card) should adapt to fill the browser window.
-* The reference name is automatically generated from the user-entered label on blur.
+* The reference name is automatically generated from the user-entered label on blur. The reference name will be used as a programatic reference to this input, and is used in other parts of the app. 
 * The custom validation input should validate that proper regex is used.
-* Once a tag group is selected, the tag list to the right should be populated.
+* Once a tag group is selected, the tag list to the right should be populated. 
+
+For that last point, a tag group might be one of our auto insurance vendors, vinmaster, which takes in a VIN and returns information about a car. Once you select the 'Vinmaster' tag group, the right hand list would populate with tags for all the pieces of information Vinmaster needs or returns, including car make, car model, year built, etc.
+
+Finally, the right-hand side of this page also features an area called 'Field Groups'. It is possible to group together several different input fields. They could place this field in a group by clicking the group's card, or they could add a new group from this page.
+
+## Primary Goal
 
 Most importantly, we are looking for you to implement this design in a way that shows how you might work in a larger design system, based heavily on a component-first architecture. We'll be looking at all aspects of your front end, including JS, CSS and HTML structure. 
 
