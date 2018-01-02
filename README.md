@@ -1,4 +1,4 @@
-# Design Team Project
+# Frontend Design Team Project
 
 Our design team is currently in the process of redesiging all aspects of our app, BriteCore, which insurance companies use to manage their internal business (think of it almost as an industry-specific CMS).
 
