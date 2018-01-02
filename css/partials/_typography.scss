@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
+/*anchor*/
+a {
+    color: #32323A;
+}
+
+a:hover {
+    color: #222227;
+}
+
+.form-horizontal{ 
+	.control-label{
+		font-weight:normal;
+		font-size:14px !important;
+	}
+}
+
+.popupbtn{
+	color: #0191a9;
+    margin-top: 5px;
+    border-bottom: 1px solid #0191a9 !important;
+    background: none;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+	border-radius:0px;
+}
+
+.popupbtn:hover{
+		background:none !important;
+		color: #0191a9;
+	}
+

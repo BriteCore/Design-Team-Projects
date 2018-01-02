@@ -1,0 +1,17 @@
+
+
+// Partials
+
+//vendor
+@import "partials/vendor/bootstrap.min.css";
+@import "../font-awesome/css/font-awesome.min.css";
+@import "partials/vendor/datepicker.css";
+
+
+// basics
+@import "partials/_typography.scss";
+@import "partials/_mixins.scss";
+
+@import "partials/_layout.scss";
+@import "partials/_media.scss";
+
