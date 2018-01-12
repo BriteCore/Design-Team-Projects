@@ -1,0 +1,424 @@
+/* --------- GLOBALS ---------- */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: .5vw solid transparent;
+  border-right: .5vw solid transparent;
+
+  border-top: .5vw solid #0391A9;
+}
+
+/* --------- TYPOGRAPHY ---------- */
+
+@fontface {
+  font-family: 'Oswald', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Oswald:300.400,500,700')
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  color:#777;
+  padding:0;
+  margin:2vw 5vw 0 5vw;
+}
+
+.light {
+  font-weight:300;
+}
+
+.bold {
+  font-weight:500;
+}
+
+.boldest {
+  font-weight:700;
+}
+
+.red {
+  color:#cc0000;
+}
+
+a {
+  color:#0391A9;
+}
+
+/* --------- HEADER ---------- */
+
+.header_admin {
+  cursor:pointer;
+}
+
+.header_main {
+  width:100%;
+  border:1px solid red;
+}
+
+.header_logo {
+  float:left;
+}
+
+.header_logo img {
+  width:14vw;
+}
+
+.header_admin {
+  float:right;
+  position:relative;
+}
+
+.admin_name {
+  float:left;
+  padding: .8vw .6vw 0 0;
+}
+.admin_portrait {
+  width:3.6vw;
+  height:3.6vw;
+  background:#ccc;
+  float:left;
+  border-radius:2vw;
+  padding:.125vw;
+}
+
+.admin_portrait > div {
+    border-radius:2vw;
+    overflow:hidden;
+    width:3.4vw;
+    height:3.4vw;
+    margin: .1vw 0 0 .1vw ;
+}
+
+.admin_portrait > div > img {
+  width:3.4vw;
+  height:3.4vw;
+}
+
+/*--------- HEADER NAV ---------- */
+
+#header_nav {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+#header_nav ul {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:2.5vw;
+}
+
+#header_nav li {
+  list-style-type: none;
+  float:left;
+  padding: 0 1.4vw 0 0;
+  margin:0;
+  font-size:1.9vw;
+  color:black;
+  cursor:pointer;
+}
+
+#header_nav li:hover {
+  color:#0391A9;
+}
+
+#header_nav li#header_nav_agencies {
+  color:#0391A9;
+}
+
+.header_bottom_bar {
+  width:100%;
+  height:.1vw;
+  background: linear-gradient(90deg, #999, #999, white);
+  clear:both;
+}
+
+.header_nav_indicator {
+  width:100%;
+  height:1vw;
+}
+
+.header_bottom_bar_activeLinkShell {
+    margin: .5vw 0 0 2.5vw ;
+    width:1vw;
+}
+
+/* ---------- AGENCIES LIST HEADER ------------- */
+
+#agencies_header {
+  position:relative;
+  padding: 0 0 1vw 0;
+}
+
+.agencies_header_title {
+  float:left;
+  font-size:3vw;
+  font-weight:500;
+  color:black;
+}
+
+.agencies_header_filters_nav {
+  float:right;
+  font-size:2vw;
+  font-weight:500;
+  color:black;
+  position:absolute;
+  bottom:1vw;
+  right:0;
+  cursor:pointer;
+}
+
+.agencies_header_filters_nav div {
+  float:right;
+}
+
+.agencies_header_filters_nav img {
+  width:3.5vw;
+  padding: 0 0 0 1vw;
+  float:right;
+}
+
+/* ---------- AGENCIES LIST MAIN ------------- */
+
+#agencies_body {
+  width:100%;
+  position:relative;
+}
+
+#agencies_table_shell {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.agency_item_detail {
+  text-align:left;
+  padding: 0 0 1vw 6.5vw;
+}
+
+.agency_item_detail a {
+  color:#0391A9;
+}
+
+.agency_item_inline_edit {
+  background:#0391A9;
+  color:#fff;
+  border-radius: .7vw;
+  width:10vw;
+  padding:.2vw;
+  text-align:center;
+  margin:.5vw 0 0 0;
+}
+
+.agency_item_inline_edit a {
+  color:white;
+  text-decoration: none;
+}
+
+.bc_table_headerColumn {
+  background:#ddd;
+  color:#000;
+}
+
+
+/* ---------- AGENCIES FILTER ------------- */
+
+#agencies_filter {
+  position:absolute;
+  top:0;
+  right:0;
+  overflow:hidden;
+}
+
+.filter_open {
+  animation-name: filter_open_keys;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.filter_closed {
+  animation-name: filter_close_keys;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes filter_open_keys {
+    0%   {width:0;}
+    100% {width:30%;}
+}
+
+@keyframes filter_close_keys {
+    0%   {width:30%;}
+    100% {width:0;}
+}
+
+.agency_list_wide {
+  animation-name: list_wide_keys;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.agency_list_narrow {
+  animation-name: list_narrow_keys;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes list_wide_keys {
+    0%   {width:70%;}
+    100% {width:100%;}
+}
+
+@keyframes list_narrow_keys {
+    0%   {width:100%;}
+    100% {width:70%;}
+}
+
+#Filters {
+  padding: 0 0 0 2vw;
+  text-align:left;
+  color:black;
+}
+
+.filters_section {
+  width:24vw;
+}
+
+.filters_section {
+  padding: 0 0 2vw 0;
+}
+
+.filters_section h1 {
+  font-size:2vw;
+  margin:0;
+  padding:0;
+  color:#000;
+  width:100%;
+  text-align:left;
+  vertical-align:top;
+}
+
+.filters_button {
+  border:1px solid #000;
+  border-radius:.7vw;
+  position:relative;
+  padding: .4vw .7vw .4vw .7vw;
+  cursor:pointer;
+  color:#000;
+}
+
+.filters_button_label {
+  float:left;
+}
+
+.filter_button_icon {
+  float:right;
+}
+
+.filter_button_icon img {
+  width:1.5vw;
+}
+
+.filters_chosen {
+  color:#0391A9;
+}
+
+.filters_checkBoxContainer{
+  position:relative;
+}
+
+.filters_policies div.filter_radio,
+.filters_licenses div.filter_radio {
+  width:auto;
+}
+
+.filters_checkBoxContainer p {
+  margin:0;
+  padding:0;
+}
+
+.filters_checkBoxContainer div.state_row:nth-child(odd) {
+  background:#ccc;
+}
+
+.filters_checkBoxContainer .filter_radio {
+  width:3.5vw;
+  font-size:1.5vw;
+}
+
+.filter_radio {
+  float:left;
+  padding: 0 1vw 0 0;
+}
+
+.filter_search {
+  height:2.5vw;
+  border:1px solid #000;
+  border-radius: 1vw;
+  padding:0 0 0 1vw;
+
+  color:#ccc;
+  position:relative;
+}
+
+.filter_search input {
+    width:80%;
+    height:2vw;
+    float:left;
+    border:none;
+    font-size:1.3vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+}
+
+.filter_search img {
+  float:right;
+  width:1.3vw;
+  padding: .5vw .5vw 0 0;
+}
+
+/* ---------- FOOTER ------------- */
+
+#footer {
+  clear:both;
+  float:left;
+  width:100%;
+  padding:1vw 0 3vw 0;
+}
