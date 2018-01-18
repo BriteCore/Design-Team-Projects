@@ -1,40 +1,33 @@
 # Design Team Project
 
-This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process and seeing how you work.
+This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process.
 
 ## Background
-
-[BriteCore](http://www.britecore.com/) is a web-based platform insurance companies use to manage their business. Insurance is a form of risk management. Risks are anything that someone could incur a loss on. BriteCore has historically worked primarily with property-based risks (homes, farms, churches, etc.).
+[BriteCore](http://www.britecore.com/) is a web-based platform insurance companies use to manage their business. An inevitable part of the insurance process is Claims Management. A claim occurs when a policyholder experiences a loss, such as a house fire or burglary. Insurance companies have entire departments whose job it is to manage claims. 
 
 ## Problem
+Having a responsive, friendly claims staff has become a key way companies try to set themselves apart. So, they are both trying to have great customer service, while also trying to make sure a claim is covered by a policy and isn’t fraudulent or misreported.
 
-Since BriteCore was created to work mostly with property-based insurance, the system is pretty rigid. It assumes that all risks are properties and have addresses. This makes it difficult for BriteCore to work with different forms of insurance like Automobile Policies, Cyber Liability Coverage (protection against hacking), or Prize Insurance (if someone gets a $1 million hole-in-one prize at a golf tournament, the golf course doesn't pay it, they have an insurance policy to cover them).
+The key person responsible for most of this is the **Claims Adjuster**. This person gathers all the information about a claim and interacts with the person who experienced a loss.
 
-Any kind of insurance requires a certain amount of information to be collected from the customer in order to figure out how much the insurance policy will cost. These questions include things like:
-
-- "How many square feet is the home" - For a Homeowners Policy
-- "Have you had a speeding ticket in the last year" - For an automobile policy
-- "When is your birthday" - For a life insurance policy
-
-We need a way for insurance carriers to setup and manage the questions they are asking their customers.
+Insurance companies normally only have a limited staff of Adjusters, and it is not uncommon for claims adjusters to work several dozen claims at any one time. 
 
 ## Primary Goal
+BriteCore’s clients want a design that a claims manager can use to assign adjusters to all open claims that meets the following conditions:
 
-We would like to see you come up with a solution that allows insurers to define their own custom inputs for any type of insurance. This will include creating a design to view and create input fields that will then be presented to users while they complete insurance applications.
+* The design is efficient to use, as claims managers have limited time themselves, and there can be many claims they have to assign.
+* The design helps inform the claims manager, by showing them relevant workload metrics for adjusters. This could include things like **Average number of claims**.
+* While assigning a claim, the claims manager will know the following information about it: **Claim Number**, **Loss Date & Time**, **Description**, **Loss Address**.
 
-Each input is expected to have a label, and most importantly a 'type'. This type will determine much about how the input is presented and it's UX. These types include, but are not limited to, 'date', 'number', 'currency', 'text', and 'select (multiple preset options with a single choice).'
-
-We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups, with a focus on a solid UX. You should also create a single, static high-fidelty prototype in HTML/CSS for your design that showcases your UI abilities, and ability to deliver a polished final product.
-
-Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for our clients using this design.
+We would like to see a set of low-fidelty mockups/sketches showing approaches for how you would design this feature. We would also like to see a high-fidelity mockup of one of these approaches. 
 
 ### Delivery
 
 Your final deliverables will be:
-- Documentation around your design process (Can be stored in a google drive folder you share)
-- HTML/CSS Design Prototype
+* Images of low-fidelity sketches/mockups and hi-fidelity final design.
+* Any other documentation that helps us understand how you work.
 
-Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges. The more you share, the more we can steer you and make sure you don’t waste any time.
+Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges.
 
 ## Questions
 
