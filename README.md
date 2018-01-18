@@ -1,6 +1,6 @@
 # Design Team Project
 
-This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process.
+This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process, and seeing a design that is extremely usable, intuitive and visually polished.
 
 ## Background
 [BriteCore](http://www.britecore.com/) is a web-based platform insurance companies use to manage their business. An inevitable part of the insurance process is Claims Management. A claim occurs when a policyholder experiences a loss, such as a house fire or burglary. Insurance companies have entire departments whose job it is to manage claims. 
@@ -26,8 +26,6 @@ We would like to see a set of low-fidelty mockups/sketches showing approaches fo
 Your final deliverables will be:
 * Images of low-fidelity sketches/mockups and hi-fidelity final design.
 * Any other documentation that helps us understand how you work.
-
-Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges.
 
 ## Questions
 
