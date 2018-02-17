@@ -1,8 +1,8 @@
-# Frontend Design Team Project
+UI Engineer Design Team Project
 
 Our design team is currently in the process of redesiging all aspects of our app, BriteCore, which insurance companies use to manage their internal business (think of it almost as an industry-specific CMS).
 
-The app is being broken up from one large monolithic application into smaller modules, with a unified front end. Almost all of our developers are backend experts, and we're now finding that it would be helpful to have a front-end expert to work alongside the design team.
+The app is being broken up from one large monolithic application into smaller modules, with a unified front end. Almost all of our developers are backend experts, and we're now finding that it would be helpful to have a front-end expert to work on the design team.
 
 This exercise is taken from a recent design we did, and we would like to see how you would approach it.
 
