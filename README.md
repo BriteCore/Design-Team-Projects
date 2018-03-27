@@ -44,7 +44,7 @@ Most carriers have around 7-9 distinct policy types. They will want to specify w
 ## Primary Goal
 We would like to see you come up with an intuitive design that incorporates these advanced management features along with the standard contact information that BriteCore already displays for agents and agencies. You can do this in any way you choose (one page, splitting information up across pages, etc). 
 
-We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups. You should also create a static high-fidelty prototype in HTML/CSS for your design. If your design has many pages, only one needs to be mocked up in code. 
+We’re mostly interested in how well you design an interface that is extremely usable, functional and responsive. This means we would like to see work product from the entire design process, including sketches and mockups. You should also create a static high-fidelty prototype in HTML/CSS for your design. If your design has many pages, only one needs to be mocked up in high fidelity. 
 
 Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce.
 
