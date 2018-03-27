@@ -49,10 +49,9 @@ We’re mostly interested in how well you design an interface that is extremely 
 Bonus Points for hooking up some interesting functionality using jQuery/javascript. Super bonus points for anything else you can come up with that would be really helpful for an insurance company looking to manage its agency workforce.
 
 ## Delivery
-
 Your final deliverables will be:
- - HTML/CSS Design Prototype
- - Any documentation around your design process (Can be stored in a google drive folder you share)
+- Images of low-fidelity sketches/mockups and hi-fidelity final design.
+- Any other documentation that helps us understand how you work.
  
 Please share progress along the way. We are most interested in seeing how you work as a designer and tackle challenges along the way. The more you share, the more we can steer you and make sure you don’t waste any time.
 
