@@ -15,7 +15,7 @@ It's hard for customers to estimate the replacement cost of their homes, so inst
 
 Below is the form design they want to use for collecting this information.
 
-
+![mockup for design test](design_test_mockup.png)
 
 Come up with a high fidelty version of this design that contains any improvements you can think of to improve the UX of this feature. Specific wording, ordering of questions, and anything else can be proposed as a change.
 
