@@ -1,36 +1,30 @@
 # Design Team Project
 
-This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process, and seeing a design that is extremely usable, intuitive and visually polished.
+Thank you for taking time to do our design test. It is inspired by a real world design problem we faced and includes two parts: 
 
-## Background
-[BriteCore](http://www.britecore.com/) is a web-based platform insurance companies use to manage their business. An inevitable part of the insurance process is Claims Management. A claim occurs when a policyholder experiences a loss, such as a house fire or burglary. Insurance companies have entire departments whose job it is to manage claims. 
+* The design test
+* A few followup questions
 
-## Problem
-Having a responsive, friendly claims staff has become a key way companies try to set themselves apart. So, they are both trying to have great customer service, while also trying to make sure a claim is covered by a policy and isn’t fraudulent or misreported.
+Please submit this project as a zip file back to the design team lead, Will Guldin (will@britecore.com). The zip file should contain a .md file with your answers and a high fidelty design.
 
-The key person responsible for most of this is the **Claims Adjuster**. This person gathers all the information about a claim and interacts with the person who experienced a loss.
+## The Design Test
 
-Insurance companies normally only have a limited staff of Adjusters, and it is not uncommon for claims adjusters to work several dozen claims at any one time. 
+BriteCore uses a ‘community source’ model, which means any of our clients can see our source code and make contributions that can be used by the entire community (similar to an open source project). Below is a basic mockup for a new feature a client developer wants to add to the system. This feature is called a 'Replacement Cost Estimator'. In home insurance, these estimators are used to calculate the value of a home, so that the correct amount of insurance can be given to the end customer. 
 
-## Primary Goal
-BriteCore’s clients want a design that a claims manager can use to assign adjusters to all open claims that meets the following conditions:
+It's hard for customers to estimate the replacement cost of their homes, so instead, they will answer the following questions below, and then an algorithm used by the client will determine the replacement cost. 
 
-* The design is efficient to use, as claims managers have limited time themselves, and there can be many claims they have to assign.
-* The design helps inform the claims manager, by showing them relevant workload metrics for adjusters. This could include things like **Average number of claims**.
-* While assigning a claim, the claims manager will know the following information about it: **Claim Number**, **Loss Date & Time**, **Description**, **Loss Address**.
+Below is the form design they want to use for collecting this information.
 
-We would like to see a set of low-fidelty mockups/sketches showing approaches for how you would design this feature. We would also like to see a high-fidelity mockup of one of these approaches. 
 
-### Delivery
 
-Your final deliverables will be:
-* Images of low-fidelity sketches/mockups and hi-fidelity final design.
-* Any other documentation that helps us understand how you work.
+Come up with a high fidelty version of this design that contains any improvements you can think of to improve the UX of this feature. Specific wording, ordering of questions, and anything else can be proposed as a change.
 
-## Questions
+### Considerations
+* Once all information is entered, a replacement cost can automatically be fetched and updated, but this could also be triggered by a user action.
+* This is just a single component widget in a larger application, no need to worry about designing page navigation, footer information, etc. 
+* Brand the UI however you wish, so long as your UI is polished and professional.
 
-For questions, please contact will@britecore.com.
+## Followup Questions
 
-## Finished?
-
-When you're done with the above project, please submit your github repo to will@britecore.com.
+1. How long did you spend on the test? What 
+2. Describe what you see as the biggest change you made to improve usability of this design. 
