@@ -22,9 +22,22 @@ Come up with a high fidelty version of this design that contains any changes you
 ### Considerations
 * Once all information is entered, a replacement cost can automatically be fetched and updated, or this could also be triggered by a user action.
 * This is just a single component widget in a larger application, no need to worry about designing page navigation, footer information, etc. 
-* Brand the UI however you wish, so long as your final product is polished and professional.
+* Brand the UI however you wish, so long as your final mockup is polished and professional.
+* The person using this interface will be an insurance agent getting a policy for the customer. It won't be the homeowner who is directly completing this form.
+
+### User Story
+As an agent using BriteCore,
+I am able to quickly get a replacement cost estimate for my customer,
+so that they can have the correct amount of homeowner's insurance.
+
+### Requirements
+Take as much or as little time as you would like to complete the following requirements:
+* Your design meets the user story outlined above. 
+* You have a high-fidelity version of your design completed.
+* If you sketched different approaches, those can also be submitted.
 
 ## Followup Questions
-
-1. How long did you spend on the test?
+1. How long did you spend on the test? Would you do anything differently if you had more time? 
 2. Describe what you see as the biggest change you made to improve usability of this design. 
+3. Would you be able to code a prototype of this design using HTML and CSS?
+4. What typeface best describes your personality?
