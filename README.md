@@ -17,12 +17,12 @@ Below is the form design they want to use for collecting this information.
 
 <img src="https://github.com/IntuitiveWebSolutions/DesignProject/blob/project-v3/design_test_mockup.png?s=200" alt="mockup"/>
 
-Come up with a high fidelty version of this design that contains any improvements you can think of to improve the UX of this feature. Specific wording, ordering of questions, and anything else can be proposed as a change.
+Come up with a high fidelty version of this design that contains any changes you can think of to improve the UX of this feature. Specific wording, ordering of questions, layout changes, and anything else can be proposed as a change.
 
 ### Considerations
-* Once all information is entered, a replacement cost can automatically be fetched and updated, but this could also be triggered by a user action.
+* Once all information is entered, a replacement cost can automatically be fetched and updated, or this could also be triggered by a user action.
 * This is just a single component widget in a larger application, no need to worry about designing page navigation, footer information, etc. 
-* Brand the UI however you wish, so long as your UI is polished and professional.
+* Brand the UI however you wish, so long as your final product is polished and professional.
 
 ## Followup Questions
 
