@@ -26,5 +26,5 @@ Come up with a high fidelty version of this design that contains any changes you
 
 ## Followup Questions
 
-1. How long did you spend on the test? What 
+1. How long did you spend on the test?
 2. Describe what you see as the biggest change you made to improve usability of this design. 
