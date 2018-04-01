@@ -1,0 +1,17 @@
+1.JPG
+
+This screen sketch represents the list of agencies that are working with the Client's Insurance Company. General details can be viewed here, and once an agency row is clicked it will go to '2.JPG' where the details of that agency will be displayed.
+
+2.JPG
+
+In this screen sketch, you can view all details of the agency (I have put some common fields as I am currently not aware of the field this system provides.) also, below there is a section where it shows in which states this agency operates, and in each state which licenses the agency has, and also, in each state which policy types are available for this agency.
+
+When a license is clicked, it can show the license in PDF form.
+
+3.JPG
+From the '2.JPG' file, in top area, when the 'Agents' tab is clicked, the '3.JPG' screen appears. Here the list of those agents is available who are employeed in this specific Agency.
+We can filter by state from the list. Also search in the search bar for a specific agent. When any row of agent is clicked, it goes to screen '4.JPG' where detail of that agent is available.
+
+4.JPG
+In this sketch, all details of agent is displayed (again, I have put in general fields as I am not aware of fields available in Britecore system for agents.)
+Below general details, the license that this agent has, is also displayed, along with information of the license. It is available here in PDF format. It proves that this agent has approval of the work he is doing.
