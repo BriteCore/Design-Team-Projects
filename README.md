@@ -33,6 +33,7 @@ so that they can have the correct amount of homeowner's insurance.
 ### Requirements
 Take as much or as little time as you would like to complete the following requirements:
 * Your design meets the user story outlined above. 
+* All the same data as the original mockup is collected in your design.
 * You have a high-fidelity version of your design completed.
 * If you sketched different approaches, those can also be submitted.
 
