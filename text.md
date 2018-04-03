@@ -2,7 +2,7 @@ How many square feet is the home?
 
 What year was the home built?
 
-Quality and Style of home
+Quality and style of home
 - Economy
 - Standard
 - Above Average
