@@ -9,7 +9,7 @@ Please submit this project as a `.zip` file back to the design team lead, Will G
 
 ## The Design Test
 
-BriteCore uses a ‘community source’ model, which means any of our clients can see our source code and make contributions that can be used by the entire community (similar to an open source project). Below is a basic mockup for a new feature a client developer wants to add to the system. This feature is called a 'Replacement Cost Estimator'. In home insurance, these estimators are used to calculate the value of a home, so that the correct amount of insurance can be given to the end customer. 
+BriteCore uses a "community source" model, which means any of our clients can see our source code and make contributions that can be used by the entire client community (similar to an open source project). Below is a basic mockup for a new feature a client's developer wants to add to the system. This feature is called a **Replacement Cost Estimator**. In home insurance, these estimators are used to calculate the value of a home, so that the correct amount of insurance can be given to the end customer. 
 
 It's hard for customers to estimate the replacement cost of their homes, so instead, they will answer the following questions below, and then an algorithm used by the client will determine the replacement cost. 
 
@@ -17,7 +17,7 @@ Below is the form design they want to use for collecting this information.
 
 <img src="https://github.com/IntuitiveWebSolutions/DesignProject/blob/project-v3/design_test_mockup.png?s=200" alt="mockup"/>
 
-Come up with a high fidelty version of this design that contains any changes you can think of to improve the UX and UI of this feature. Specific wording, ordering of questions, layout changes, and anything else can be proposed as a change.
+Come up with a high fidelty version of this design that contains any changes you can think of to improve the UX and UI of this feature. Specific wording, ordering of questions, layout changes, and anything else can be proposed.
 
 ### Considerations
 * Once all information is entered, a replacement cost can automatically be fetched and updated, or this could also be triggered by a user action.
@@ -35,7 +35,8 @@ Take as much or as little time as you would like to complete the following requi
 * Your design meets the user story outlined above. 
 * All the same data as the original mockup is collected in your design.
 * You have a high-fidelity version of your design completed.
-* If you sketched different approaches, those can also be submitted.
+
+*Optional: If you sketched different approaches, those can also be submitted, but this is not required.*
 
 ## Followup Questions
 1. How long did you spend on the test? Would you do anything differently if you had more time? 
