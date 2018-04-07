@@ -17,7 +17,7 @@ Below is the form design they want to use for collecting this information.
 
 <img src="https://github.com/IntuitiveWebSolutions/DesignProject/blob/project-v3/design_test_mockup.png?s=200" alt="mockup"/>
 
-Come up with a high fidelty version of this design that contains any changes you can think of to improve the UX of this feature. Specific wording, ordering of questions, layout changes, and anything else can be proposed as a change.
+Come up with a high fidelty version of this design that contains any changes you can think of to improve the UX and UI of this feature. Specific wording, ordering of questions, layout changes, and anything else can be proposed as a change.
 
 ### Considerations
 * Once all information is entered, a replacement cost can automatically be fetched and updated, or this could also be triggered by a user action.
