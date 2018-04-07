@@ -24,6 +24,7 @@ Come up with a high fidelty version of this design that contains any changes you
 * This is just a single component widget in a larger application, no need to worry about designing page navigation, footer information, etc. 
 * Brand the UI however you wish, so long as your final mockup is polished and professional.
 * The person using this interface will be an insurance agent getting a policy for the customer. It won't be the homeowner who is directly completing this form.
+* The images and text used in the mockup are available in this repo for use in your design.
 
 ### User Story
 As an agent using BriteCore,
