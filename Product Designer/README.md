@@ -1,4 +1,4 @@
-# Design Team Project
+# Product Designer Project
 
 Thank you for taking time to do our design test. It is inspired by a real world design problem we faced and includes two parts: 
 
