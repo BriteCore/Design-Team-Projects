@@ -5,7 +5,7 @@ Thank you for taking time to do our design test. It is inspired by a real world 
 * The design research test
 * A few followup questions
 
-Please submit this project as a .zip file back to the design team lead, Will Guldin (will@britecore.com). The zip file should contain a .md file with your answers and a research plan, in PDF format.
+Please submit this project as a .zip file back to the design director, Will Guldin (will@britecore.com). The zip file should contain a .md file with your answers and a research plan, in PDF format.
 
 ## The Design Research Test
 
