@@ -46,4 +46,4 @@ Take as much or as little time as you would like to complete the following requi
 ## Followup Questions
 1. How long did you spend on the test? Would you do anything differently if you had more time?
 2. What aspect of your plan do you see as being the most important to it being successfully executed?
-3. How did BriteCore's fully remote nature impact your research plan?
+3. What methods specifically related to remote research did you leverage?
