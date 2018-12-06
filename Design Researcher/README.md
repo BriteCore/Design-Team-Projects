@@ -32,14 +32,10 @@ We’d like to better understand how our users might use a search tool like this
 Please come up with a research plan that would test the effectiveness of both high-level and low-level concepts here.
 
 ### Considerations
-
-The main people using this area of our app will be claims adjusters. Adjusters work inside an insurance company to document and record all aspects of the claim, and what happened. They also decide how much the insurance company should pay to the person filing the claim.
-
-Typically, they have a large workload of up to 100 claims at a given time they are working on.
-
-Any methodology that you feel is appropriate can be included in your project plan.
-
-We’re mostly interested in assessing how you approach and advocate for design research within a company.
+* The main people using this area of our app will be claims adjusters. Adjusters work inside an insurance company to document and record all aspects of the claim, and what happened. They also decide how much the insurance company should pay to the person filing the claim.
+* Typically, they have a large workload of up to 100 claims at a given time they are working on.
+* Any methodology that you feel is appropriate can be included in your project plan.
+* We’re mostly interested in assessing how you approach and advocate for design research within a company.
 
 ### Requirements
 Take as much or as little time as you would like to complete the following requirements:
@@ -47,7 +43,7 @@ Take as much or as little time as you would like to complete the following requi
 * A project plan that describes how you would research the problems outlined above.
 * The plan should also include details into how you would share this research with the rest of the team or incorporate it into a design process.
 
-
 ## Followup Questions
 1. How long did you spend on the test? Would you do anything differently if you had more time?
-2. 
+2. What aspect of your plan do you see as being the most important to it being successfully executed?
+3. How did BriteCore's fully remote nature impact your research plan?
