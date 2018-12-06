@@ -14,15 +14,15 @@ BriteCore is essentially a CMS for insurance companies. They use our web-based s
 To aid in searching for a claim, we’re planning to use our existing search component. This component already includes traditional filters to limit results, as seen below:
 
 #### Search Component
-<img src="/Design%20Researcher/search.png?s=150" alt="mockup"/>
+<img src="/Design%20Researcher/search.png" width="650" alt="mockup"/>
 
 #### Search Component w/ Active Filter
-<img src="/Design%20Researcher/search-filter-active.png?s=150" alt="mockup"/>
+<img src="/Design%20Researcher/search-filter-active.png" width="650" alt="mockup"/>
 
 We’re also considering an approach where someone searching for a claim can scope or limit their search results.
 
 #### Search Component with Scoping Dropdown Active
-<img src="/Design%20Researcher/search-scoped.png?s=150" alt="mockup"/>
+<img src="/Design%20Researcher/search-scoped.png" width="650" alt="mockup"/>
 
 
 This feature would allow the user to narrow down how their search results are interpreted to match certain categories of data. We think this might be most useful for searching for partial records. A claim number is normally formatted like C-2018-52312. So, if you were searching ‘52312’ only, we think it might be helpful to limit your search to ‘claim number’ so that phone numbers like “532-127-5555” don’t show up as well. The ‘all’ option will try its best to match results from all data categories.
