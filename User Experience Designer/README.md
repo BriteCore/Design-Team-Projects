@@ -42,5 +42,5 @@ Take as much or as little time as you would like to complete the following requi
 ## Followup Questions
 1. How long did you spend on the test? Would you do anything differently if you had more time? 
 2. Describe what you see as the biggest change you made to improve usability of this design. 
-3. Would you be able to code a prototype of this design using HTML and CSS?
+3. How would you approach testing this design with real users?
 4. What typeface best describes your personality?
