@@ -9,7 +9,7 @@ Please submit this project as a `.zip` file back to the design director, Will Gu
 
 ## The Design Test
 
-BriteCore uses a "community source" model, which means any of our clients can see our source code and make contributions that can be used by the entire client community (similar to an open source project). Below is a basic mockup for a new feature a client's developer wants to add to the system. This feature is called a **Replacement Cost Estimator**. In home insurance, these estimators are used to calculate the value of a home, so that the correct amount of insurance can be given to the end customer. 
+BriteCore allows our clients to see our source code and make contributions that can then be used by the entire client community. Below is a basic mockup for a new feature a client's developer wants to add to the system. This feature is called a **Replacement Cost Estimator**. In home insurance, these estimators are used to calculate the value of a home, so that the correct amount of insurance can be given to the end customer. 
 
 It's hard for customers to estimate the replacement cost of their homes, so instead, they will answer the following questions below, and then an algorithm used by the client will determine the replacement cost. 
 
