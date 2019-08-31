@@ -2,15 +2,15 @@
 
 Thank you for taking time to do our coding test. It is inspired by a real world analytics problem we faced and includes two parts:
 
-The coding test
-A few followup questions
+* The coding test
+* A few followup questions
 
-Please submit this project as a pull request back to this repo. The PR should include your code and answers to the follow up questions.
+Please submit this project as a pull request back to this repo. The PR should include your code and answers to the follow-up questions.
 
 ## The Coding Test
 
 ### Overview
-Our frontend team has almost completed a UI rewrite of one of the oldest, and most used pages in our application. The billing page is used to look up a policy's billing information, past transactions and payment plan options. The team has left the backend logic unchanged, but has updated the frontend to use vue.js and our [design system](ui.britecore.com).
+Our frontend team has almost completed a UI rewrite of one of the oldest, and most used, pages in our application. The billing page is used to look up a policy's billing information, past transactions and payment plan options. The team has left the backend logic unchanged, but has updated the frontend to use vue.js and our [design system](ui.britecore.com).
 
 We originally chose this page for a UI rewrite because our user research indicated that it had many pain points. Although we kept functionality the same for this initial refactor, our goal is to now use the rewritten page as a base for future improvements. 
 
