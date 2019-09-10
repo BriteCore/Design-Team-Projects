@@ -30,11 +30,14 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
-            ],
-            "scripts": []
+            ]
           },
           "configurations": {
             "production": {
+              "scripts": [
+                "src/assets/scripts/gtag.js",
+                "src/assets/scripts/google-analytics.js"
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
