@@ -1,0 +1,40 @@
+<h4>Current Session</h4>
+<ul>
+  <li><b>Session ID: </b> {{ session.id }}</li>
+  <li><b>Session Duration: </b> {{ session.duration / 10 }} Seconds</li>
+  <li>
+    <b>Page Progression and Time Spent on Each Page</b>
+    <ul>
+      <li *ngFor="let path of session.paths">
+        <b>{{ path.path }}</b> {{ path.duration / 1000 }} seconds
+      </li>
+    </ul>
+    <p >
+    </p>
+  </li>
+</ul>
+
+<h4>Site Analytics</h4>
+
+<p><b>Bounce Rate:</b> {{ bounceRate | percent }}</p>
+
+<p><b>Total Sessions:</b> {{ totalSessions }}</p>
+
+<p><b>Average Session Duration:</b> {{ averageSessionDuration / 10 | toFixed2 }}</p>
+
+<p><b>Pages Per Session:</b> {{ pagesPerSession | toFixed2 }}</p>
+
+<table class="table">
+  <tr>
+    <th>Path</th>
+    <th>Average Time Spent On Page</th>
+    <th>Page Count</th>
+  </tr>
+
+  <tr *ngFor="let pageView of pageViews | keyvalue">
+    <td>{{ pageView.key }}</td>
+    <td>{{ pageView.value.duration / 1000 / pageView.value.pageViews | toFixed2 }} seconds.</td>
+    <td>{{ pageView.value.pageViews }}</td>
+  </tr>
+</table>
+
